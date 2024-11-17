@@ -6,13 +6,13 @@
 
 html {
   width: 100%;
-  height: 7000px;
+  height: 8000px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   scroll-behavior: smooth;
-  scroll-padding: 2rem;
+  scroll-padding: 7.5rem;
   justify-content: flex-start;
   overflow-x: hidden;
 }
@@ -244,8 +244,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  align-items: flex-start;
   margin-top: 120px;
+  gap: 20px;
 }
 main #categorySection {
   width: 100%;
@@ -344,150 +344,42 @@ main #categorySection .scrollSection h3 {
   align-items: center;
 }
 main #categorySection .scrollSection img {
-  width: 25%;
+  width: 15%;
   height: auto;
   transform: rotate(-90deg);
 }
-main #categoriesSection {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-main #categoriesSection div {
+main .category {
   width: 100%;
   height: 700px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  border-bottom: 1px dashed rgb(181, 181, 181);
 }
-main #categoriesSection .firstCategory, main #categoriesSection .secondCategory, main #categoriesSection .thirdCategory, main #categoriesSection .fourthCategory,
-main #categoriesSection .fifthCategory, main #categoriesSection .sixthCategory, main #categoriesSection .seventhCategory, main #categoriesSection .eigthCategory, main #categoriesSection .ninethCategory {
-  background-image: url(/src/assets/img/categories/bolsosCategory.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: default;
-}
-main #categoriesSection .firstCategory div, main #categoriesSection .secondCategory div, main #categoriesSection .thirdCategory div, main #categoriesSection .fourthCategory div,
-main #categoriesSection .fifthCategory div, main #categoriesSection .sixthCategory div, main #categoriesSection .seventhCategory div, main #categoriesSection .eigthCategory div, main #categoriesSection .ninethCategory div {
+main .category h2 {
   width: 100%;
   height: 40px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
-  align-items: flex-start;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  padding-left: 10px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
-main #categoriesSection .firstCategory div h3, main #categoriesSection .secondCategory div h3, main #categoriesSection .thirdCategory div h3, main #categoriesSection .fourthCategory div h3,
-main #categoriesSection .fifthCategory div h3, main #categoriesSection .sixthCategory div h3, main #categoriesSection .seventhCategory div h3, main #categoriesSection .eigthCategory div h3, main #categoriesSection .ninethCategory div h3 {
-  width: 40%;
+main .category div {
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  align-items: flex-start;
-  padding-left: 10px;
-  font-size: 4vw;
-  font-weight: 400;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #e3e3e3;
-}
-main #categoriesSection .secondCategory {
-  background-image: url(/src/assets/img/categories/pantalonesJeansCategory.jpeg);
-}
-main #categoriesSection .thirdCategory {
-  background-image: url(/src/assets/img/categories/blusasTopsCategory.jpeg);
-}
-main #categoriesSection .fourthCategory {
-  background-image: url(/src/assets/img/categories/tenisCategory.jpeg);
-}
-main #categoriesSection .fifthCategory {
-  background-image: url(/src/assets/img/categories/vestidosCategory.jpeg);
-}
-main #categoriesSection .toBriefcaseSection {
-  width: 100%;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  background-image: url(/src/assets/img/backgroundOpacity.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-main #categoriesSection .toBriefcaseSection button {
-  padding: 2px;
-  border: 0px solid #e3e3e3;
-  border-radius: 5px;
-  background-color: transparent;
-  transition: all 0.3s ease;
-  font-family: "Afacad Flux", sans-serif;
-  width: 50%;
-  height: 50px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 22px;
-  color: #353535;
-  cursor: pointer;
-  background-color: #e3e3e3;
-  box-shadow: 0px 0px 20px 1px black;
-  box-shadow: none;
-}
-main #categoriesSection .toBriefcaseSection button:hover {
-  transform: scale(1.05);
-}
-main #categoriesSection .sixthCategory {
-  background-image: url(/src/assets/img/categories/ropaDeportivaCategory.jpeg);
-}
-main #categoriesSection .seventhCategory {
-  background-image: url(/src/assets/img/categories/hoodiesSueterCategory.jpeg);
-}
-main #categoriesSection .eigthCategory {
-  background-image: url(/src/assets/img/categories/zapatosTaconesCategory.jpeg);
-}
-main #categoriesSection .ninethCategory {
-  background-image: url(/src/assets/img/categories/abrigosCategory.jpeg);
-}
-main #categoriesSection #buttonSection {
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
-}
-main #categoriesSection #buttonSection button {
-  padding: 2px;
-  border: 0px solid #e3e3e3;
-  border-radius: 5px;
-  background-color: transparent;
-  transition: all 0.3s ease;
-  font-family: "Afacad Flux", sans-serif;
-  width: 250px;
-  height: 50px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 22px;
-  color: #353535;
-  cursor: pointer;
-  background-color: #e3e3e3;
-  box-shadow: 0px 0px 20px 1px black;
-  margin-bottom: 25px;
-}
-main #categoriesSection #buttonSection button:hover {
-  transform: scale(1.02);
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 main #whatsapp {
   width: 60px;

@@ -80,10 +80,10 @@ $fontPlaywrite: "Playwrite CU", cursive;
 
 //Html
 html{
-    @include sizes($height: 7000px);
+    @include sizes($height: 8000px);
     @include displayFlex();
     scroll-behavior: smooth;
-    scroll-padding: 2rem;
+    scroll-padding: 7.5rem;
     justify-content: flex-start;
     overflow-x: hidden;
 }
@@ -269,8 +269,8 @@ main{
     @include sizes();
     @include displayFlex();
     justify-content: flex-start;
-    align-items: flex-start;
     margin-top: 120px;
+    gap: 20px;
     
     //Contenedor de categorias
     #categorySection{
@@ -342,104 +342,33 @@ main{
                 @include displayFlex();
             }
             img{
-                @include sizes(25%,auto);
-                transform: rotate(-90deg)
+                @include sizes(15%,auto);
+                transform: rotate(-90deg);
             }
         }
     }
 
-    //Contenedor de categorias
-    #categoriesSection{
-        @include sizes();
-        @include displayFlex();
-        justify-content: flex-start;
+    //Categorias
+    .category{
+        @include sizes($height: 700px);
+        @include displayFlex($justifyContent: space-between);
+        overflow: hidden;
+        border-bottom: 1px dashed rgb(181, 181, 181);
 
-        div{
-            @include sizes($height: 700px);
-            @include displayFlex($justifyContent:space-between);
-        }
-        .firstCategory, .secondCategory, .thirdCategory, .fourthCategory,
-        .fifthCategory, .sixthCategory, .seventhCategory, .eigthCategory, .ninethCategory{
-            background-image: url(/src/assets/img/categories/bolsosCategory.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            cursor: default;
-
-            div{
-                @include sizes(100%,40px);
-                @include displayFlex();
-                margin-top: 100px;
-                align-items: flex-start;
-
-                h3{
-                    @include sizes(40%);
-                    @include displayFlex();
-                    align-items: flex-start;
-                    padding-left: 10px;
-                    font-size: 4vw;
-                    font-weight: $noBold;
-                    border-top-right-radius: 15px;
-                    border-bottom-right-radius: 15px;
-                    background-color: $lightFontColor;
-                    
-                }
-            }
-        }
-        .secondCategory{
-            background-image: url(/src/assets/img/categories/pantalonesJeansCategory.jpeg);
-        }
-        .thirdCategory{
-            background-image: url(/src/assets/img/categories/blusasTopsCategory.jpeg);
-        }
-        .fourthCategory{
-            background-image: url(/src/assets/img/categories/tenisCategory.jpeg);
-        }
-        .fifthCategory{
-            background-image: url(/src/assets/img/categories/vestidosCategory.jpeg);
-        }
-        .toBriefcaseSection{
-            @include sizes(100%,250px);
+        h2{
+            @include sizes($height: 40px);
             @include displayFlex();
-            gap: 5px;
-            background-image: url(/src/assets/img/backgroundOpacity.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            
-            button{
-                @include buttonDesign(50%);
-                box-shadow: none;
-            }
-            button:hover{
-                transform: scale(1.05);
-            }
+            background-image: $cardBackgroundImage;
+            padding-left: 10px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
         }
-        .sixthCategory{
-            background-image: url(/src/assets/img/categories/ropaDeportivaCategory.jpeg);
-        }
-        .seventhCategory{
-            background-image: url(/src/assets/img/categories/hoodiesSueterCategory.jpeg);
-        }
-        .eigthCategory{
-            background-image: url(/src/assets/img/categories/zapatosTaconesCategory.jpeg);
-        }
-        .ninethCategory{
-            background-image: url(/src/assets/img/categories/abrigosCategory.jpeg);
-        }
-        #buttonSection{
-            @include sizes(100%,80px);
-            @include displayFlex($flexDirection:row);
-            gap: 10px;
-            padding: 20px;
-
-            button{
-                @include buttonDesign($width: 250px);
-                margin-bottom: 25px;
-            }
-            button:hover{
-                transform: scale(1.02)
-            }
+        div{
+            @include sizes();
+            @include displayFlex();
+            flex-wrap: wrap;
+            overflow-y: scroll;
+            overflow-x: hidden; 
         }
     }
 

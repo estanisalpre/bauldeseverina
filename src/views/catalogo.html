@@ -53,20 +53,56 @@
         <section id="categorySection">
             <h2>Todas nuestras categorías</h2>
             <div class="links">
-                <div><span>Bolsos</span><img src="/src/assets/img/icons/bolso.png" alt="Ícono de Categoria de Bolsos"></div>
-                <div><span>Jeans</span><img src="/src/assets/img/icons/jeans.png" alt="Ícono de Categoria de Pantalones y Jeans"></div>
-                <div><span>Blusas</span><img src="/src/assets/img/icons/blusa.png" alt="Ícono de Categoria de Blusas"></div>
-                <div><span>Tenis</span><img src="/src/assets/img/icons/zapatos.png" alt="Ícono de Categoria de Tenis"></div>
-                <div><span>Vestidos & Faldas</span><img src="/src/assets/img/icons/falda.png" alt="Ícono de Categoria de Vestidos y Faldas"></div>
-                <div><span>Ropa Deportiva</span><img src="/src/assets/img/icons/deportiva.png" alt="Ícono de Categoria de Ropa Deportiva"></div>
-                <div><span>Sueters</span><img src="/src/assets/img/icons/sueters.png" alt="Ícono de Categoria de Hoodies y Sueters"></div>
-                <div><span>Tacones</span><img src="/src/assets/img/icons/tacones.png" alt="Ícono de Categoria de Sandalias y Tacones"></div>
-                <div><span>Abrigos</span><img src="/src/assets/img/icons/abrigos.png" alt="Ícono de Categoria de Abrigos"></div>
+                <div class="toCategory" data-id="bolsosCategory"><span>Bolsos</span><img src="/src/assets/img/icons/bolso.png" alt="Ícono de Categoria de Bolsos"></div>
+                <div class="toCategory" data-id="jeansCategory"><span>Jeans</span><img src="/src/assets/img/icons/jeans.png" alt="Ícono de Categoria de Pantalones y Jeans"></div>
+                <div class="toCategory" data-id="blusasCategory"><span>Blusas</span><img src="/src/assets/img/icons/blusa.png" alt="Ícono de Categoria de Blusas"></div>
+                <div class="toCategory" data-id="tenisCategory"><span>Tenis</span><img src="/src/assets/img/icons/zapatos.png" alt="Ícono de Categoria de Tenis"></div>
+                <div class="toCategory" data-id="vestidosCategory"><span>Vestidos & Faldas</span><img src="/src/assets/img/icons/falda.png" alt="Ícono de Categoria de Vestidos y Faldas"></div>
+                <div class="toCategory" data-id="deportivaCategory"><span>Ropa Deportiva</span><img src="/src/assets/img/icons/deportiva.png" alt="Ícono de Categoria de Ropa Deportiva"></div>
+                <div class="toCategory" data-id="suetersCategory"><span>Sueters</span><img src="/src/assets/img/icons/sueters.png" alt="Ícono de Categoria de Hoodies y Sueters"></div>
+                <div class="toCategory" data-id="taconesCategory"><span>Tacones</span><img src="/src/assets/img/icons/tacones.png" alt="Ícono de Categoria de Sandalias y Tacones"></div>
+                <div class="toCategory" data-id="abrigosCategory"><span>Abrigos</span><img src="/src/assets/img/icons/abrigos.png" alt="Ícono de Categoria de Abrigos"></div>
             </div>
             <div class="scrollSection">
                 <h3>¡Desliza para descubrir por tu cuenta!</h3>
                 <img src="/src/assets/img/icons/scroll.png" alt="Ícono de Scroll para ver todo nuestro catálogo de indumentaria">
             </div>
+        </section>
+        <section id="bolsosCategory" class="category">
+            <h2>Bolsos</h2>
+            <div id="bolsosProducts"></div>
+        </section>
+        <section id="jeansCategory" class="category">
+            <h2>Pantalones & Jeans</h2>
+            <div id="jeansProducts"></div>
+        </section>
+        <section id="blusasCategory" class="category">
+            <h2>Blusas</h2>
+            <div id="blusasProducts"></div>
+        </section>
+        <section id="tenisCategory" class="category">
+            <h2>Tenis</h2>
+            <div id="tenisProducts"></div>
+        </section>
+        <section id="vestidosCategory" class="category">
+            <h2>Vestidos & Faldas</h2>
+            <div id="vestidosProducts"></div>
+        </section>
+        <section id="deportivaCategory" class="category">
+            <h2>Ropa Deportiva</h2>
+            <div id="deportivaProducts"></div>
+        </section>
+        <section id="suetersCategory" class="category">
+            <h2>Hoodies & Sueters</h2>
+            <div id="suetersProducts"></div>
+        </section>
+        <section id="taconesCategory" class="category">
+            <h2>Sandalias & Tacones</h2>
+            <div id="taconesProducts"></div>
+        </section>
+        <section id="abrigosCategory" class="category">
+            <h2>Chaquetas & Abrigos</h2>
+            <div id="abrigosProducts"></div>
         </section>
     </main>
     <!--FOOTER-->
@@ -89,6 +125,6 @@
         </div>
     </footer>
     <!--SCRIPTS-->
-    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/catalogo.js"></script>
 </body>
 </html>
