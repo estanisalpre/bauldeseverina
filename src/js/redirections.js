@@ -18,6 +18,9 @@ export function allRedirections(){
 
     //Botones para redireccionar a categorias / catalogo
     toCategories();
+
+    //Boton al panel administrativo
+    toAdminPanel();
 }
 
 //Boton whatsapp
@@ -113,6 +116,17 @@ function toCategories(){
             button.addEventListener('click', () => {
                 location.href = 'src/views/catalogo.html'
             })
+        })
+    }
+}
+
+//Boton hacia panel administrativo
+function toAdminPanel(){
+    const adminButton = document.getElementById('adminAccess')
+
+    if(adminButton){
+        adminButton.addEventListener('click', () => {
+            location.href = 'src/views/admin.html'
         })
     }
 }

@@ -1,9 +1,13 @@
 //Toda la funcionalidad de la pagina de catalogo
 
+import { burguerMenu } from "./burguerMenu.js";
+
 document.addEventListener('DOMContentLoaded', () => {
     //Nav buttons
+    navButtons();
 
     //Burguer buttons
+    burguerMenu();
 
     //Botones categoría
     categoryButtons();
@@ -17,7 +21,6 @@ function categoryButtons(){
         category.addEventListener('click', () => {
             const categoryId = category.dataset.id;
 
-            console.log(categoryId)
             if(categoryId){
                 location.href = `catalogo.html#${categoryId}`;
             } else {
@@ -25,4 +28,19 @@ function categoryButtons(){
             }
         })
     })
+}
+
+//Nav Buttons
+function navButtons(){
+    const myLogo = document.getElementById('myLogo')
+    const toContact = document.getElementById('contact')
+    
+    if(myLogo || toContact){
+        myLogo.addEventListener('click', () => {
+            location.href = '/index.html'
+        })
+        toContact.addEventListener('click', () => {
+            location.href = '/index.html'
+        })
+    }
 }

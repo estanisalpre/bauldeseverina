@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Baúl de Severina - Catálogo</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="/src/assets/styles/admin.css">
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="/src/assets/img/logos/logo.png" type="image/x-icon">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!--NAV-->
+   <nav id="nav">
+        <header>
+            <img id="toBriefcase" src="/src/assets/img/icons/catalogo.png" alt="Ícono catálogo de productos">
+            <img id="logout" src="/src/assets/img/icons/logout.png" alt="Ícono para cerrar sesión">
+        </header>
+    </nav>
+    <!--MAIN / CONTENIDO PRINCIPAL-->
+    <main>
+        <h1>Panel Administrativo</h1>
+        <!--OPCIONES A ELEGIR-->
+        <section id="options">
+            <div>
+                <button id="addProductButton">Agregar nuevo producto</button>
+            </div>
+            <div>
+                <button id="showListButton">Lista de productos</button>
+            </div>
+        </section>
+        <section id="standarSection"><img src="/src/assets/img/logos/logo.png" alt="Logo de El Baul de Severina"></section>
+        <!--AGREGAR PRODUCTOS-->
+        <section id="addProduct">
+            <h2>Agrega un nuevo producto</h2>
+
+            <button id="cancelButton" class="cancelButton">Cancelar</button>
+        </section>
+        <!--LISTA DE PRODUCTOS-->
+        <section id="productList">
+            <h2>Edita o elimina productos</h2>
+            <button id="cancelButton" class="cancelButton">Cancelar</button>
+        </section>
+    </main>
+    <!--SCRIPTS-->
+    <script type="module" src="/src/js/admin.js"></script>
+</body>
+</html>
