@@ -251,7 +251,7 @@ main #presentation {
   width: 100%;
   height: 900px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 15px;
@@ -261,10 +261,27 @@ main #presentation {
   gap: 15px;
 }
 main #presentation h2 {
-  width: 100%;
+  width: 40%;
   height: 30px;
   margin-bottom: 15px;
-  padding-left: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #353535;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 5px;
+}
+main #presentation h2 img {
+  width: 30px;
+  height: auto;
+}
+main #presentation h2:hover {
+  transform: translateY(-5px);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 main #presentation .textPresentation, main #presentation .links {
   width: 100%;
