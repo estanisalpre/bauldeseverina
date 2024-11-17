@@ -2,7 +2,7 @@
 $backgroundImage: linear-gradient(to top, #e2afa1 0%, #f2bf97 100%);
 $secondBackgroundImage: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 $cardBackgroundImage: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-//$brandColor: #09e668;
+$lightBackgroundImage: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 $sm: 12px;
 $md: 18px;
 $lg: 24px;
@@ -15,7 +15,7 @@ $errorColor: rgb(245, 106, 106);
 $sm: 14px;
 $md: 16px;
 $lg: 22px;
-$slg: 30px;
+$slg: 28px;
 $noBold: 400;
 $bold: 600;
 $montserratFont: "Montserrat", sans-serif;
@@ -42,10 +42,9 @@ $fontPlaywrite: "Playwrite CU", cursive;
     text-align: $textAlign;
 }
 @mixin buttonDesign($width: 100%){
-    padding: 2px;
-    border: 0px solid $lightFontColor;
-    border-radius: 5px;
-    background-color: transparent;
+    padding: 5px;
+    border: 1px solid $darkFontColor;
+    border-radius: 30px;
     transition: all 0.3s ease;
     font-family: $fontAfacada;
     width: $width;
@@ -55,8 +54,7 @@ $fontPlaywrite: "Playwrite CU", cursive;
     font-size: $lg;
     color: $darkFontColor;
     cursor: pointer;
-    background-color: $lightFontColor;
-    box-shadow: 0px 0px 20px 1px black;
+    background-image: $secondBackgroundImage;
 }
 @mixin inputDesign($width: 300px, $height: 40px){
     border-radius: 5px;
@@ -346,6 +344,7 @@ main{
             }
         }
     }
+
     //Contenedor de categorias
     #categoriesSection{
         @include sizes();
@@ -379,7 +378,7 @@ main{
                     font-weight: $noBold;
                     border-top-right-radius: 15px;
                     border-bottom-right-radius: 15px;
-                    background-color: $lightFontColor;
+                    background-image: $secondBackgroundImage;
                     
                 }
             }
@@ -404,10 +403,21 @@ main{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            z-index: 10000;
+            box-shadow: 0px 0px 10px 1px $shadow;
+
+            h3{
+                font-size: $slg;
+            }
             
             button{
                 @include buttonDesign(50%);
                 box-shadow: none;
+                @include displayFlex($flexDirection:row);
+
+                img{
+                    @include sizes(30px,auto);
+                }
             }
             button:hover{
                 transform: scale(1.05);
@@ -439,6 +449,76 @@ main{
                 transform: scale(1.02)
             }
         }
+
+        //Contenedor de contacto
+        #contact{
+            @include sizes($height: 280px);
+            @include displayFlex();
+            background-image: url(/src/assets/img/backgroundOpacity.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            gap: 10px;
+            cursor: default;
+            z-index: 10000;
+            box-shadow: 0px 0px 10px 1px $shadow;
+
+            h2{
+                @include sizes($height: 50px);
+                @include displayFlex();
+                background-image: $secondBackgroundImage;
+                border-bottom-left-radius: 60px;
+                border-bottom-right-radius: 60px;
+            }
+            div{
+                @include sizes();
+                @include displayFlex();
+                padding: 2px;
+                margin-top: 30px;
+
+                ul{
+                    @include sizes($height: 60px);
+                    @include displayFlex($flexDirection:row, $justifyContent: space-around);
+                    align-items: flex-end;
+    
+                    li{
+                        list-style: none;
+                        color: $darkFontColor;
+                        @include displayFlex();
+                        @include sizes(100%);
+                        justify-content: flex-end;
+
+                        img{
+                            @include sizes(70px,auto);
+                            transition: all 0.3s ease;
+                            cursor: pointer;
+                        }
+                        img:hover{
+                            transform: scale(1.05)
+                        }
+                    }
+                }
+            }
+            div ul:nth-child(2){
+                height: 40px;
+
+                li{
+                    justify-content: flex-start;
+                    font-size: $lg;
+                }
+            }
+        }
+        #contact div:nth-child(3){
+            margin-top: 30px;
+            justify-content: flex-start;
+            ul{
+                li{
+                    justify-content: flex-start;
+                    font-weight: $bold;
+                    font-size: $lg;
+                }
+            }
+        }
     }
 
     //Whatsapp logo
@@ -460,7 +540,7 @@ main{
 footer{
     @include sizes($height: 300px);
     @include displayFlex($flexDirection:row, $justifyContent:space-around);
-
+    
     img{
         @include sizes(30%,auto);
     }

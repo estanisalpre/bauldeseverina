@@ -392,7 +392,7 @@ main #categoriesSection .fifthCategory div h3, main #categoriesSection .sixthCat
   font-weight: 400;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #e3e3e3;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 main #categoriesSection .secondCategory {
   background-image: url(/src/assets/img/categories/pantalonesJeansCategory.jpeg);
@@ -418,12 +418,16 @@ main #categoriesSection .toBriefcaseSection {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 10000;
+  box-shadow: 0px 0px 10px 1px #414141;
+}
+main #categoriesSection .toBriefcaseSection h3 {
+  font-size: 28px;
 }
 main #categoriesSection .toBriefcaseSection button {
-  padding: 2px;
-  border: 0px solid #e3e3e3;
-  border-radius: 5px;
-  background-color: transparent;
+  padding: 5px;
+  border: 1px solid #353535;
+  border-radius: 30px;
   transition: all 0.3s ease;
   font-family: "Afacad Flux", sans-serif;
   width: 50%;
@@ -433,9 +437,16 @@ main #categoriesSection .toBriefcaseSection button {
   font-size: 22px;
   color: #353535;
   cursor: pointer;
-  background-color: #e3e3e3;
-  box-shadow: 0px 0px 20px 1px black;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   box-shadow: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+main #categoriesSection .toBriefcaseSection button img {
+  width: 30px;
+  height: auto;
 }
 main #categoriesSection .toBriefcaseSection button:hover {
   transform: scale(1.05);
@@ -463,10 +474,9 @@ main #categoriesSection #buttonSection {
   padding: 20px;
 }
 main #categoriesSection #buttonSection button {
-  padding: 2px;
-  border: 0px solid #e3e3e3;
-  border-radius: 5px;
-  background-color: transparent;
+  padding: 5px;
+  border: 1px solid #353535;
+  border-radius: 30px;
   transition: all 0.3s ease;
   font-family: "Afacad Flux", sans-serif;
   width: 250px;
@@ -476,12 +486,93 @@ main #categoriesSection #buttonSection button {
   font-size: 22px;
   color: #353535;
   cursor: pointer;
-  background-color: #e3e3e3;
-  box-shadow: 0px 0px 20px 1px black;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   margin-bottom: 25px;
 }
 main #categoriesSection #buttonSection button:hover {
   transform: scale(1.02);
+}
+main #categoriesSection #contact {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/src/assets/img/backgroundOpacity.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 10px;
+  cursor: default;
+  z-index: 10000;
+  box-shadow: 0px 0px 10px 1px #414141;
+}
+main #categoriesSection #contact h2 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+main #categoriesSection #contact div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  margin-top: 30px;
+}
+main #categoriesSection #contact div ul {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  align-items: flex-end;
+}
+main #categoriesSection #contact div ul li {
+  list-style: none;
+  color: #353535;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+}
+main #categoriesSection #contact div ul li img {
+  width: 70px;
+  height: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+main #categoriesSection #contact div ul li img:hover {
+  transform: scale(1.05);
+}
+main #categoriesSection #contact div ul:nth-child(2) {
+  height: 40px;
+}
+main #categoriesSection #contact div ul:nth-child(2) li {
+  justify-content: flex-start;
+  font-size: 22px;
+}
+main #categoriesSection #contact div:nth-child(3) {
+  margin-top: 30px;
+  justify-content: flex-start;
+}
+main #categoriesSection #contact div:nth-child(3) ul li {
+  justify-content: flex-start;
+  font-weight: 600;
+  font-size: 22px;
 }
 main #whatsapp {
   width: 60px;
