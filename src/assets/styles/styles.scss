@@ -1,6 +1,7 @@
 //Variables
 $backgroundImage: linear-gradient(to top, #e2afa1 0%, #f2bf97 100%);
 $secondBackgroundImage: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+$cardBackgroundImage: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 //$brandColor: #09e668;
 $sm: 12px;
 $md: 18px;
@@ -79,7 +80,7 @@ $fontPlaywrite: "Playwrite CU", cursive;
 
 //Html
 html{
-    @include sizes($height: 7000px);
+    @include sizes($height: 8000px);
     @include displayFlex();
     scroll-behavior: smooth;
     scroll-padding: 2rem;
@@ -271,7 +272,67 @@ main{
     align-items: flex-start;
     margin-top: 120px;
     
-    //Contenedor de contacto
+    //Contenedor de presentación
+    #presentation{
+    @include sizes($height: 900px);
+    @include displayFlex($justifyContent: space-between);
+    padding: 15px;
+    cursor: default;
+    transform: translateX(2500px);
+    animation: sideIn 0.5s ease forwards;
+    gap: 15px;
+    
+    h2{
+        @include sizes($height: 30px);
+        margin-bottom: 15px;
+        padding-left: 10px;
+    }
+        .textPresentation, .links{
+            @include sizes($height: 50%);
+            @include displayFlex();
+
+            img{
+                @include sizes(40%,auto);
+            }
+            p{
+                @include sizes();
+                @include displayFlex();
+            }
+        }
+        .links{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction: row;
+            gap: 15px;
+
+            div{
+                @include sizes(130px,120px);
+                @include displayFlex();
+                border-radius: 100%;
+                padding: 10px;
+                background-image: $cardBackgroundImage;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                gap: 10px;
+
+                span{
+                    @include sizes($height: 35px);
+                    @include displayFlex();
+                    background-image: $secondBackgroundImage;
+                    margin-top: -40px;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px 1px $shadow;
+                }
+                img{
+                    @include sizes(60%,auto);
+                }
+            }
+            div:hover{
+                transform: scale(1.03);
+            }
+        }
+    }
+    //Contenedor de categorias
     #categoriesSection{
         @include sizes();
         @include displayFlex();
@@ -436,97 +497,3 @@ footer{
     70%{transform: rotate(-15deg) scale(1.02)}
     100%{transform: rotate(0deg) scale(1)}
 }
-
-//Contenedor de presentación
-   /*  #presentation{
-        @include sizes(95%,$height: 80%);
-        @include displayFlex($flexDirection:row, $justifyContent: space-between);
-        background-image: url(/src/assets/img/presentationBackground.png);
-        padding: 25px;
-        cursor: default;
-        transform: translateX(2500px);
-        animation: sideIn 1s ease forwards;
-
-        .presentationImg{
-            @include displayFlex();
-            @include sizes(40%,100%);
-            gap: 25px;
-            opacity: 0;
-            animation: fadeIn 0.5s ease forwards;
-
-            .imgs{
-                @include sizes(80%,90%);
-                @include displayFlex();
-                overflow: hidden;
-                backdrop-filter: blur(3px);
-                box-shadow: 0px 0px 10px 1px $shadow;
-
-                #firstImage, #secondImage, #thirdImage{
-                    @include sizes();
-                }
-                #secondImage, #thirdImage{
-                    display: none;
-                }
-            }
-            .carrouselController{
-                @include sizes(20%,10%);
-                @include displayFlex($flexDirection:row);
-                gap: 25px;
-                backdrop-filter: blur(3px);
-                box-shadow: 0px 0px 10px 1px $shadow;
-                border-radius: 10px;
-                margin-top: -50px;
-                animation: carrouselControllers 5s ease infinite;
-                animation-delay: 5s;
-
-                img{
-                    @include sizes(50px,auto);
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                }
-                #leftArrow{
-                    transform: rotate(0deg)
-                }
-                #rightArrow{
-                    transform: rotate(180deg)
-                }
-            }
-            .carrouselController:hover{
-                animation-play-state: paused;
-            }
-        }
-        //Texto y links para redireccionar al cliente
-        .linksAndText{
-            @include sizes(60%,60%);
-            @include displayFlex();
-
-            p{
-                @include sizes(70%,40%);
-                @include displayFlex();
-                text-align: center;
-                font-size: $lg;
-                padding: 5px;
-                color: $darkFontColor;
-                backdrop-filter: blur(10px);
-                transition: all 0.3s ease;
-                border-radius: 10px;
-                box-shadow: 0px 0px 10px 1px $shadow;
-                transform: scale(0.00001);
-                animation: zoomAnimation 0.5s ease forwards;
-            }
-            p:hover{
-                transform: scale(1.02)
-            }
-            .pageRedirections{
-                @include sizes(70%,20%);
-                @include displayFlex($justifyContent: space-between, $flexDirection:row);
-                gap: 10px;
-
-                button{
-                    @include buttonDesign(100%);
-                    transform: scale(0.00001);
-                    animation: zoomAnimation 0.5s ease forwards;
-                }
-            }
-        }
-    } */
