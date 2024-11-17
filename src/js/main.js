@@ -9,4 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
     navFunctionality();
     //Redirecciones
     allRedirections();
+    //Boton comenzar
+    comenzar();
 });
+
+//Button Comenzar
+function comenzar(){
+    const comenzar = document.getElementById('comenzarButton')
+
+    if(comenzar){
+        comenzar.addEventListener('click', () => {
+            location.href = '/index.html#categoriesSection'
+        })
+    }
+}
