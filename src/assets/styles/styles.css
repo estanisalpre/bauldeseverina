@@ -1,0 +1,580 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 7000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+  justify-content: flex-start;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  font-family: "Afacad Flux", sans-serif;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+nav {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  background-color: #e3e3e3;
+  z-index: 10000;
+  gap: 20px;
+  box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
+}
+nav .topNav {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: #e3e3e3;
+  cursor: default;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  gap: 20px;
+  box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
+}
+nav .topNav img {
+  width: 25px;
+  height: auto;
+}
+nav .topNav p {
+  font-weight: 600;
+  font-size: 2.5vw;
+  color: #353535;
+}
+nav header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+nav header .mobileHeader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 50px;
+}
+nav header .mobileHeader #myLogo {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+nav header .mobileHeader img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav header .mobileHeader img:hover {
+  transform: scale(1.05);
+}
+nav header .mobileHeader ul {
+  width: 25%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+nav header .mobileHeader ul .contactSpan {
+  cursor: pointer;
+}
+nav header .mobileHeader ul li {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  transition: all 0.3s ease;
+}
+nav header .mobileHeader ul li #catalogoImg:hover {
+  transform: none;
+}
+nav header .mobileHeader ul #catalogo:hover {
+  transform: scale(1.05);
+}
+
+.burguerMenu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  display: none;
+  z-index: 11000;
+  background-color: #e3e3e3;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 0px 50px 10px #414141;
+  overflow: hidden;
+  gap: 20px;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+.burguerMenu div {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  align-items: flex-end;
+}
+.burguerMenu div #adminAccess {
+  width: 40px;
+  height: auto;
+}
+.burguerMenu div img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.burguerMenu div img:hover {
+  transform: scale(1.05);
+}
+.burguerMenu img {
+  width: 150px;
+  height: auto;
+}
+.burguerMenu ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.burguerMenu ul li {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.burguerMenu ul li img {
+  width: 30px;
+  height: auto;
+}
+.burguerMenu ul li:hover {
+  padding-right: 20px;
+  font-weight: 600;
+}
+.burguerMenu .socialMedia {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.burguerMenu .socialMedia p {
+  color: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: default;
+}
+.burguerMenu p {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  color: #353535;
+  font-size: 14px;
+}
+.burguerMenu p a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #353535;
+  font-weight: 600;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 120px;
+}
+main #categoriesSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+main #categoriesSection div {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+main #categoriesSection .firstCategory, main #categoriesSection .secondCategory, main #categoriesSection .thirdCategory, main #categoriesSection .fourthCategory,
+main #categoriesSection .fifthCategory, main #categoriesSection .sixthCategory, main #categoriesSection .seventhCategory, main #categoriesSection .eigthCategory, main #categoriesSection .ninethCategory {
+  background-image: url(/src/assets/img/categories/bolsosCategory.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: default;
+}
+main #categoriesSection .firstCategory div, main #categoriesSection .secondCategory div, main #categoriesSection .thirdCategory div, main #categoriesSection .fourthCategory div,
+main #categoriesSection .fifthCategory div, main #categoriesSection .sixthCategory div, main #categoriesSection .seventhCategory div, main #categoriesSection .eigthCategory div, main #categoriesSection .ninethCategory div {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  align-items: flex-start;
+}
+main #categoriesSection .firstCategory div h3, main #categoriesSection .secondCategory div h3, main #categoriesSection .thirdCategory div h3, main #categoriesSection .fourthCategory div h3,
+main #categoriesSection .fifthCategory div h3, main #categoriesSection .sixthCategory div h3, main #categoriesSection .seventhCategory div h3, main #categoriesSection .eigthCategory div h3, main #categoriesSection .ninethCategory div h3 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  padding-left: 10px;
+  font-size: 4vw;
+  font-weight: 400;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #e3e3e3;
+}
+main #categoriesSection .secondCategory {
+  background-image: url(/src/assets/img/categories/pantalonesJeansCategory.jpeg);
+}
+main #categoriesSection .thirdCategory {
+  background-image: url(/src/assets/img/categories/blusasTopsCategory.jpeg);
+}
+main #categoriesSection .fourthCategory {
+  background-image: url(/src/assets/img/categories/tenisCategory.jpeg);
+}
+main #categoriesSection .fifthCategory {
+  background-image: url(/src/assets/img/categories/vestidosCategory.jpeg);
+}
+main #categoriesSection .toBriefcaseSection {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-image: url(/src/assets/img/backgroundOpacity.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main #categoriesSection .toBriefcaseSection button {
+  padding: 2px;
+  border: 0px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-family: "Afacad Flux", sans-serif;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #353535;
+  cursor: pointer;
+  background-color: #e3e3e3;
+  box-shadow: 0px 0px 20px 1px black;
+  box-shadow: none;
+}
+main #categoriesSection .toBriefcaseSection button:hover {
+  transform: scale(1.05);
+}
+main #categoriesSection .sixthCategory {
+  background-image: url(/src/assets/img/categories/ropaDeportivaCategory.jpeg);
+}
+main #categoriesSection .seventhCategory {
+  background-image: url(/src/assets/img/categories/hoodiesSueterCategory.jpeg);
+}
+main #categoriesSection .eigthCategory {
+  background-image: url(/src/assets/img/categories/zapatosTaconesCategory.jpeg);
+}
+main #categoriesSection .ninethCategory {
+  background-image: url(/src/assets/img/categories/abrigosCategory.jpeg);
+}
+main #categoriesSection #buttonSection {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+main #categoriesSection #buttonSection button {
+  padding: 2px;
+  border: 0px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-family: "Afacad Flux", sans-serif;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #353535;
+  cursor: pointer;
+  background-color: #e3e3e3;
+  box-shadow: 0px 0px 20px 1px black;
+  margin-bottom: 25px;
+}
+main #categoriesSection #buttonSection button:hover {
+  transform: scale(1.02);
+}
+main #whatsapp {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  transition: all 0.3s ease;
+  z-index: 10000;
+}
+main #whatsapp:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+footer img {
+  width: 30%;
+  height: auto;
+}
+footer div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+}
+footer div img {
+  cursor: pointer;
+  width: 30%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+footer div img:hover {
+  transform: scale(1.05);
+}
+footer div ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+footer div ul li {
+  list-style: none;
+}
+
+@keyframes zoomAnimation {
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes sideIn {
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes sideOut {
+  100% {
+    transform: translateX(-2500px);
+  }
+}
+@keyframes carrouselControllers {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  49% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(-15deg) scale(1.02);
+  }
+  60% {
+    transform: rotate(15deg) scale(1.02);
+  }
+  70% {
+    transform: rotate(-15deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+/*  #presentation{
+     @include sizes(95%,$height: 80%);
+     @include displayFlex($flexDirection:row, $justifyContent: space-between);
+     background-image: url(/src/assets/img/presentationBackground.png);
+     padding: 25px;
+     cursor: default;
+     transform: translateX(2500px);
+     animation: sideIn 1s ease forwards;
+
+     .presentationImg{
+         @include displayFlex();
+         @include sizes(40%,100%);
+         gap: 25px;
+         opacity: 0;
+         animation: fadeIn 0.5s ease forwards;
+
+         .imgs{
+             @include sizes(80%,90%);
+             @include displayFlex();
+             overflow: hidden;
+             backdrop-filter: blur(3px);
+             box-shadow: 0px 0px 10px 1px $shadow;
+
+             #firstImage, #secondImage, #thirdImage{
+                 @include sizes();
+             }
+             #secondImage, #thirdImage{
+                 display: none;
+             }
+         }
+         .carrouselController{
+             @include sizes(20%,10%);
+             @include displayFlex($flexDirection:row);
+             gap: 25px;
+             backdrop-filter: blur(3px);
+             box-shadow: 0px 0px 10px 1px $shadow;
+             border-radius: 10px;
+             margin-top: -50px;
+             animation: carrouselControllers 5s ease infinite;
+             animation-delay: 5s;
+
+             img{
+                 @include sizes(50px,auto);
+                 cursor: pointer;
+                 transition: all 0.3s ease;
+             }
+             #leftArrow{
+                 transform: rotate(0deg)
+             }
+             #rightArrow{
+                 transform: rotate(180deg)
+             }
+         }
+         .carrouselController:hover{
+             animation-play-state: paused;
+         }
+     }
+     //Texto y links para redireccionar al cliente
+     .linksAndText{
+         @include sizes(60%,60%);
+         @include displayFlex();
+
+         p{
+             @include sizes(70%,40%);
+             @include displayFlex();
+             text-align: center;
+             font-size: $lg;
+             padding: 5px;
+             color: $darkFontColor;
+             backdrop-filter: blur(10px);
+             transition: all 0.3s ease;
+             border-radius: 10px;
+             box-shadow: 0px 0px 10px 1px $shadow;
+             transform: scale(0.00001);
+             animation: zoomAnimation 0.5s ease forwards;
+         }
+         p:hover{
+             transform: scale(1.02)
+         }
+         .pageRedirections{
+             @include sizes(70%,20%);
+             @include displayFlex($justifyContent: space-between, $flexDirection:row);
+             gap: 10px;
+
+             button{
+                 @include buttonDesign(100%);
+                 transform: scale(0.00001);
+                 animation: zoomAnimation 0.5s ease forwards;
+             }
+         }
+     }
+ } *//*# sourceMappingURL=styles.css.map */
