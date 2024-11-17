@@ -12,6 +12,12 @@ export function allRedirections(){
 
     //Botones para redireccionar al catalogo
     toBriefcase();
+
+    //Botones para redireccionar a contacto
+    toContact();
+
+    //Botones para redireccionar a categorias / catalogo
+    toCategories();
 }
 
 //Boton whatsapp
@@ -72,17 +78,41 @@ function principalButtons(){
 function toBriefcase(){
     const catalogoNav = document.getElementById('catalogo')
     const catalogoBurguer = document.getElementById('toBriefcase')
-    const catalogoMain = document.getElementById('toBriefcaseSection')
 
-    if(catalogoNav || catalogoBurguer || catalogoMain){
+    if(catalogoNav || catalogoBurguer){
         catalogoNav.addEventListener('click', () => {
             location.href = '/src/views/catalogo.html'
         })
         catalogoBurguer.addEventListener('click', () => {
             location.href = '/src/views/catalogo.html'
         })
-        catalogoMain.addEventListener('click', () => {
-            location.href = '/src/views/catalogo.html'
+    }
+}
+
+//Botón hacia contacto
+function toContact(){
+    const contactNav = document.getElementById('contact')
+    const contactBurguer = document.getElementById('toContact')
+
+    if(contactNav || contactBurguer){
+        contactNav.addEventListener('click', () => {
+            location.href = 'src/views/severinaInfo.html'
+        })
+        contactBurguer.addEventListener('click', () => {
+            location.href = 'src/views/severinaInfo.html'
+        })
+    }
+}
+
+//Botón hacia categorías / catálogo
+function toCategories(){
+    const buttonToCategory = document.querySelectorAll('.toCategories')
+
+    if(buttonToCategory){
+        buttonToCategory.forEach(function(button){
+            button.addEventListener('click', () => {
+                location.href = 'src/views/catalogo.html'
+            })
         })
     }
 }
