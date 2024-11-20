@@ -1,0 +1,16 @@
+{
+    "name": "usuario/chat-gpt-cafe-frutal",
+    "description": "Un sitio web con PHP, COMPOSER Y FLIGHT\"",
+    "type": "project",
+    "require": {
+        "mikecao/flight": "^3.13"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Estanislao Salinas",
+            "email": "estanisprevite@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
