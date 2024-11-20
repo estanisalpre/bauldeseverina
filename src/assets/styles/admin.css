@@ -244,6 +244,7 @@ main #standarSection {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  display: flex;
 }
 main #standarSection img {
   width: 50%;
@@ -251,7 +252,7 @@ main #standarSection img {
   animation: heartAnimation 5s ease infinite;
 }
 main #addProduct, main #productList {
-  border: 1px solid black;
+  border: 2px solid rgb(180, 200, 255);
   width: 100%;
   height: 600px;
   display: flex;
@@ -259,6 +260,7 @@ main #addProduct, main #productList {
   flex-direction: column;
   align-items: center;
   display: none;
+  border-radius: 10px;
 }
 main #addProduct h2, main #productList h2 {
   width: 100%;
@@ -270,6 +272,84 @@ main #addProduct h2, main #productList h2 {
   align-items: flex-start;
   padding-left: 10px;
   padding: 5px;
+}
+main #addProduct form, main #productList form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  align-items: flex-start;
+}
+main #addProduct form input, main #productList form input {
+  width: 90%;
+  height: 40px;
+  padding: 10px;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 16px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  outline: none;
+}
+main #addProduct form select, main #productList form select {
+  width: 90%;
+  height: 40px;
+  padding: 10px;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+main #addProduct form #addProductButton, main #productList form #addProductButton {
+  width: 30%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 16px;
+}
+main #addProduct form #addProductButton:hover, main #productList form #addProductButton:hover {
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+main #addProduct form button, main #productList form button {
+  padding: 2px;
+  border: 0px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-family: "Afacad Flux", sans-serif;
+  width: 30%;
+  height: 50px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #353535;
+  cursor: pointer;
+  background-color: #e3e3e3;
+  box-shadow: 0px 0px 20px 1px black;
+  height: 40px;
+  font-size: 16px;
+  box-shadow: none;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+main #addProduct form button:hover, main #productList form button:hover {
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 
 @keyframes heartAnimation {

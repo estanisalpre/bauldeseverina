@@ -37,8 +37,24 @@
         <!--AGREGAR PRODUCTOS-->
         <section id="addProduct">
             <h2>Agrega un nuevo producto</h2>
-
-            <button id="cancelButton" class="cancelButton">Cancelar</button>
+            <form action="" method="POST">
+                <input type="file" name="productImg" id="productImg" required>
+                <input type="text" name="productName" id="productName" required placeholder="Nombre del producto">
+                <input type="number" name="productPrice" id="productPrice" required placeholder="Precio del producto">
+                <select name="categories" id="categories">
+                    <option value="1">Bolsos</option>
+                    <option value="2">Bolsos</option>
+                    <option value="3">Bolsos</option>
+                    <option value="4">Bolsos</option>
+                    <option value="5">Bolsos</option>
+                    <option value="6">Bolsos</option>
+                    <option value="7">Bolsos</option>
+                    <option value="8">Bolsos</option>
+                    <option value="9">Bolsos</option>
+                </select>
+                <input type="submit" id="addProductButton" value="Cargar">
+                <button id="cancelButton" class="cancelButton">Cancelar</button>
+            </form>
         </section>
         <!--LISTA DE PRODUCTOS-->
         <section id="productList">

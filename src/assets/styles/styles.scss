@@ -523,13 +523,13 @@ main{
 
     //Whatsapp logo
     #whatsapp{
-        @include sizes(60px,auto);
+        @include sizes(80px,auto);
         cursor: pointer;
         position: fixed;
         left: 20px;
         bottom: 20px;
         transition: all 0.3s ease;
-        z-index: 10000;
+        z-index: 10998;
     }
     #whatsapp:hover{
         transform: scale(1.05);
@@ -540,7 +540,8 @@ main{
 footer{
     @include sizes($height: 300px);
     @include displayFlex($flexDirection:row, $justifyContent:space-around);
-    
+    z-index: 10999;
+
     img{
         @include sizes(30%,auto);
     }

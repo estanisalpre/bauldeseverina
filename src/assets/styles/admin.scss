@@ -254,6 +254,7 @@ main{
     #standarSection{
         @include sizes();
         @include displayFlex();
+        display: flex;
 
         img{
             @include sizes(50%, auto);
@@ -261,10 +262,11 @@ main{
         }
     }
     #addProduct, #productList{
-        border: 1px solid black;
+        border: 2px solid rgb(180, 200, 255);
         @include sizes($height: 600px);
         @include displayFlex($justifyContent: space-between);
         display: none;
+        border-radius: 10px;
 
         h2{
             @include sizes($height: 30px);
@@ -272,6 +274,58 @@ main{
             align-items: flex-start;
             padding-left: 10px;
             padding: 5px;
+        }
+        form{
+            @include sizes();
+            @include displayFlex();
+            gap: 5px;
+            padding: 10px;
+            align-items: flex-start;
+
+            input{
+                @include sizes(90%,40px);
+                padding: 10px;
+                font-family: $afacadFont;
+                font-size: $md;
+                border: 1px solid black;
+                @include displayFlex();
+                border-radius: 10px;
+                outline: none;
+            }
+            select{
+                @include sizes(90%,40px);
+                padding: 10px;
+                font-family: $afacadFont;
+                font-size: $md;
+                border: 1px solid black;
+                border-radius: 10px;
+                outline: none;
+            }
+            #addProductButton{
+                @include sizes(30%,40px);
+                @include displayFlex();
+                text-align: center;
+                padding: 10px;
+                background-color: transparent;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                font-size: $md;
+            }
+            #addProductButton:hover{
+                background-image: $secondBackgroundImage;
+            }
+            button{
+                @include buttonDesign(30%);
+                height: 40px;
+                font-size: $md;
+                box-shadow: none;
+                border-radius: 10px;
+                border: 1px solid black;
+                background-color: transparent;
+            }
+            button:hover{
+                background-image: $secondBackgroundImage;
+            }
         }
     }
 }
