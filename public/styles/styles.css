@@ -604,14 +604,18 @@ main .sectionForm form {
 main .sectionForm form #errorMessage {
   display: none;
 }
+main .sectionForm form p {
+  font-size: 22px;
+}
 main .sectionForm form input {
   width: 90%;
-  height: 30px;
+  height: 40px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding-left: 10px;
+  font-size: 22px;
   font-family: "Afacad Flux", sans-serif;
 }
 main .sectionForm form button {
@@ -629,12 +633,13 @@ main .sectionForm form button {
   cursor: pointer;
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   box-shadow: none;
+  margin-top: 0px;
 }
 main .sectionForm form button:hover {
-  background-image: linear-gradient(to top, #e2afa1 0%, #f2bf97 100%);
+  background-image: linear-gradient(to top, #fcddd4 0%, #e8dad0 100%);
 }
 main .sectionForm button {
-  margin-top: -50px;
+  margin-top: -60px;
   padding: 5px;
   border: 1px solid #353535;
   border-radius: 30px;
@@ -650,7 +655,7 @@ main .sectionForm button {
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 main .sectionForm button:hover {
-  background-image: linear-gradient(to top, #e2afa1 0%, #f2bf97 100%);
+  background-image: linear-gradient(to top, #fcddd4 0%, #e8dad0 100%);
 }
 main #whatsapp {
   width: 80px;
