@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(response => response.text())
         .then(data => {
-            console.log(data)
             console.log('Éxito');
         })
         .catch(error => {
