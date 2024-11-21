@@ -1,0 +1,594 @@
+//Variables
+$backgroundImage: linear-gradient(to top, #e2afa1 0%, #f2bf97 100%);
+$secondBackgroundImage: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+$cardBackgroundImage: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+$lightBackgroundImage: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+$sm: 12px;
+$md: 18px;
+$lg: 24px;
+$afacadFont: "Afacad Flux", sans-serif;
+$secondaryColor: #2c4ba9;
+$darkFontColor: #353535;
+$lightFontColor: #e3e3e3;
+$shadow: #414141;
+$errorColor: rgb(245, 106, 106);
+$sm: 14px;
+$md: 16px;
+$lg: 22px;
+$slg: 28px;
+$noBold: 400;
+$bold: 600;
+$montserratFont: "Montserrat", sans-serif;
+$fontAfacada: "Afacad Flux", sans-serif;
+$fontOpenSans: "Open Sans", sans-serif;
+$fontNerkoOne: "Nerko One", cursive;
+$fontPlaywrite: "Playwrite CU", cursive;
+
+//Mixins
+@mixin displayFlex($justifyContent: center, $flexDirection: column){
+    display: flex;
+    justify-content: $justifyContent;
+    flex-direction: $flexDirection;
+    align-items: center;
+}
+@mixin sizes($width: 100%, $height: 100%){
+    width: $width;
+    height: $height;
+}
+@mixin fontConfig($textAlign: center, $fontSize: $sm, $fontWeight: $noBold, $fontColor: $darkFontColor){
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $fontColor;
+    text-align: $textAlign;
+}
+@mixin buttonDesign($width: 100%){
+    padding: 5px;
+    border: 1px solid $darkFontColor;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-family: $fontAfacada;
+    width: $width;
+    height: 50px;
+    text-align: center;
+    font-weight: $noBold;
+    font-size: $lg;
+    color: $darkFontColor;
+    cursor: pointer;
+    background-image: $secondBackgroundImage;
+}
+@mixin inputDesign($width: 300px, $height: 40px){
+    border-radius: 5px;
+    border: 0px solid black;
+    outline: none;
+    width: $width;
+    height: $height;
+    background-color: transparent;
+    font-size: $md;
+    font-family: $fontAfacada;
+    padding-left: 10px;
+    box-shadow: 0px 0px 5px 1px $shadow;
+}
+
+//Generales
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Html
+html{
+    @include sizes($height: 8000px);
+    @include displayFlex();
+    scroll-behavior: smooth;
+    scroll-padding: 2rem;
+    justify-content: flex-start;
+    overflow-x: hidden;
+}
+
+//Body
+body{
+    @include sizes();
+    @include displayFlex();
+    background-image: $secondBackgroundImage;
+    font-family: $afacadFont;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+
+//Nav
+nav{
+    @include sizes($height: 120px);
+    @include displayFlex();
+    position: fixed;
+    top:0px;
+    background-color: $lightFontColor;
+    z-index: 10000;
+    gap: 20px;
+    box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
+
+    .topNav{
+        @include sizes(80%);
+        @include displayFlex($flexDirection:row);
+        background-color: $lightFontColor;
+        cursor: default;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        gap: 20px;
+        box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
+
+        img{
+            @include sizes(25px,auto);
+        }
+        p{
+            font-weight: $bold;
+            font-size: 2.5vw;
+            color: $darkFontColor;
+        }
+    }
+    header{
+        @include displayFlex();
+        @include sizes($height: 50px);
+        
+        .mobileHeader{
+            @include sizes();
+            @include displayFlex($flexDirection:row,$justifyContent: space-between);
+            padding-left: 25px;
+            padding-right: 50px;
+
+            #myLogo{
+                @include sizes(50px,auto);
+                cursor: pointer;
+            }
+            img{
+                @include sizes(30px, auto);
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            img:hover{
+                transform: scale(1.05)
+            }
+            ul{
+                @include sizes(25%,50px);
+                @include displayFlex($flexDirection:row);
+                gap: 15px;
+
+                .contactSpan{
+                    cursor: pointer;
+                }
+                li{
+                    @include sizes(100px,80px);
+                    @include displayFlex();
+                    list-style: none;
+                    transition: all 0.3s ease;
+
+                    #catalogoImg:hover{
+                        transform: none;
+                    }
+                }
+                #catalogo:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+//Menu hamburguesa
+.burguerMenu{
+    @include displayFlex($justifyContent: space-between);
+    @include sizes(250px);
+    position: fixed;
+    display: none;
+    z-index: 11000;
+    background-color: $lightFontColor;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 50px 10px $shadow;
+    overflow: hidden;
+    gap: 20px;
+    background-image: $secondBackgroundImage;
+ 
+
+    div{
+        @include sizes(90%,$height:50px);
+        @include displayFlex($flexDirection:row,$justifyContent:space-between);
+        align-items: flex-end;
+
+        #adminAccess{
+             @include sizes(40px,auto);
+        }
+        img{
+            @include sizes(50px,auto);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+    }
+    img{
+        @include sizes(150px,auto);
+    }
+    ul{
+        @include sizes();
+        @include displayFlex();
+        gap: 10px;
+
+        li{ 
+            @include sizes($height:40px);
+            @include displayFlex($flexDirection: row, $justifyContent: space-between);
+            list-style: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+
+            img{
+                @include sizes(30px,auto);
+            }
+        }
+        li:hover{
+            padding-right: 20px;
+            font-weight: $bold;
+        }
+    }
+    .socialMedia{
+        width: 90%;
+        @include displayFlex($flexDirection:row);
+        gap: 10px;
+
+        p{
+            color: $secondBackgroundImage;
+            background-color: transparent;
+            font-weight: $bold;
+            font-size: $md;
+            cursor: default;
+        }
+    }
+    p{
+        @include sizes($height:40px);
+        @include displayFlex();
+        background-color: $secondBackgroundImage;
+        color: $darkFontColor;
+        font-size: $sm;
+
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: $darkFontColor;
+            font-weight: $bold;
+        }
+    }
+}
+
+//Main
+main{
+    @include sizes();
+    @include displayFlex();
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 120px;
+    
+    //Contenedor de presentación
+    #presentation{
+    @include sizes($height: 900px);
+    @include displayFlex();
+    padding: 15px;
+    cursor: default;
+    transform: translateX(2500px);
+    animation: sideIn 0.5s ease forwards;
+    gap: 15px;
+    
+    h2{
+        @include sizes(40%,$height: 30px);
+        margin-bottom: 15px;
+        padding: 20px;
+        @include displayFlex($flexDirection:row, $justifyContent: space-between);
+        border-radius: 20px;
+        border: 1px solid $darkFontColor;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        gap: 5px;
+
+        img{
+            @include sizes(30px,auto);
+        }
+    }
+    h2:hover{
+        transform: translateY(-5px);
+        background-image: $secondBackgroundImage;
+    }
+        .textPresentation, .links{
+            @include sizes($height: 50%);
+            @include displayFlex();
+
+            img{
+                @include sizes(40%,auto);
+            }
+            p{
+                @include sizes();
+                @include displayFlex();
+            }
+        }
+        .links{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction: row;
+            gap: 15px;
+
+            div{
+                @include sizes(130px,120px);
+                @include displayFlex();
+                border-radius: 100%;
+                padding: 10px;
+                background-image: $cardBackgroundImage;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                gap: 10px;
+
+                span{
+                    @include sizes($height: 35px);
+                    @include displayFlex();
+                    background-image: $secondBackgroundImage;
+                    margin-top: -40px;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px 1px $shadow;
+                }
+                img{
+                    @include sizes(60%,auto);
+                }
+            }
+            div:hover{
+                transform: scale(1.03);
+            }
+        }
+    }
+
+    //Contenedor de categorias
+    #categoriesSection{
+        @include sizes();
+        @include displayFlex();
+        justify-content: flex-start;
+
+        div{
+            @include sizes($height: 700px);
+            @include displayFlex($justifyContent:space-between);
+        }
+        .firstCategory, .secondCategory, .thirdCategory, .fourthCategory,
+        .fifthCategory, .sixthCategory, .seventhCategory, .eigthCategory, .ninethCategory{
+            background-image: url(/src/assets/img/categories/bolsosCategory.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: default;
+
+            div{
+                @include sizes(100%,40px);
+                @include displayFlex();
+                margin-top: 100px;
+                align-items: flex-start;
+
+                h3{
+                    @include sizes(40%);
+                    @include displayFlex();
+                    align-items: flex-start;
+                    padding-left: 10px;
+                    font-size: 4vw;
+                    font-weight: $noBold;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    background-image: $secondBackgroundImage;
+                    
+                }
+            }
+        }
+        .secondCategory{
+            background-image: url(/src/assets/img/categories/pantalonesJeansCategory.jpeg);
+        }
+        .thirdCategory{
+            background-image: url(/src/assets/img/categories/blusasTopsCategory.jpeg);
+        }
+        .fourthCategory{
+            background-image: url(/src/assets/img/categories/tenisCategory.jpeg);
+        }
+        .fifthCategory{
+            background-image: url(/src/assets/img/categories/vestidosCategory.jpeg);
+        }
+        .toBriefcaseSection{
+            @include sizes(100%,250px);
+            @include displayFlex();
+            gap: 5px;
+            background-image: url(/src/assets/img/backgroundOpacity.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 10000;
+            box-shadow: 0px 0px 10px 1px $shadow;
+
+            h3{
+                font-size: $slg;
+            }
+            
+            button{
+                @include buttonDesign(50%);
+                box-shadow: none;
+                @include displayFlex($flexDirection:row);
+
+                img{
+                    @include sizes(30px,auto);
+                }
+            }
+            button:hover{
+                transform: scale(1.05);
+            }
+        }
+        .sixthCategory{
+            background-image: url(/src/assets/img/categories/ropaDeportivaCategory.jpeg);
+        }
+        .seventhCategory{
+            background-image: url(/src/assets/img/categories/hoodiesSueterCategory.jpeg);
+        }
+        .eigthCategory{
+            background-image: url(/src/assets/img/categories/zapatosTaconesCategory.jpeg);
+        }
+        .ninethCategory{
+            background-image: url(/src/assets/img/categories/abrigosCategory.jpeg);
+        }
+        #buttonSection{
+            @include sizes(100%,80px);
+            @include displayFlex($flexDirection:row);
+            gap: 10px;
+            padding: 20px;
+
+            button{
+                @include buttonDesign($width: 250px);
+                margin-bottom: 25px;
+            }
+            button:hover{
+                transform: scale(1.02)
+            }
+        }
+
+        //Contenedor de contacto
+        #contact{
+            @include sizes($height: 280px);
+            @include displayFlex();
+            background-image: url(/src/assets/img/backgroundOpacity.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            gap: 10px;
+            cursor: default;
+            z-index: 10000;
+            box-shadow: 0px 0px 10px 1px $shadow;
+
+            h2{
+                @include sizes($height: 50px);
+                @include displayFlex();
+                background-image: $secondBackgroundImage;
+                border-bottom-left-radius: 60px;
+                border-bottom-right-radius: 60px;
+            }
+            div{
+                @include sizes();
+                @include displayFlex();
+                padding: 2px;
+                margin-top: 30px;
+
+                ul{
+                    @include sizes($height: 60px);
+                    @include displayFlex($flexDirection:row, $justifyContent: space-around);
+                    align-items: flex-end;
+    
+                    li{
+                        list-style: none;
+                        color: $darkFontColor;
+                        @include displayFlex();
+                        @include sizes(100%);
+                        justify-content: flex-end;
+
+                        img{
+                            @include sizes(70px,auto);
+                            transition: all 0.3s ease;
+                            cursor: pointer;
+                        }
+                        img:hover{
+                            transform: scale(1.05)
+                        }
+                    }
+                }
+            }
+            div ul:nth-child(2){
+                height: 40px;
+
+                li{
+                    justify-content: flex-start;
+                    font-size: $lg;
+                }
+            }
+        }
+        #contact div:nth-child(3){
+            margin-top: 30px;
+            justify-content: flex-start;
+            ul{
+                li{
+                    justify-content: flex-start;
+                    font-weight: $bold;
+                    font-size: $lg;
+                }
+            }
+        }
+    }
+
+    //Whatsapp logo
+    #whatsapp{
+        @include sizes(80px,auto);
+        cursor: pointer;
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        transition: all 0.3s ease;
+        z-index: 10998;
+    }
+    #whatsapp:hover{
+        transform: scale(1.05);
+    }
+}
+
+//Footer
+footer{
+    @include sizes($height: 300px);
+    @include displayFlex($flexDirection:row, $justifyContent:space-around);
+    z-index: 10999;
+
+    img{
+        @include sizes(30%,auto);
+    }
+    div{
+        @include sizes();
+        @include displayFlex();
+        gap: 10px;
+        cursor: default;
+
+        img{
+            cursor: pointer;
+            @include sizes(30%,auto);
+            transition: all 0.3s ease;
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+        ul{
+            @include sizes();
+            @include displayFlex();
+            align-items: flex-start;
+
+            li{
+                list-style: none;
+            }
+        }
+    }
+}
+
+//Animaciones
+@keyframes zoomAnimation {
+    100%{transform: scale(1)};
+}
+@keyframes fadeIn {
+    100%{opacity: 1};
+}
+@keyframes sideIn {
+    100%{transform: translateX(0px);}
+}
+@keyframes sideOut {
+    100%{transform: translateX(-2500px);}
+}
+@keyframes carrouselControllers {
+    0%{transform: rotate(0deg) scale(1)}
+    49%{transform: rotate(0deg) scale(1)}
+    50%{transform: rotate(-15deg) scale(1.02)}
+    60%{transform: rotate(15deg) scale(1.02)}
+    70%{transform: rotate(-15deg) scale(1.02)}
+    100%{transform: rotate(0deg) scale(1)}
+}

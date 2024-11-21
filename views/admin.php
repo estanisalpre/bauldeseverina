@@ -30,42 +30,62 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel Administrativo - Café Frutal</title>
+    <title>El Baúl de Severina - Catálogo</title>
     <!--CSS-->
-    <link rel="stylesheet" href="/public/styles/admin.css">
+    <link rel="stylesheet" href="/src/assets/styles/admin.css">
     <!--FAVICON-->
-    <link rel="shortcut icon" href="/public/imgs/logo/logo_planta.png" type="image/x-icon">
-    <!--FUENTES GOOGLE-->
+    <link rel="shortcut icon" href="/src/assets/img/logos/logo.png" type="image/x-icon">
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--NAV-->
-    <nav>
-        <button id="addButton">AGREGAR PRODUCTO</button>
-        <img id="toIndex" src="/public/imgs/logo/logo_horizontal.png" alt="Logo Café Frutal">
-        <button id="listButton">VER LISTA</button>
-        <img id="logout" src="/public/imgs/icons/logout.png" alt="Ícono de cerrar sesión">
+   <!--NAV-->
+   <nav id="nav">
+        <header>
+            <img id="toBriefcase" src="/src/assets/img/icons/catalogo.png" alt="Ícono catálogo de productos">
+            <img id="logout" src="/src/assets/img/icons/logout.png" alt="Ícono para cerrar sesión">
+        </header>
     </nav>
-    <!--MAIN-->
+    <!--MAIN / CONTENIDO PRINCIPAL-->
     <main>
-        <h1 id="titlePanel">Panel Administrativo</h1>
-        <p id="infoPanel">Tu espacio para agregar, editar o eliminar productos</p>
-        <section class="newProductSection" id="newProductSection">
-            <h3>Agrega un nuevo producto</h3>
-            <form class="form" action="/add-product.php" method="POST">
-                <input type="file" name="productImg" id="producitImg" required>
-                <input type="text" name="prodName" id="productName" required placeholder="Nombre del producto">
-                <input type="number" name="price" id="price" required placeholder="Precio">
-                <label for="available">Disponible:</label>
-                <input type="checkbox" name="available" id="available">
-                <input class="addButtonInput" type="submit" value="Agregar">
+        <h1>Panel Administrativo</h1>
+        <!--OPCIONES A ELEGIR-->
+        <section id="options">
+            <div>
+                <button id="addProductButton">Agregar nuevo producto</button>
+            </div>
+            <div>
+                <button id="showListButton">Lista de productos</button>
+            </div>
+        </section>
+        <section id="standarSection"><img src="/src/assets/img/logos/logo.png" alt="Logo de El Baul de Severina"></section>
+        <!--AGREGAR PRODUCTOS-->
+        <section id="addProduct">
+            <h2>Agrega un nuevo producto</h2>
+            <form action="" method="POST">
+                <input type="file" name="productImg" id="productImg" required>
+                <input type="text" name="productName" id="productName" required placeholder="Nombre del producto">
+                <input type="number" name="productPrice" id="productPrice" required placeholder="Precio del producto">
+                <select name="categories" id="categories">
+                    <option value="1">Bolsos</option>
+                    <option value="2">Bolsos</option>
+                    <option value="3">Bolsos</option>
+                    <option value="4">Bolsos</option>
+                    <option value="5">Bolsos</option>
+                    <option value="6">Bolsos</option>
+                    <option value="7">Bolsos</option>
+                    <option value="8">Bolsos</option>
+                    <option value="9">Bolsos</option>
+                </select>
+                <input type="submit" id="addProductButton" value="Cargar">
+                <button id="cancelButton" class="cancelButton">Cancelar</button>
             </form>
         </section>
-        <section class="productList" id="productListSection">
+        <!--LISTA DE PRODUCTOS-->
+        <section id="productList">
+            <h2>Edita o elimina productos</h2>
             <h3>Editar o eliminar productos</h3>
             <?php 
                 if (isset($products) && !empty($products)) {
@@ -88,8 +108,9 @@ try {
                     echo "<p>No hay productos disponibles.</p>";
                 }
             ?>
+            <button id="cancelButton" class="cancelButton">Cancelar</button>
         </section>
-       <!--EDIT MODAL-->
+        <!--EDIT MODAL-->
         <div id="editForm" style="display: none;">
             <h2>Editar Producto</h2>
             <form id="editProductForm">
@@ -108,6 +129,6 @@ try {
         </div>
     </main>
     <!--SCRIPTS-->
-    <script type="module" src="/public/js/admin.js?v=<?php echo time(); ?>"></script>
+    <script type="module" src="/src/js/admin.js"></script>
 </body>
 </html>

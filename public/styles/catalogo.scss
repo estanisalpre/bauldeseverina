@@ -2,6 +2,7 @@
 $backgroundImage: linear-gradient(to top, #e2afa1 0%, #f2bf97 100%);
 $secondBackgroundImage: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 $cardBackgroundImage: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+//$brandColor: #09e668;
 $sm: 12px;
 $md: 18px;
 $lg: 24px;
@@ -79,11 +80,12 @@ $fontPlaywrite: "Playwrite CU", cursive;
 
 //Html
 html{
-    @include sizes();
+    @include sizes($height: 8000px);
     @include displayFlex();
+    scroll-behavior: smooth;
+    scroll-padding: 7.5rem;
     justify-content: flex-start;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 //Body
@@ -98,7 +100,7 @@ body{
 
 //Nav
 nav{
-    @include sizes($height: 80px);
+    @include sizes($height: 120px);
     @include displayFlex();
     position: fixed;
     top:0px;
@@ -107,21 +109,69 @@ nav{
     gap: 20px;
     box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
 
-    header{
-        @include sizes();
+    .topNav{
+        @include sizes(80%);
         @include displayFlex($flexDirection:row);
-        justify-content: flex-end;
-        padding-right: 10px;
-        border: 1px solid black;
-        gap: 10px;
+        background-color: $lightFontColor;
+        cursor: default;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+        gap: 20px;
+        box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
 
         img{
-            @include sizes(40px, auto);
-            cursor: pointer;
-            transition: all 0.3s ease;
+            @include sizes(25px,auto);
         }
-        img:hover{
-            transform: scale(1.05)
+        p{
+            font-weight: $bold;
+            font-size: 2.5vw;
+            color: $darkFontColor;
+        }
+    }
+    header{
+        @include displayFlex();
+        @include sizes($height: 50px);
+        
+        .mobileHeader{
+            @include sizes();
+            @include displayFlex($flexDirection:row,$justifyContent: space-between);
+            padding-left: 25px;
+            padding-right: 50px;
+
+            #myLogo{
+                @include sizes(50px,auto);
+                cursor: pointer;
+            }
+            img{
+                @include sizes(30px, auto);
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            img:hover{
+                transform: scale(1.05)
+            }
+            ul{
+                @include sizes(25%,50px);
+                @include displayFlex($flexDirection:row);
+                gap: 15px;
+
+                .contactSpan{
+                    cursor: pointer;
+                }
+                li{
+                    @include sizes(100px,80px);
+                    @include displayFlex();
+                    list-style: none;
+                    transition: all 0.3s ease;
+
+                    #catalogoImg:hover{
+                        transform: none;
+                    }
+                }
+                #catalogo:hover{
+                    transform: scale(1.05);
+                }
+            }
         }
     }
 }
@@ -220,121 +270,158 @@ main{
     @include displayFlex();
     justify-content: flex-start;
     margin-top: 120px;
+    gap: 20px;
     
-    h1{
-        @include sizes($height: 40px);
-        @include displayFlex();
-        align-items: flex-start;
+    //Contenedor de categorias
+    #categorySection{
+    @include sizes($height: 900px);
+    @include displayFlex();
+    padding: 5px;
+    cursor: default;
+    transform: translateX(2500px);
+    animation: sideIn 1s ease forwards;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    h2{
+        @include sizes($height: 30px);
         padding-left: 10px;
     }
-    #options{
-        @include sizes($height: 100px);
-        @include displayFlex($flexDirection:row);
-        gap: 10px;
-        padding: 10px;
-
-        div{
-            @include sizes(250px,100px);
+            .links{
+            @include sizes($height: 50%);
             @include displayFlex();
 
-            button{
-                @include buttonDesign();
-                padding: 10px;
-                border: 1px solid black;
-                font-size: $md;
-                background-image: $secondBackgroundImage;
-                box-shadow: none;
-                font-weight: $bold;
+            img{
+                @include sizes(40%,auto);
             }
-            button:hover{
-                transform: scale(1.05);
-            }
-        }
-    }
-    #standarSection{
-        @include sizes();
-        @include displayFlex();
-        display: flex;
-
-        img{
-            @include sizes(50%, auto);
-            animation: heartAnimation 5s ease infinite;
-        }
-    }
-    #addProduct, #productList{
-        border: 2px solid rgb(180, 200, 255);
-        @include sizes($height: 600px);
-        @include displayFlex($justifyContent: space-between);
-        display: none;
-        border-radius: 10px;
-
-        h2{
-            @include sizes($height: 30px);
-            @include displayFlex();
-            align-items: flex-start;
-            padding-left: 10px;
-            padding: 5px;
-        }
-        form{
-            @include sizes();
-            @include displayFlex();
-            gap: 5px;
-            padding: 10px;
-            align-items: flex-start;
-
-            input{
-                @include sizes(90%,40px);
-                padding: 10px;
-                font-family: $afacadFont;
-                font-size: $md;
-                border: 1px solid black;
+            p{
+                @include sizes();
                 @include displayFlex();
-                border-radius: 10px;
-                outline: none;
             }
-            select{
-                @include sizes(90%,40px);
-                padding: 10px;
-                font-family: $afacadFont;
-                font-size: $md;
-                border: 1px solid black;
-                border-radius: 10px;
-                outline: none;
-            }
-            #addProductButton{
-                @include sizes(30%,40px);
+        }
+        .links{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction: row;
+            gap: 15px;
+
+            div{
+                @include sizes(130px,120px);
                 @include displayFlex();
-                text-align: center;
+                border-radius: 100%;
                 padding: 10px;
-                background-color: transparent;
+                background-image: $cardBackgroundImage;
                 transition: all 0.3s ease;
                 cursor: pointer;
-                font-size: $md;
+                gap: 10px;
+
+                span{
+                    @include sizes($height: 35px);
+                    @include displayFlex();
+                    background-image: $secondBackgroundImage;
+                    margin-top: -40px;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px 1px $shadow;
+                }
+                img{
+                    @include sizes(60%,auto);
+                }
             }
-            #addProductButton:hover{
-                background-image: $secondBackgroundImage;
+            div:hover{
+                transform: scale(1.03);
             }
-            button{
-                @include buttonDesign(30%);
-                height: 40px;
-                font-size: $md;
-                box-shadow: none;
-                border-radius: 10px;
-                border: 1px solid black;
-                background-color: transparent;
+        }
+        .scrollSection{
+            @include sizes($height: 200px);
+            @include displayFlex();
+            gap: 10px;
+
+            h3{
+                @include sizes($height: 30px);
+                @include displayFlex();
             }
-            button:hover{
-                background-image: $secondBackgroundImage;
+            img{
+                @include sizes(15%,auto);
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    //Categorias
+    .category{
+        @include sizes($height: 700px);
+        @include displayFlex($justifyContent: space-between);
+        overflow: hidden;
+        border-bottom: 1px dashed rgb(181, 181, 181);
+
+        h2{
+            @include sizes($height: 40px);
+            @include displayFlex();
+            background-image: $cardBackgroundImage;
+            padding-left: 10px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+        }
+        div{
+            @include sizes();
+            @include displayFlex();
+            flex-wrap: wrap;
+            overflow-y: scroll;
+            overflow-x: hidden; 
+        }
+    }
+
+    //Whatsapp logo
+    #whatsapp{
+        @include sizes(60px,auto);
+        cursor: pointer;
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        transition: all 0.3s ease;
+        z-index: 10000;
+    }
+    #whatsapp:hover{
+        transform: scale(1.05);
+    }
+}
+
+//Footer
+footer{
+    @include sizes($height: 300px);
+    @include displayFlex($flexDirection:row, $justifyContent:space-around);
+
+    img{
+        @include sizes(30%,auto);
+    }
+    div{
+        @include sizes();
+        @include displayFlex();
+        gap: 10px;
+        cursor: default;
+
+        img{
+            cursor: pointer;
+            @include sizes(30%,auto);
+            transition: all 0.3s ease;
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+        ul{
+            @include sizes();
+            @include displayFlex();
+            align-items: flex-start;
+
+            li{
+                list-style: none;
             }
         }
     }
 }
 
 //Animaciones
-@keyframes heartAnimation {
-    0%{transform: scale(1);}
-    50%{transform: scale(1.3);}
-}
 @keyframes zoomAnimation {
     100%{transform: scale(1)};
 }
@@ -346,4 +433,12 @@ main{
 }
 @keyframes sideOut {
     100%{transform: translateX(-2500px);}
+}
+@keyframes carrouselControllers {
+    0%{transform: rotate(0deg) scale(1)}
+    49%{transform: rotate(0deg) scale(1)}
+    50%{transform: rotate(-15deg) scale(1.02)}
+    60%{transform: rotate(15deg) scale(1.02)}
+    70%{transform: rotate(-15deg) scale(1.02)}
+    100%{transform: rotate(0deg) scale(1)}
 }

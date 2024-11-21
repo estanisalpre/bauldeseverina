@@ -1,7 +1,7 @@
 <?php
 $host = '82.197.82.73'; 
-$dbname = 'u584871321_stockProducts'; 
-$username = 'u584871321_admin';  
+$dbname = 'u584871321_bauldeseverina'; 
+$username = 'u584871321_contacto';  
 $password = 'Kinesis1233';  
 
 try {

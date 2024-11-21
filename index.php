@@ -20,8 +20,8 @@ Flight::route('/admin', function(){
 });
 
 // Ruta para la sección de productos
-Flight::route('/productos', function(){
-    Flight::render('productos');  // Carga views/productos.php
+Flight::route('/catalogo', function(){
+    Flight::render('catalogo');  // Carga views/catalogo.php
 });
 
 // Iniciar Flight
