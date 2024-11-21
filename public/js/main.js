@@ -3,6 +3,7 @@
 import { navFunctionality } from "./nav.js";
 import { allRedirections } from "./redirections.js";
 
+console.log('leyendo mainjs')
 //Los captura el DOM
 document.addEventListener('DOMContentLoaded', () => {
     //Funcionalidad del NAV
