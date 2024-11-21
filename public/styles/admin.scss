@@ -262,11 +262,9 @@ main{
         }
     }
     #addProduct, #productList{
-        border: 2px solid rgb(180, 200, 255);
         @include sizes($height: 600px);
         @include displayFlex($justifyContent: space-between);
         display: none;
-        border-radius: 10px;
 
         h2{
             @include sizes($height: 30px);
@@ -367,8 +365,13 @@ main{
                 width: 350px;
 
                 button{
-                    @include buttonDesign(100px);
+                    @include buttonDesign(80px);
                     box-shadow: none;
+                    height: 30px;
+                    background-image: $secondBackgroundImage;
+                    border-radius: 60px;
+                    border: 1px solid $shadow;
+                    font-size: $sm;
                 }
             }
         }
