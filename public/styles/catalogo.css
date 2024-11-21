@@ -394,8 +394,8 @@ main .category #productos-bolsos, main .category #productos-tenis {
   gap: 5px;
 }
 main .category #productos-bolsos div, main .category #productos-tenis div {
-  width: 170px;
-  height: 250px;
+  width: 350px;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
