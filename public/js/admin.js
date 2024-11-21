@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const prodName = document.querySelector('#productName').value;
         const price = document.querySelector('#productPrice').value;
+        const category = document.querySelector('#categories').value;
+
+        console.log(category)
 
         // Enviar los datos al servidor
         fetch('/add-product.php', {
@@ -24,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(response => response.text())
         .then(data => {
+            console.log(data)
             console.log('Éxito');
         })
         .catch(error => {
