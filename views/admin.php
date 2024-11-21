@@ -14,7 +14,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-try {
+/* try {
     // Hacer la consulta para obtener los productos
     $stmt = $pdo->prepare("SELECT * FROM cat_bolsos");
     $stmt->execute();
@@ -22,7 +22,7 @@ try {
 
 } catch (PDOException $e) {
     die("Error al obtener los productos: " . $e->getMessage());
-}
+} */
 ?>
 
 <!DOCTYPE html>
