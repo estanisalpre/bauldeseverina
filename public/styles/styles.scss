@@ -103,7 +103,7 @@ nav{
     position: fixed;
     top:0px;
     background-color: $lightFontColor;
-    z-index: 10000;
+    z-index: 10500;
     gap: 20px;
     box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
 
@@ -340,7 +340,7 @@ main{
                 align-items: flex-start;
 
                 h3{
-                    @include sizes(40%);
+                    @include sizes(60%);
                     @include displayFlex();
                     align-items: flex-start;
                     padding-left: 10px;
