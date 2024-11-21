@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Recoger los datos del formulario
     $productName = $_POST['productName'];
     $productPrice = $_POST['productPrice'];
-    //$category = $_POST['categories'];
+    $id_categoria = $_POST['id_categoria'];
     $available = isset($_POST['available']) ? 1 : 0; 
     $productImg = ''; 
 
@@ -31,11 +31,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Insertar los datos en la base de datos
         try {
             // Preparar la consulta SQL para insertar el producto
-            $stmt = $pdo->prepare("INSERT INTO cat_bolsos (productName, productPrice, productImg, available) VALUES (:productName, :productPrice, :productImg, :available)");
+            $stmt = $pdo->prepare("INSERT INTO productos (productName, productPrice, productImg, available, id_categoria) VALUES (:productName, :productPrice, :productImg, :available, :id_categoria)");
             $stmt->bindParam(':productName', $productName);
             $stmt->bindParam(':productPrice', $productPrice);
             $stmt->bindParam(':productImg', $productImg);
             $stmt->bindParam(':available', $available);
+            $stmt->bindParam(':id_categoria', $id_categoria);
 
             // Ejecutar la consulta
             $stmt->execute();
