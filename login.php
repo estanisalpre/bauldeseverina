@@ -15,8 +15,9 @@ if (isset($_POST['username'], $_POST['password'])) {
     // Validar las credenciales (reemplazar con tu lógica)
     if ($username === 'mibaul1233' && $password === 'mibaul1233') {
         $_SESSION['user'] = $username;
-        // Redirigir o mostrar éxito
-        echo "Inicio de sesión exitoso.";
+        // Redirigir al panel de administración
+        header('Location: /admin');
+        exit;
     } else {
         $error = 'Credenciales incorrectas';
         echo $error;
