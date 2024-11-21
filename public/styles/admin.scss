@@ -328,6 +328,88 @@ main{
             }
         }
     }
+    .productList{
+        display: none;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        gap: 5px;
+
+        h3{
+            height: 20px;
+        }
+        .product{
+            @include sizes();
+            @include displayFlex($flexDirection:row, $justifyContent: space-around);
+            gap: 5px;
+
+            div{
+                @include displayFlex($flexDirection:row);
+                @include sizes($height: 100px);
+                gap: 5px;
+                border-bottom: 1px solid black;
+
+                h4,h2{
+                    @include sizes();
+                    @include displayFlex();
+                }
+                p{
+                    @include sizes();
+                    font-size: $md;
+                    @include displayFlex();
+                    box-shadow: none;
+                }
+                img{
+                    @include sizes(auto,100px);
+                }
+            }
+            .product-buttons{
+                width: 350px;
+
+                button{
+                    @include buttonDesign(100px);
+                }
+            }
+        }
+    }
+    #editForm{
+        @include sizes(90%,$height: 500px);
+        @include displayFlex();
+        box-shadow: 0px 0px 10px 1px black;
+        display: none;
+        position: fixed;
+        background-color: $lightFontColor;
+        overflow: hidden;
+
+        h2{
+            @include sizes($height: 30px);
+            font-size: $md;
+            @include displayFlex();
+            align-items: flex-start;
+            background-image: $backgroundImage;
+            padding-left: 10px;
+        }
+        form{
+            @include displayFlex();
+            @include sizes();
+            gap: 5px;
+
+            label{
+                @include sizes($height: 30px);
+                font-size: $md;
+                padding-left: 10px;
+            }
+            input{
+                @include sizes(95%,$height: 40px);
+                background-color: transparent;
+                border: 1px solid black;
+                outline: none;
+            }
+            button{
+                margin-top: 50px;
+                @include buttonDesign(90%);
+            }
+        }
+    }
 }
 
 //Animaciones

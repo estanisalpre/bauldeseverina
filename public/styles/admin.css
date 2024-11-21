@@ -351,6 +351,141 @@ main #addProduct form button, main #productList form button {
 main #addProduct form button:hover, main #productList form button:hover {
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
+main .productList {
+  display: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  gap: 5px;
+}
+main .productList h3 {
+  height: 20px;
+}
+main .productList .product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+main .productList .product div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  gap: 5px;
+  border-bottom: 1px solid black;
+}
+main .productList .product div h4, main .productList .product div h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .productList .product div p {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: none;
+}
+main .productList .product div img {
+  width: auto;
+  height: 100px;
+}
+main .productList .product .product-buttons {
+  width: 350px;
+}
+main .productList .product .product-buttons button {
+  padding: 2px;
+  border: 0px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-family: "Afacad Flux", sans-serif;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #353535;
+  cursor: pointer;
+  background-color: #e3e3e3;
+  box-shadow: 0px 0px 20px 1px black;
+}
+main #editForm {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px 1px black;
+  display: none;
+  position: fixed;
+  background-color: #e3e3e3;
+  overflow: hidden;
+}
+main #editForm h2 {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  background-image: linear-gradient(to top, #e2afa1 0%, #f2bf97 100%);
+  padding-left: 10px;
+}
+main #editForm form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+}
+main #editForm form label {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+main #editForm form input {
+  width: 95%;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid black;
+  outline: none;
+}
+main #editForm form button {
+  margin-top: 50px;
+  padding: 2px;
+  border: 0px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-family: "Afacad Flux", sans-serif;
+  width: 90%;
+  height: 50px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #353535;
+  cursor: pointer;
+  background-color: #e3e3e3;
+  box-shadow: 0px 0px 20px 1px black;
+}
 
 @keyframes heartAnimation {
   0% {
