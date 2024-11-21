@@ -11,7 +11,7 @@ if (isset($data['username'], $data['password'])) {
 
     // Aquí debes validar las credenciales con la base de datos
     // Ejemplo simple con validación estática (cambiar por tu propia lógica)
-    if ($username === 'armando2024' && $password === 'armando1233') {
+    if ($username === 'mibaul1233' && $password === 'mibaul1233') {
         // Iniciar sesión y guardar el nombre de usuario
         $_SESSION['user'] = $username;
         echo json_encode(['success' => true]); // Responder con éxito

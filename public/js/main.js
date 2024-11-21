@@ -3,7 +3,6 @@
 import { navFunctionality } from "./nav.js";
 import { allRedirections } from "./redirections.js";
 
-console.log('leyendo mainjs')
 //Los captura el DOM
 document.addEventListener('DOMContentLoaded', () => {
     //Funcionalidad del NAV
@@ -12,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     allRedirections();
     //Boton comenzar
     comenzar();
+    //Funcionalidad para loguearse
+    loginButton();
 });
 
 //Button Comenzar
@@ -21,6 +22,24 @@ function comenzar(){
     if(comenzar){
         comenzar.addEventListener('click', () => {
             location.href = '/index.html#categoriesSection'
+        })
+    }
+}
+
+//Boton para loguearse
+function loginButton(){
+    const toAdmin = document.getElementById('toAdmin')
+    const sectionForm = document.getElementById('sectionForm')
+    const backButton = document.getElementById('backButton')
+
+    if(toAdmin){
+        toAdmin.addEventListener('click', () => {
+            sectionForm.style.display = 'flex'
+        })
+    }
+    if(backButton){
+        backButton.addEventListener('click', () => {
+            sectionForm.style.display = 'none'
         })
     }
 }

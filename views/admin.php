@@ -1,14 +1,14 @@
 <?php
 include 'db.php';
 
-//session_start(); // Iniciar sesión
+session_start(); // Iniciar sesión
 
 // Verificar si el usuario ha iniciado sesión
-//if (!isset($_SESSION['user'])) {
+if (!isset($_SESSION['user'])) {
     // Si no hay sesión activa, redirigir al login
-    /* header("Location: /");
+    header("Location: /");
     exit;
-} */
+} 
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);

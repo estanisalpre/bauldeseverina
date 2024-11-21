@@ -144,6 +144,7 @@
                 </div> 
             </div>
         </section>
+        <!--LOGIN-->
         <section id="sectionForm" class="sectionForm">
             <form action="login.php" method="POST" class="loginForm">
                 <span id="errorMessage">❌Credenciales incorrectas</span>

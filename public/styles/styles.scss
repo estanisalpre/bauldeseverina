@@ -521,6 +521,24 @@ main{
         }
     }
 
+    //Login
+    .sectionForm{
+        @include sizes();
+        @include displayFlex();
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+
+        form{
+            @include displayFlex();
+            @include sizes(80%, 200px);
+            border-radius: 20px;
+            background-image: $secondBackgroundImage;
+        }
+    }
+
     //Whatsapp logo
     #whatsapp{
         @include sizes(80px,auto);
