@@ -53,10 +53,10 @@
         <!--PRESENTACION-->
         <section id="presentation">
             <div class="textPresentation">
-                <img src="/src/assets/img/logos/logo.png" alt="Logo de El Baul de Severina">
+                <img src="/public/imgs/logos/logo.png" alt="Logo de El Baul de Severina">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> <br> Ex dicta sunt quaerat. Ex dicta sunt quaerat. Ex dicta sunt quaerat. Ex dicta sunt quaerat. Ex dicta sunt quaerat.</p>
             </div>
-            <h2 id="comenzarButton"><img src="/src/assets/img/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online"> Comenzar</h2>
+            <h2 id="comenzarButton"><img src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online"> Comenzar</h2>
         </section>
         <!--SECCIÓN DE CATEGORÍAS-->
         <section id="categoriesSection">
@@ -80,7 +80,7 @@
             </div>
             <div class="toBriefcaseSection">
                 <h3>¿Quieres ver el catálogo completo?</h3>
-                <button id="toBriefcase"><img src="/src/assets/img/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
+                <button id="toBriefcase"><img src="/public/imgs/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
             </div>
             <div class="fourthCategory">
                 <div><h3>Tenis</h3></div>
@@ -112,10 +112,10 @@
                 <h2>¡Contáctanos!</h2>
                 <div>
                     <ul>
-                        <li><img src="/src/assets/img/icons/facebook.png" alt="Ícono de Facebook"></li>
-                        <li><img src="/src/assets/img/icons/instagram.png" alt="Ícono de Instagram"></li>
-                        <li><img src="/src/assets/img/icons/whatsapp.png" alt="Ícono de Whatsapp"></li>
-                        <li><img src="/src/assets/img/icons/gmail.png" alt="Ícono de Correo Electrónico"></li>
+                        <li><img src="/public/imgs/icons/facebook.png" alt="Ícono de Facebook"></li>
+                        <li><img src="/public/imgs/icons/instagram.png" alt="Ícono de Instagram"></li>
+                        <li><img src="/public/imgs/icons/whatsapp.png" alt="Ícono de Whatsapp"></li>
+                        <li><img src="/public/imgs/icons/gmail.png" alt="Ícono de Correo Electrónico"></li>
                     </ul>
                     <ul>
                         <li>Facebook</li>
@@ -164,11 +164,11 @@
     </main>
     <!--FOOTER-->
     <footer>
-        <img src="/src/assets/img/logos/logo.png" alt="El Baul de Severina Logo">
+        <img src="/public/imgs/logos/logo.png" alt="El Baul de Severina Logo">
         <div class="socialMedia">
             <h3>¡Síguenos!</h3>
-            <img src="/src/assets/img/icons/instagram.png" alt="Instagram Icon">
-            <img src="/src/assets/img/icons/facebook.png" alt="Facebook Icon">
+            <img src="/public/imgs/icons/instagram.png" alt="Instagram Icon">
+            <img src="/public/imgs/icons/facebook.png" alt="Facebook Icon">
         </div>
         <div>
             <ul>
