@@ -152,8 +152,8 @@
                 <input type="text" name="username" id="username" required placeholder="Usuario" maxlength="11">
                 <input type="password" name="password" id="password" required placeholder="Contraseña" maxlength="17">
                 <button id="submitLogin" type="submit">Ingresar</button>
-                <button id="backButton">Regresar</button>
             </form>
+            <button id="backButton">Regresar</button>
             <?php
                 // Mostrar error si las credenciales son incorrectas
                 if (isset($error)) {
