@@ -129,6 +129,6 @@ try {
         </div>
     </main>
     <!--SCRIPTS-->
-    <script type="module" src="/src/js/admin.js"></script>
+    <script type="module" src="/public/js/admin.js"></script>
 </body>
 </html>
