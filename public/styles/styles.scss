@@ -532,6 +532,7 @@ main{
         right: 0px;
         z-index: 12000;
         display: none;
+        filter: blur(5px);
 
         form{
             @include displayFlex();
@@ -565,7 +566,7 @@ main{
         }
         button{
             margin-top: -60px;
-            @include buttonDesign(25%);
+            @include buttonDesign(90%);
         }
         button:hover{
             background-image: $backgroundImage;

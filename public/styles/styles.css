@@ -588,6 +588,7 @@ main .sectionForm {
   right: 0px;
   z-index: 12000;
   display: none;
+  filter: blur(5px);
 }
 main .sectionForm form {
   display: flex;
@@ -645,7 +646,7 @@ main .sectionForm button {
   border-radius: 30px;
   transition: all 0.3s ease;
   font-family: "Afacad Flux", sans-serif;
-  width: 25%;
+  width: 90%;
   height: 50px;
   text-align: center;
   font-weight: 400;
