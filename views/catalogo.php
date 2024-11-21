@@ -2,7 +2,7 @@
     include 'db.php';
 
     $queryBolsos = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 1";
-    $stmtBolsos = $pdoBolsos->prepare($queryBolsos);
+    $stmtBolsos = $pdo->prepare($queryBolsos);
     $stmtBolsos->execute();
     $productosBolsos = $stmtBolsos->fetchAll(PDO::FETCH_ASSOC);
 ?>
