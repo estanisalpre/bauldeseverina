@@ -13,13 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
     form.addEventListener('submit', function (event) {
         event.preventDefault();
-
-        const prodName = document.querySelector('#productName').value;
-        const price = document.querySelector('#productPrice').value;
-        const category = document.querySelector('#categories').value;
-
-        console.log(category)
-
+        
         // Enviar los datos al servidor
         fetch('/add-product.php', {
             method: 'POST',
