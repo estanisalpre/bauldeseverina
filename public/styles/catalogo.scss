@@ -2,7 +2,6 @@
 $backgroundImage: linear-gradient(to top, #e2afa1 0%, #f2bf97 100%);
 $secondBackgroundImage: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 $cardBackgroundImage: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-//$brandColor: #09e668;
 $sm: 12px;
 $md: 18px;
 $lg: 24px;
@@ -383,7 +382,7 @@ main{
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size: cover;
                 background-position: center;
 
                 div{
@@ -392,7 +391,7 @@ main{
                         @include sizes(100%,50px);
                         @include displayFlex();
                         font-size: $sm;
-                        background-image: $backgroundImage;
+                        background-image: $secondBackgroundImage;
                     }
                 }
                 div span:first-child{
