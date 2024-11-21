@@ -14,10 +14,9 @@ function allButtons(){
     const briefcase = document.querySelectorAll('#toBriefcase')
     const aboutUs = document.querySelectorAll('#toAboutUs')
     const happyClients = document.querySelectorAll('#toHappyClients')
-    const admin = document.querySelectorAll('#toAdmin')
     const logout = document.querySelectorAll('#logout')
 
-    if(myLogo || contact || briefcase || aboutUs || happyClients || admin || logout){
+    if(myLogo || contact || briefcase || aboutUs || happyClients ||  logout){
         myLogo.forEach(function(logo){
             logo.addEventListener('click', () => {
                 location.href = '/'
@@ -41,11 +40,6 @@ function allButtons(){
         happyClients.forEach(function(happyClients){
             happyClients.addEventListener('click', () => {
                 location.href = '/'
-            })
-        })
-        admin.forEach(function(admin){
-            admin.addEventListener('click', () => {
-                location.href = './admin'
             })
         })
         logout.forEach(function(logout){
