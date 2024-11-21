@@ -68,7 +68,7 @@ error_reporting(E_ALL);
                 <input type="file" name="productImg" id="productImg" required>
                 <input type="text" name="productName" id="productName" required placeholder="Nombre del producto">
                 <input type="number" name="productPrice" id="productPrice" required placeholder="Precio del producto">
-                <select name="id_categorias" id="categories">
+                <select name="id_categoria" id="categories">
                     <option value="1">Bolsos</option>
                     <option value="2">Tenis</option>
                 </select>
