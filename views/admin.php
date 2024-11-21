@@ -126,8 +126,8 @@ try {
                 <input type="checkbox" id="editProductAvailable" />
 
                 <button type="button" id="submitEditButton">Actualizar Producto</button>
-                <button type="button" id="closeEditForm">Cancelar</button>
             </form>
+            <button type="button" id="closeEditForm">Cancelar</button>
         </div>
     </main>
     <!--SCRIPTS-->
