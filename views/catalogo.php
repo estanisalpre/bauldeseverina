@@ -1,7 +1,7 @@
 <?php
     include 'db.php';
 
-    $query = "SELECT productImg, productName, productValue, available FROM cat_bolsos WHERE available = 1";
+    $query = "SELECT productImg, productName, productPrice, available FROM cat_bolsos WHERE available = 1";
     $stmt = $pdo->prepare($query);
     $stmt->execute();
     $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
