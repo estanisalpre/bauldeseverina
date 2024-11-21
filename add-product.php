@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Recoger los datos del formulario
     $productName = $_POST['productName'];
     $productPrice = $_POST['productPrice'];
-    $category = $_POST['categories'];
+    //$category = $_POST['categories'];
     $available = isset($_POST['available']) ? 1 : 0; 
     $productImg = ''; 
 
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    if($category === "1"){
+    
         // Insertar los datos en la base de datos
         try {
             // Preparar la consulta SQL para insertar el producto
@@ -47,9 +47,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Mostrar error si no se puede insertar el producto
             echo "Error al agregar el producto: " . $e->getMessage();
         }
-    } else {
-        echo "No existe categoria bolsos"
-    }
 } else {
     // Si no es una solicitud POST, redirigir al panel de administración
     header('Location: /views/admin.php');
