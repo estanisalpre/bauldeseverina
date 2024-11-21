@@ -79,6 +79,8 @@ try {
                     <option value="8">Bolsos</option>
                     <option value="9">Bolsos</option>
                 </select>
+                <label for="available">Disponible:</label>
+                <input type="checkbox" name="available" id="available">
                 <input type="submit" id="addProductButton" value="Cargar">
                 <button id="cancelButton" class="cancelButton">Cancelar</button>
             </form>
