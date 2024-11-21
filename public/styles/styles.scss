@@ -344,7 +344,7 @@ main{
                     @include displayFlex();
                     align-items: flex-start;
                     padding-left: 10px;
-                    font-size: 4vw;
+                    font-size: $lg;
                     font-weight: $noBold;
                     border-top-right-radius: 15px;
                     border-bottom-right-radius: 15px;
