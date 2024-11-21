@@ -20,37 +20,37 @@ function allButtons(){
     if(myLogo || contact || briefcase || aboutUs || happyClients || admin || logout){
         myLogo.forEach(function(logo){
             logo.addEventListener('click', () => {
-                location.href = 'index'
+                location.href = '/'
             })
         })
         contact.forEach(function(contact){
             contact.addEventListener('click', () => {
-                location.href = 'index'
+                location.href = '/'
             })
         })
         briefcase.forEach(function(briefcase){
             briefcase.addEventListener('click', () => {
-                location.href = 'catalogo'
+                location.href = '/catalogo'
             })
         })
         aboutUs.forEach(function(aboutUs){
             aboutUs.addEventListener('click', () => {
-                location.href = 'index'
+                location.href = '/'
             })
         })
         happyClients.forEach(function(happyClients){
             happyClients.addEventListener('click', () => {
-                location.href = 'index'
+                location.href = '/'
             })
         })
         admin.forEach(function(admin){
             admin.addEventListener('click', () => {
-                location.href = 'admin'
+                location.href = '/admin'
             })
         })
         logout.forEach(function(logout){
             logout.addEventListener('click', () => {
-                location.href = 'index'
+                location.href = '/'
             })
         })
     }
