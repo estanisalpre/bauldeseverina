@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Baúl de Severina - Catálogo</title>
     <!--CSS-->
-    <link rel="stylesheet" href="/src/assets/styles/catalogo.css">
+    <link rel="stylesheet" href="/public/styles/catalogo.css">
     <!--FAVICON-->
     <link rel="shortcut icon" href="/src/assets/img/logos/logo.png" type="image/x-icon">
     <!--GOOGLE FONTS-->
