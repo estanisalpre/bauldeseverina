@@ -87,8 +87,7 @@ error_reporting(E_ALL);
         </section>
         <!--LISTA DE PRODUCTOS-->
         <section id="productList">
-            <h2>Edita o elimina productos</h2>
-            <h3>Editar o eliminar productos</h3>
+            <h2>Editar o eliminar productos</h2>
             <?php 
                 if (isset($products) && !empty($products)) {
                     foreach ($products as $product): ?>
