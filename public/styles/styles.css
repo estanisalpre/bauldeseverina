@@ -586,6 +586,8 @@ main .sectionForm {
   bottom: 0px;
   left: 0px;
   right: 0px;
+  z-index: 12000;
+  display: none;
 }
 main .sectionForm form {
   display: flex;
