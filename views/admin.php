@@ -127,7 +127,6 @@ try {
 
                 <button type="button" id="submitEditButton">Actualizar Producto</button>
             </form>
-            <button type="button" id="closeEditForm">Cancelar</button>
         </div>
     </main>
     <!--SCRIPTS-->
