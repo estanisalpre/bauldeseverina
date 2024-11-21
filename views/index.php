@@ -181,7 +181,7 @@
         </div>
     </footer>
     <!--SCRIPTS-->
-    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/public/js/main.js"></script>
 </body>
 </html>
 
