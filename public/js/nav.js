@@ -30,7 +30,7 @@ function allButtons(){
         })
         briefcase.forEach(function(briefcase){
             briefcase.addEventListener('click', () => {
-                location.href = '/catalogo'
+                location.href = './catalogo'
             })
         })
         aboutUs.forEach(function(aboutUs){
@@ -45,7 +45,7 @@ function allButtons(){
         })
         admin.forEach(function(admin){
             admin.addEventListener('click', () => {
-                location.href = '/admin'
+                location.href = './admin'
             })
         })
         logout.forEach(function(logout){
