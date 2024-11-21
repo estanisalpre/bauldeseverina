@@ -356,6 +356,7 @@ main #productList {
   overflow-y: scroll;
   overflow-x: hidden;
   gap: 5px;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 main #productList h3 {
   height: 20px;

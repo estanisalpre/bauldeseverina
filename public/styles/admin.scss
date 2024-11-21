@@ -333,6 +333,7 @@ main{
         overflow-y: scroll;
         overflow-x: hidden;
         gap: 5px;
+        background-image: $cardBackgroundImage;
 
         h3{
             height: 20px;
