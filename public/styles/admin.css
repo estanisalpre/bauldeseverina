@@ -421,6 +421,7 @@ main #productList .product .product-buttons button {
   cursor: pointer;
   background-color: #e3e3e3;
   box-shadow: 0px 0px 20px 1px black;
+  box-shadow: none;
 }
 main #editForm {
   width: 90%;

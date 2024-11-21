@@ -368,6 +368,7 @@ main{
 
                 button{
                     @include buttonDesign(100px);
+                    box-shadow: none;
                 }
             }
         }

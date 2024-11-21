@@ -34,7 +34,7 @@ try {
     <!--CSS-->
     <link rel="stylesheet" href="/public/styles/admin.css">
     <!--FAVICON-->
-    <link rel="shortcut icon" href="/src/assets/img/logos/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/imgs/logos/logo.png" type="image/x-icon">
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,8 +44,8 @@ try {
    <!--NAV-->
    <nav id="nav">
         <header>
-            <img id="toBriefcase" src="/src/assets/img/icons/catalogo.png" alt="Ícono catálogo de productos">
-            <img id="logout" src="/src/assets/img/icons/logout.png" alt="Ícono para cerrar sesión">
+            <img id="toBriefcase" src="/public/imgs/icons/catalogo.png" alt="Ícono catálogo de productos">
+            <img id="logout" src="/public/imgs/icons/logout.png" alt="Ícono para cerrar sesión">
         </header>
     </nav>
     <!--MAIN / CONTENIDO PRINCIPAL-->
@@ -60,7 +60,7 @@ try {
                 <button id="showListButton">Lista de productos</button>
             </div>
         </section>
-        <section id="standarSection"><img src="/src/assets/img/logos/logo.png" alt="Logo de El Baul de Severina"></section>
+        <section id="standarSection"><img src="/public/imgs/logos/logo.png" alt="Logo de El Baul de Severina"></section>
         <!--AGREGAR PRODUCTOS-->
         <section id="addProduct">
             <h2>Agrega un nuevo producto</h2>
