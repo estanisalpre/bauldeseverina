@@ -26,10 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $productImg = $uploadFile;  // Guardar la ruta de la imagen en la base de datos
         }
     }
-
-    <script>
-                console.log('Datos insertadossss')
-            </script>
         // Insertar los datos en la base de datos
         try {
             // Preparar la consulta SQL para insertar el producto
@@ -39,9 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->bindParam(':productImg', $productImg);
             $stmt->bindParam(':available', $available);
             $stmt->bindParam(':id_categoria', $id_categoria);
-            <script>
-                console.log('Datos insertados')
-            </script>
+            
             // Ejecutar la consulta
             $stmt->execute();
 
