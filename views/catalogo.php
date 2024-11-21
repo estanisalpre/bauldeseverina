@@ -1,10 +1,14 @@
 <?php
     include 'db.php';
 
-    $query = "SELECT productImg, productName, productPrice, available FROM cat_bolsos WHERE available = 1";
-    $stmt = $pdo->prepare($query);
-    $stmt->execute();
-    $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $queryBolsos = "SELECT productImg, productName, productPrice, available FROM cat_bolsos WHERE available = 1";
+    $queryTenis = "SELECT productImg, productName, productPrice, available FROM cat_tenis WHERE available = 1";
+    $stmtBolsos = $pdo->prepare($queryBolsos);
+    $stmtTenis = $pdo->prepare($queryTenis);
+    $stmtBolsos->execute();
+    $stmtTenis->execute();
+    $productosBolsos = $stmtBolsos->fetchAll(PDO::FETCH_ASSOC);
+    $productosTenis = $stmtBolsos->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
