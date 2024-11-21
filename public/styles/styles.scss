@@ -194,6 +194,7 @@ nav{
         @include sizes(90%,$height:50px);
         @include displayFlex($flexDirection:row,$justifyContent:space-between);
         align-items: flex-end;
+        margin-top: 10px;
 
         #adminAccess{
              @include sizes(40px,auto);
