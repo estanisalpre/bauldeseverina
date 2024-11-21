@@ -9,8 +9,9 @@ include 'db.php';
 // Verificar si la solicitud es POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Recoger los datos del formulario
-    $productName = $_POST['prodName'];
-    $productValue = $_POST['price'];
+    $productName = $_POST['productName'];
+    $productPrice = $_POST['productPrice'];
+    $category = $_POST['categories'];
     $available = isset($_POST['available']) ? 1 : 0; 
     $productImg = ''; 
 
@@ -26,24 +27,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Insertar los datos en la base de datos
-    try {
-        // Preparar la consulta SQL para insertar el producto
-        $stmt = $pdo->prepare("INSERT INTO products (productName, productValue, productImg, available) VALUES (:productName, :productValue, :productImg, :available)");
-        $stmt->bindParam(':productName', $productName);
-        $stmt->bindParam(':productValue', $productValue);
-        $stmt->bindParam(':productImg', $productImg);
-        $stmt->bindParam(':available', $available);
+    if($category = 'bolsos'){
+        // Insertar los datos en la base de datos
+        try {
+            // Preparar la consulta SQL para insertar el producto
+            $stmt = $pdo->prepare("INSERT INTO cat_bolsos (productName, productPrice, productImg, available) VALUES (:productName, :productPrice, :productImg, :available)");
+            $stmt->bindParam(':productName', $productName);
+            $stmt->bindParam(':productPrice', $productPrice);
+            $stmt->bindParam(':productImg', $productImg);
+            $stmt->bindParam(':available', $available);
 
-        // Ejecutar la consulta
-        $stmt->execute();
+            // Ejecutar la consulta
+            $stmt->execute();
 
-        // Redirigir al panel de administración con un mensaje de éxito
-        header('Location: /views/admin.php?success=1');  // Redirigir con un parámetro 'success'
-        exit;
-    } catch (PDOException $e) {
-        // Mostrar error si no se puede insertar el producto
-        echo "Error al agregar el producto: " . $e->getMessage();
+            // Redirigir al panel de administración con un mensaje de éxito
+            header('Location: /views/admin.php?success=1');  // Redirigir con un parámetro 'success'
+            exit;
+        } catch (PDOException $e) {
+            // Mostrar error si no se puede insertar el producto
+            echo "Error al agregar el producto: " . $e->getMessage();
+        }
+    } else {
+        echo "No existe categoria bolsos"
     }
 } else {
     // Si no es una solicitud POST, redirigir al panel de administración

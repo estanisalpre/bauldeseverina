@@ -1,14 +1,14 @@
 <?php
 include 'db.php';
 
-session_start(); // Iniciar sesión
+//session_start(); // Iniciar sesión
 
 // Verificar si el usuario ha iniciado sesión
-if (!isset($_SESSION['user'])) {
+//if (!isset($_SESSION['user'])) {
     // Si no hay sesión activa, redirigir al login
-    header("Location: /");
+    /* header("Location: /");
     exit;
-}
+} */
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -16,7 +16,7 @@ error_reporting(E_ALL);
 
 try {
     // Hacer la consulta para obtener los productos
-    $stmt = $pdo->prepare("SELECT * FROM products");
+    $stmt = $pdo->prepare("SELECT * FROM cat_bolsos");
     $stmt->execute();
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC); // Obtener todos los productos
 
@@ -64,7 +64,7 @@ try {
         <!--AGREGAR PRODUCTOS-->
         <section id="addProduct">
             <h2>Agrega un nuevo producto</h2>
-            <form action="" method="POST">
+            <form action="/add-product.php" method="POST">
                 <input type="file" name="productImg" id="productImg" required>
                 <input type="text" name="productName" id="productName" required placeholder="Nombre del producto">
                 <input type="number" name="productPrice" id="productPrice" required placeholder="Precio del producto">
