@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
 
         const prodName = document.querySelector('#productName').value;
-        const price = document.querySelector('#price').value;
+        const price = document.querySelector('#productPrice').value;
 
         // Enviar los datos al servidor
         fetch('/add-product.php', {
