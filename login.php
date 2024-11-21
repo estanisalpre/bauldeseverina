@@ -1,23 +1,26 @@
 <?php
-session_start(); // Iniciar la sesión
+session_start();
 
-// Obtener los datos enviados en el cuerpo de la solicitud
-$data = json_decode(file_get_contents('php://input'), true);
+// Verificar si la solicitud es POST
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    echo json_encode(['success' => false, 'message' => 'Método no permitido']);
+    exit;
+}
 
-// Verificar si las credenciales se han enviado
-if (isset($data['username'], $data['password'])) {
-    $username = $data['username'];
-    $password = $data['password'];
+// Obtener los datos enviados desde el formulario
+if (isset($_POST['username'], $_POST['password'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-    // Aquí debes validar las credenciales con la base de datos
-    // Ejemplo simple con validación estática (cambiar por tu propia lógica)
+    // Validar las credenciales (reemplazar con tu lógica)
     if ($username === 'mibaul1233' && $password === 'mibaul1233') {
-        // Iniciar sesión y guardar el nombre de usuario
         $_SESSION['user'] = $username;
-        echo json_encode(['success' => true]); // Responder con éxito
+        // Redirigir o mostrar éxito
+        echo "Inicio de sesión exitoso.";
     } else {
-        echo json_encode(['success' => false, 'message' => 'Credenciales incorrectas']); // Responder con error
+        $error = 'Credenciales incorrectas';
+        echo $error;
     }
 } else {
-    echo json_encode(['success' => false, 'message' => 'Datos incompletos']);
+    echo "Datos incompletos";
 }
