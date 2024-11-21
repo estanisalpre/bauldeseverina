@@ -257,7 +257,7 @@ main{
         display: flex;
 
         img{
-            @include sizes(50%, auto);
+            @include sizes(300px, auto);
             animation: heartAnimation 5s ease infinite;
         }
     }
@@ -333,7 +333,7 @@ main{
         overflow-y: scroll;
         overflow-x: hidden;
         gap: 5px;
-        background-image: $cardBackgroundImage;
+        background-image: $secondBackgroundImage;
 
         h3{
             height: 20px;
@@ -387,7 +387,7 @@ main{
             font-size: $md;
             @include displayFlex();
             align-items: flex-start;
-            background-image: $backgroundImage;
+            background-image: $secondBackgroundImage;
             padding-left: 10px;
         }
         form{
