@@ -555,7 +555,7 @@ main{
                 font-family: $afacadFont;
             }
             button{
-                @include buttonDesign(40%);
+                @include buttonDesign(90%);
                 box-shadow: none;
                 margin-top: 0px;
             }
@@ -565,7 +565,7 @@ main{
         }
         button{
             margin-top: -60px;
-            @include buttonDesign(90%);
+            @include buttonDesign(40%);
         }
         button:hover{
             background-image: $backgroundImage;
