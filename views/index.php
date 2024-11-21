@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Baúl de Severina - Tienda Oficial</title>
     <!--CSS-->
-    <link rel="stylesheet" href="/src/assets/styles/styles.css">
+    <link rel="stylesheet" href="/public/assets/styles/styles.css">
     <!--FAVICON-->
-    <link rel="shortcut icon" href="/src/assets/img/logos/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/assets/img/logos/logo.png" type="image/x-icon">
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
