@@ -14,15 +14,15 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-/* try {
+try {
     // Hacer la consulta para obtener los productos
-    $stmt = $pdo->prepare("SELECT * FROM cat_bolsos");
+    $stmt = $pdo->prepare("SELECT * FROM productos");
     $stmt->execute();
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC); // Obtener todos los productos
 
 } catch (PDOException $e) {
     die("Error al obtener los productos: " . $e->getMessage());
-} */
+}
 ?>
 
 <!DOCTYPE html>
@@ -88,7 +88,7 @@ error_reporting(E_ALL);
                             <div>
                                 <h2><?= htmlspecialchars($product['idProduct']); ?></h2>
                                 <h4><?= htmlspecialchars($product['productName']); ?></h4>
-                                <p>Precio: $<?= htmlspecialchars($product['productValue']); ?></p>
+                                <p>Precio: $<?= htmlspecialchars($product['productPrice']); ?></p>
                                 <img src="<?= htmlspecialchars($product['productImg']); ?>" alt="Imagen de <?= htmlspecialchars($product['productName']); ?>">
                                 <p>Disponible: <?= $product['available'] ? 'Sí' : 'No'; ?></p>
                             </div>
