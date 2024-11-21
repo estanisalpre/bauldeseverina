@@ -18,7 +18,7 @@ function categoryButtons(){
             const categoryId = category.dataset.id;
 
             if(categoryId){
-                location.href = `catalogo.html#${categoryId}`;
+                location.href = `catalogo#${categoryId}`;
             } else {
                 console.log('Categoria sin data-id')
             }
