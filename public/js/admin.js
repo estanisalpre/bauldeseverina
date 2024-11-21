@@ -103,7 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 })
                 .then(response => response.json())
                 .then(data => {
+                    console.log(data)
                     if (data.success) {
+                        console.log('imprimir mensaje entra')
                         alert("Producto editado exitosamente.");
                         location.reload(); // Recargar la página para reflejar los cambios
                     } else {
