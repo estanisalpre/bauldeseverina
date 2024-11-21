@@ -370,6 +370,49 @@ main{
             overflow-y: scroll;
             overflow-x: hidden; 
         }
+        #productos-bolsos, #productos-tenis{
+            @include displayFlex($flexDirection:row);
+            @include sizes();
+            overflow: scroll;
+            flex-wrap: wrap;
+            padding: 10px;
+            gap: 5px;
+            
+            div{
+                @include sizes(170px,250px);
+                @include displayFlex($justifyContent: space-between); 
+                box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+
+                div{
+                    @include sizes();
+                    span{
+                        @include sizes(100%,50px);
+                        @include displayFlex();
+                        font-size: $sm;
+                        background-image: $backgroundImage;
+                    }
+                }
+                div span:first-child{
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+                div span:nth-child(2){
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    height: 40px;
+                    font-size: $md;
+                    font-weight: $bold;
+                }
+            } 
+        }
+        p{
+            @include sizes(90%,30px);
+            @include displayFlex();
+            align-items: flex-start;
+        }
     }
 
     //Whatsapp logo

@@ -86,7 +86,7 @@
                     <div class="card" style="background-image: url('<?php echo htmlspecialchars($bolso['productImg']); ?>');">
                         <div class="card-content">
                             <span class="product-name"><?php echo htmlspecialchars($bolso['productName']); ?></span>
-                            <span class="product-price">$<?php echo htmlspecialchars($bolso['productValue']); ?></span>
+                            <span class="product-price">$<?php echo htmlspecialchars($bolso['productPrice']); ?></span>
                         </div>
                     </div>
                 <?php endforeach; ?>
