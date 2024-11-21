@@ -21,7 +21,7 @@ function comenzar(){
 
     if(comenzar){
         comenzar.addEventListener('click', () => {
-            location.href = '/index.html#categoriesSection'
+            location.href = '/index#categoriesSection'
         })
     }
 }
