@@ -66,62 +66,56 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitEditButton = document.getElementById("submitEditButton");
     let currentProductId = null;
 
-    const handleEditSubmit = () => {
-        editButtons.forEach(button => {
-            button.addEventListener("click", (event) => {
-                const productElement = event.target.closest(".product");
-                currentProductId = productElement.dataset.id;
-    
-                const productName = productElement.querySelector('h4').textContent;
-                const productValue = productElement.querySelector('p').textContent.replace('Precio: $', '');
-                const productAvailable = productElement.querySelector('p').textContent.includes('Sí');
-    
-                editProductName.value = productName;
-                editProductValue.value = productValue;
-                editProductAvailable.checked = productAvailable;
-    
-                 // Mostrar el formulario
-                editForm.style.display = 'block';
-            });
-    
-            // Enviar los datos al servidor para actualizar el producto
-            submitEditButton.addEventListener("click", () => {
-                const newName = editProductName.value;
-                const newValue = editProductValue.value;
-                const newAvailable = editProductAvailable.checked ? 1 : 0;
-    
-                // Verificar que los campos estén completos
-                if (newName && newValue) {
-                    fetch('/edit_product.php', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ 
-                            id: currentProductId, 
-                            productName: newName, 
-                            productPrice: newValue,
-                            available: newAvailable 
-                        })
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.success) {
-                            alert("Producto editado exitosamente.");
-                            location.reload(); // Recargar la página para reflejar los cambios
-                        } else {
-                            alert("Error al editar el producto.");
-                        }
-                    })
-                    .catch(error => console.error('Error:', error));
-                } else {
-                    alert("El nombre del producto es obligatorio.");
-                }
-            });
-        });
-    }
+    editButtons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            const productElement = event.target.closest(".product");
+            currentProductId = productElement.dataset.id;
 
-     // Registrar el evento de clic para el botón
-     submitEditButton.removeEventListener("click", handleEditSubmit); // Evita duplicados
-     submitEditButton.addEventListener("click", handleEditSubmit);
+            const productName = productElement.querySelector('h4').textContent;
+            const productValue = productElement.querySelector('p').textContent.replace('Precio: $', '');
+            const productAvailable = productElement.querySelector('p').textContent.includes('Sí');
+
+            editProductName.value = productName;
+            editProductValue.value = productValue;
+            editProductAvailable.checked = productAvailable;
+
+             // Mostrar el formulario
+            editForm.style.display = 'block';
+        });
+
+        // Enviar los datos al servidor para actualizar el producto
+        submitEditButton.addEventListener("click", () => {
+            const newName = editProductName.value;
+            const newValue = editProductValue.value;
+            const newAvailable = editProductAvailable.checked ? 1 : 0;
+
+            // Verificar que los campos estén completos
+            if (newName && newValue) {
+                fetch('/edit_product.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        id: currentProductId, 
+                        productName: newName, 
+                        productPrice: newValue,
+                        available: newAvailable 
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert("Producto editado exitosamente.");
+                        location.reload(); // Recargar la página para reflejar los cambios
+                    } else {
+                        alert("Error al editar el producto.");
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            } else {
+                alert("El nombre del producto es obligatorio.");
+            }
+        });
+    });
 
     //Botón para cerrar sesión
     const logout = document.getElementById('logout')
