@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify({ 
                         id: currentProductId, 
                         productName: newName, 
-                        productValue: newValue,
+                        productPrice: newValue,
                         available: newAvailable 
                     })
                 })
