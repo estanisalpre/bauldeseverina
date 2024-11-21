@@ -71,6 +71,14 @@ try {
                 <select name="id_categoria" id="categories">
                     <option value="1">Bolsos</option>
                     <option value="2">Tenis</option>
+                    <option value="5">Pantalones & Jeans</option>
+                    <option value="6">Blusas</option>
+                    <option value="7">Vestidos & Faldas</option>
+                    <option value="8">Ropa Deportiva</option>
+                    <option value="9">Hoodies & Sueters</option>
+                    <option value="10">Sandalias & Tacones</option>
+                    <option value="11">Chaqueta & Abrigos</option>
+                    <option value="19">Otros</option>
                 </select>
                 <label for="available">Disponible:</label>
                 <input type="checkbox" name="available" id="available">
