@@ -170,6 +170,6 @@
         </div>
     </footer>
     <!--SCRIPTS-->
-    <script type="module" src="/src/js/catalogo.js"></script>
+    <script type="module" src="/public/js/catalogo.js"></script>
 </body>
 </html>
