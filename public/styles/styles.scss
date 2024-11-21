@@ -535,9 +535,35 @@ main{
 
         form{
             @include displayFlex();
-            @include sizes(80%, 200px);
+            @include sizes(80%, 300px);
             border-radius: 20px;
+            border: 1px solid $shadow;
             background-image: $secondBackgroundImage;
+            gap: 5px;
+
+            #errorMessage{
+                display: none;
+            }
+            input{
+                @include sizes(90%,30px);
+                @include displayFlex();
+                padding-left: 10px;
+                font-family: $afacadFont;
+            }
+            button{
+                @include buttonDesign(90%);
+                box-shadow: none;
+            }
+            button:hover{
+                background-image: $backgroundImage;
+            }
+        }
+        button{
+            margin-top: -50px;
+            @include buttonDesign(25%);
+        }
+        button:hover{
+            background-image: $backgroundImage;
         }
     }
 
