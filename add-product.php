@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    if($category = 'bolsos'){
+    if($category = "bolsos"){
         // Insertar los datos en la base de datos
         try {
             // Preparar la consulta SQL para insertar el producto

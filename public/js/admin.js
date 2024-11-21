@@ -8,6 +8,28 @@ document.addEventListener('DOMContentLoaded', () => {
     openModals();
     //Cerrar modales
     closeAllSection();
+
+    //FUNCIONALIDAD FORMULARIO AGREGAR PRODUCTOS
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const prodName = document.querySelector('#productName').value;
+        const price = document.querySelector('#price').value;
+
+        // Enviar los datos al servidor
+        fetch('/add-product.php', {
+            method: 'POST',
+            body: new FormData(form)
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log('Éxito');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
 })
 
 //Abrir modales

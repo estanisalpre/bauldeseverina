@@ -64,7 +64,7 @@ try {
         <!--AGREGAR PRODUCTOS-->
         <section id="addProduct">
             <h2>Agrega un nuevo producto</h2>
-            <form action="/add-product.php" method="POST">
+            <form class="form" action="/add-product.php" method="POST">
                 <input type="file" name="productImg" id="productImg" required>
                 <input type="text" name="productName" id="productName" required placeholder="Nombre del producto">
                 <input type="number" name="productPrice" id="productPrice" required placeholder="Precio del producto">
