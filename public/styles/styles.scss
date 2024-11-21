@@ -532,7 +532,6 @@ main{
         right: 0px;
         z-index: 12000;
         display: none;
-        filter: blur(5px);
 
         form{
             @include displayFlex();
@@ -556,7 +555,7 @@ main{
                 font-family: $afacadFont;
             }
             button{
-                @include buttonDesign(90%);
+                @include buttonDesign(40%);
                 box-shadow: none;
                 margin-top: 0px;
             }
