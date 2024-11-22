@@ -317,7 +317,7 @@ main{
         justify-content: flex-start;
 
         div{
-            @include sizes($height: 700px);
+            @include sizes(80%,$height: 500px);
             @include displayFlex($justifyContent:space-between);
         }
         .firstCategory, .secondCategory, .thirdCategory, .fourthCategory,
