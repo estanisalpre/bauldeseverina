@@ -125,10 +125,6 @@
                     </ul>
                 </div>
             </div>
-             <!--CONTACTO-->
-             <section id="contact">
-                
-            </section>
         </section>
         <!--LOGIN-->
         <section id="sectionForm" class="sectionForm">
