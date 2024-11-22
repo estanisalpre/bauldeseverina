@@ -345,7 +345,7 @@ main{
             border-bottom: 1px dashed $shadow;
 
             div{
-                @include displayFlex($flexDirection:row);
+                @include displayFlex($flexDirection:row, $justifyContent: space-between);
                 @include sizes($height: 100px);
                 gap: 5px;
 
@@ -364,7 +364,7 @@ main{
                 }
             }
             .product-buttons{
-                width: 250px;
+                width: 200px;
                 @include displayFlex();
 
                 button{
