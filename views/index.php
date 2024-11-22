@@ -109,9 +109,6 @@
             <div class="toBriefcaseSection">
                 <h3>¿Quieres ver el catálogo completo?</h3>
                 <button id="toBriefcase"><img src="/public/imgs/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
-            </div>
-             <!--CONTACTO-->
-             <section id="contact">
                 <h2>¡Contáctanos!</h2>
                 <div>
                     <ul>
@@ -127,6 +124,10 @@
                         <li>📍 Medellín, CO</li>  
                     </ul>
                 </div>
+            </div>
+             <!--CONTACTO-->
+             <section id="contact">
+                
             </section>
         </section>
         <!--LOGIN-->
