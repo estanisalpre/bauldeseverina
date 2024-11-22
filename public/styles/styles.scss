@@ -321,9 +321,7 @@ main{
             @include sizes(45%,$height: 300px);
             @include displayFlex();
         }
-        .firstCategory, .secondCategory, .thirdCategory, .fourthCategory,
-        .fifthCategory, .sixthCategory, .seventhCategory, .eigthCategory, .ninethCategory,
-        .tenCategory{
+        .secondCategory,  .fourthCategory, .fifthCategory, .seventhCategory{
             background-image: url(/public/imgs/categories/bolsosCategory.jpeg);
             background-size: cover;
             background-repeat: no-repeat;
@@ -412,10 +410,14 @@ main{
             @include displayFlex($flexDirection:row);
 
             button{
-                @include buttonDesign($width: 90%);
+                @include buttonDesign($width: 100%);
                 margin-top: 25px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
                 height: 30px;
-                font-size: $md;
+                font-weight: $bold;
+                font-size: $lg;
+                border: 0px;
             }
             button:hover{
                 transform: scale(1.02);
