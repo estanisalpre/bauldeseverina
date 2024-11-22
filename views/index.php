@@ -83,25 +83,25 @@
             <div class="fourthCategory">
                 <div><h3>Tenis</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
+                    <button id="toBriefcase"><img src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
                 </div> 
             </div>
             <div class="fifthCategory">
                 <div><h3>Vestidos & Faldas</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
+                    <button id="toBriefcase"><img src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
                 </div> 
             </div>
             <div class="seventhCategory">
                 <div><h3>Hoodies & Sueters</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
+                    <button id="toBriefcase"><img src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
                 </div> 
             </div>
             <div class="secondCategory">
                 <div><h3>Pantalones & Jeans</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
+                    <button id="toBriefcase"><img src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
                 </div> 
             </div>
             <!--CLIENTES FELICES-->

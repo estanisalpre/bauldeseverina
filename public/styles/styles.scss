@@ -321,7 +321,7 @@ main{
             @include sizes(45%,$height: 300px);
             @include displayFlex();
         }
-        .secondCategory,  .fourthCategory, .fifthCategory, .seventhCategory{
+        .secondCategory, .fourthCategory, .fifthCategory, .seventhCategory{
             background-image: url(/public/imgs/categories/bolsosCategory.jpeg);
             background-size: cover;
             background-repeat: no-repeat;
@@ -346,21 +346,18 @@ main{
                     position: relative;
                     font-weight: $noBold;
                     background-image: $secondBackgroundImage;
-                    
+
+                    img{
+                        @include sizes(20px,auto);
+                    }
                 }
             }
         }
         .secondCategory{
             background-image: url(/public/imgs/categories/pantalonesJeansCategory.jpeg);
         }
-        .thirdCategory{
-            background-image: url(/public/imgs/categories/blusasTopsCategory.jpeg);
-        }
         .fourthCategory{
             background-image: url(/public/imgs/categories/tenisCategory.jpeg);
-        }
-        .fifthCategory{
-            background-image: url(/public/imgs/categories/vestidosCategory.jpeg);
         }
         .toBriefcaseSection{
             @include sizes(100%,250px);
@@ -390,20 +387,8 @@ main{
                 transform: scale(1.05);
             }
         }
-        .sixthCategory{
-            background-image: url(/public/imgs/categories/ropaDeportivaCategory.jpeg);
-        }
         .seventhCategory{
             background-image: url(/public/imgs/categories/hoodiesSueterCategory.jpeg);
-        }
-        .eigthCategory{
-            background-image: url(/public/imgs/categories/zapatosTaconesCategory.jpeg);
-        }
-        .ninethCategory{
-            background-image: url(/public/imgs/categories/abrigosCategory.jpeg);
-        }
-        .tenCategory{
-            background-image: url(/public/imgs/categories/abrigosCategory.jpeg);
         }
         #buttonSection{
             @include sizes(100%,40px);
