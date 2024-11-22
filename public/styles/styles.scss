@@ -430,10 +430,10 @@ main{
                         @include displayFlex($flexDirection:row);
                         gap: 15px;
                         padding: 10px;
-                        
+
                         li{
                             justify-content: flex-start;
-                            font-size: $lg;
+                            font-size: $md;
                         }
                     }
                 }

@@ -481,7 +481,7 @@ main #categoriesSection .toBriefcaseSection .contactSection .numeroCiudad ul {
 }
 main #categoriesSection .toBriefcaseSection .contactSection .numeroCiudad ul li {
   justify-content: flex-start;
-  font-size: 23px;
+  font-size: 16px;
 }
 main #categoriesSection .seventhCategory {
   background-image: url(/public/imgs/categories/hoodiesSueterCategory.jpeg);
