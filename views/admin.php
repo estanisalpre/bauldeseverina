@@ -46,6 +46,7 @@ try {
         <header>
             <img id="toBriefcase" src="/public/imgs/icons/catalogo.png" alt="Ícono catálogo de productos">
             <img id="logout" src="/public/imgs/icons/logout.png" alt="Ícono para cerrar sesión">
+            <img id="transportButton" src="/public/imgs/icons/envios.png" alt="Ícono para envíos a nivel nacional">
         </header>
     </nav>
     <!--MAIN / CONTENIDO PRINCIPAL-->
@@ -123,6 +124,15 @@ try {
                 <input type="checkbox" id="editProductAvailable" />
 
                 <button type="button" id="submitEditButton">Actualizar Producto</button>
+            </form>
+        </div>
+        <!--TRANSPORT MODAL-->
+        <div id="editTransport" style="display: none;">
+            <h2>Edita el costo de envío</h2>
+            <form id="editProductForm">
+                <label for="editTransportValue">Precio del transporte</label>
+                <input type="number" id="editTransportValue" step="0.01" />
+                <button type="button" id="submitTransportButton">Actualizar Producto</button>
             </form>
         </div>
     </main>

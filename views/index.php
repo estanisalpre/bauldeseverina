@@ -1,3 +1,13 @@
+<?php
+    include 'db.php';
+
+    //Transporte
+    $queryTransport = "SELECT transportPrice FROM transport";
+    $stmtTransport = $pdo->prepare($queryTransport);
+    $stmtTransport->execute();
+    $productosTransport = $stmtTransport->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
