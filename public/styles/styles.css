@@ -362,7 +362,7 @@ main #categoriesSection .fourthCategory {
 }
 main #categoriesSection .toBriefcaseSection {
   width: 100%;
-  height: 350px;
+  height: 400px;
   display: flex;
   justify-content: center;
   flex-direction: column;

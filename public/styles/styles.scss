@@ -356,7 +356,7 @@ main{
         }
         //Contenedor de catalogo
         .toBriefcaseSection{
-            @include sizes(100%,350px);
+            @include sizes(100%,400px);
             @include displayFlex();
             gap: 15px;
             background-image: url(/public/imgs/backgroundOpacity.png);
