@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     navFunctionality();
     //Funcionalidad de modales
     openModals();
-    //Cerrar modales
-    closeAllSection();
 
     //FUNCIONALIDAD FORMULARIO AGREGAR PRODUCTOS
     const form = document.querySelector('form');
@@ -156,24 +154,6 @@ function openModals(){
             standarSection.style.display = 'none'
             addProduct.style.display = 'none'
             productList.style.display = 'flex'
-        })
-    }
-}
-
-//Función para cerrar todos los sections
-function closeAllSection(){
-    const cancelButton = document.querySelectorAll('.cancelButton')
-    const productList = document.getElementById('productList')
-    const addProduct = document.getElementById('addProduct')
-    const standarSection = document.getElementById('standarSection')
-
-    if(cancelButton){
-        cancelButton.forEach(function(button){
-            button.addEventListener('click', () => {
-                productList.style.display = 'none'
-                addProduct.style.display = 'none'
-                standarSection.style.display = 'flex'
-            })
         })
     }
 }

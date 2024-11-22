@@ -109,7 +109,6 @@ try {
                     echo "<p>No hay productos disponibles.</p>";
                 }
             ?>
-            <button id="cancelButton" class="cancelButton">Cancelar</button>
         </section>
         <!--EDIT MODAL-->
         <div id="editForm" style="display: none;">
