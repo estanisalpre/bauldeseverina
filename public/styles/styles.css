@@ -350,6 +350,7 @@ main #categoriesSection .fifthCategory div h3, main #categoriesSection .sixthCat
   flex-direction: column;
   align-items: center;
   font-size: 16px;
+  margin-top: -5px;
   height: 30px;
   position: relative;
   font-weight: 400;
