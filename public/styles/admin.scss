@@ -262,7 +262,7 @@ main{
         }
     }
     #addProduct, #productList{
-        @include sizes($height: 600px);
+        @include sizes($height: 90%);
         @include displayFlex($justifyContent: space-between);
         display: none;
 

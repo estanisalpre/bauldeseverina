@@ -104,7 +104,6 @@
                     <button id="toBriefcase"><img id="moreImg" src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
                 </div> 
             </div>
-            <!--CLIENTES FELICES-->
             <!--CATALOGO-->
             <div class="toBriefcaseSection">
                 <div class="catalogoSection">
