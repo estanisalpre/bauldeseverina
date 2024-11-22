@@ -322,7 +322,8 @@ main{
             @include displayFlex();
         }
         .firstCategory, .secondCategory, .thirdCategory, .fourthCategory,
-        .fifthCategory, .sixthCategory, .seventhCategory, .eigthCategory, .ninethCategory{
+        .fifthCategory, .sixthCategory, .seventhCategory, .eigthCategory, .ninethCategory,
+        .tenCategory{
             background-image: url(/public/imgs/categories/bolsosCategory.jpeg);
             background-size: cover;
             background-repeat: no-repeat;
@@ -401,6 +402,9 @@ main{
             background-image: url(/public/imgs/categories/zapatosTaconesCategory.jpeg);
         }
         .ninethCategory{
+            background-image: url(/public/imgs/categories/abrigosCategory.jpeg);
+        }
+        .tenCategory{
             background-image: url(/public/imgs/categories/abrigosCategory.jpeg);
         }
         #buttonSection{

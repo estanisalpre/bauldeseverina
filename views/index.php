@@ -154,13 +154,19 @@
             <div class="eigthCategory">
                 <div><h3>Sandalias & Tacones</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">Ver Categoría Completa</button>
+                    <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
             <div class="ninethCategory">
                 <div><h3>Chaquetas & Abrigos</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">Ver Categoría Completa</button>
+                    <button id="toBriefcase">VER MÁS</button>
+                </div> 
+            </div>
+            <div class="tenCategory">
+                <div><h3>¡Más para ti!</h3></div>
+                <div id="buttonSection">
+                    <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
         </section>
