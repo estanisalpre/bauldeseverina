@@ -314,7 +314,7 @@ main{
     #categoriesSection{
         @include sizes();
         @include displayFlex($flexDirection:row);
-        justify-content: flex-start;
+        //justify-content: flex-start;
         gap: 25px;
         flex-wrap: wrap;
 
