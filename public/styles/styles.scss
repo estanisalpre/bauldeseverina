@@ -315,6 +315,7 @@ main{
         @include sizes();
         @include displayFlex();
         justify-content: flex-start;
+        gap: 25px;
 
         div{
             @include sizes(80%,$height: 500px);
