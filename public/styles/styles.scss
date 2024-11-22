@@ -329,18 +329,17 @@ main{
             background-repeat: no-repeat;
             background-position: center;
             cursor: default;
+            @include displayFlex($justifyContent: space-between);
 
             div{
                 @include sizes(100%,40px);
                 @include displayFlex();
-                margin-top: 100px;
-                align-items: flex-start;
 
                 h3{
                     @include sizes(65%);
                     @include displayFlex();
                     align-items: flex-start;
-                    padding-left: 10px;
+                    //padding-left: 10px;
                     font-size: $slg;
                     font-weight: $noBold;
                     border-top-right-radius: 15px;

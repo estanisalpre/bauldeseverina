@@ -325,6 +325,10 @@ main #categoriesSection .fifthCategory, main #categoriesSection .sixthCategory, 
   background-repeat: no-repeat;
   background-position: center;
   cursor: default;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 main #categoriesSection .firstCategory div, main #categoriesSection .secondCategory div, main #categoriesSection .thirdCategory div, main #categoriesSection .fourthCategory div,
 main #categoriesSection .fifthCategory div, main #categoriesSection .sixthCategory div, main #categoriesSection .seventhCategory div, main #categoriesSection .eigthCategory div, main #categoriesSection .ninethCategory div {
@@ -334,8 +338,6 @@ main #categoriesSection .fifthCategory div, main #categoriesSection .sixthCatego
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
-  align-items: flex-start;
 }
 main #categoriesSection .firstCategory div h3, main #categoriesSection .secondCategory div h3, main #categoriesSection .thirdCategory div h3, main #categoriesSection .fourthCategory div h3,
 main #categoriesSection .fifthCategory div h3, main #categoriesSection .sixthCategory div h3, main #categoriesSection .seventhCategory div h3, main #categoriesSection .eigthCategory div h3, main #categoriesSection .ninethCategory div h3 {
@@ -346,7 +348,6 @@ main #categoriesSection .fifthCategory div h3, main #categoriesSection .sixthCat
   flex-direction: column;
   align-items: center;
   align-items: flex-start;
-  padding-left: 10px;
   font-size: 28px;
   font-weight: 400;
   border-top-right-radius: 15px;

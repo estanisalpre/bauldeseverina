@@ -83,19 +83,19 @@
             <div class="firstCategory">
                 <div><h3>Bolsos</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">Ver Categoría Completa</button>
+                    <button id="toBriefcase">Categoría Completa</button>
                 </div> 
             </div>
             <div class="secondCategory">
                 <div><h3>Pantalones & Jeans</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">Ver Categoría Completa</button>
+                    <button id="toBriefcase">Categoría Completa</button>
                 </div> 
             </div>
             <div class="thirdCategory">
                 <div><h3>Blusas</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">Ver Categoría Completa</button>
+                    <button id="toBriefcase">Categoría Completa</button>
                 </div> 
             </div>
             <div class="toBriefcaseSection">
@@ -105,26 +105,26 @@
             <div class="fourthCategory">
                 <div><h3>Tenis</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">Ver Categoría Completa</button>
+                    <button id="toBriefcase">Categoría Completa</button>
                 </div> 
             </div>
             <div class="fifthCategory">
                 <div><h3>Vestidos & Faldas</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">Ver Categoría Completa</button>
+                    <button id="toBriefcase">Categoría Completa</button>
                 </div> 
             </div>
             <!--CLIENTES FELICES-->
             <div class="sixthCategory">
                 <div><h3>Ropa deportiva</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">Ver Categoría Completa</button>
+                    <button id="toBriefcase">Categoría Completa</button>
                 </div> 
             </div>
             <div class="seventhCategory">
                 <div><h3>Hoodies & Sueters</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase">Ver Categoría Completa</button>
+                    <button id="toBriefcase">Categoría Completa</button>
                 </div> 
             </div>
             <!--CONTACTO-->
