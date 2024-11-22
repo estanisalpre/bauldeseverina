@@ -164,7 +164,7 @@
                 </div> 
             </div>
             <div class="tenCategory">
-                <div><h3>Chaquetas & Abrigos</h3></div>
+                <div><h3>¡Más para ti!</h3></div>
                 <div id="buttonSection">
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
