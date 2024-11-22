@@ -336,9 +336,10 @@ main{
                 @include displayFlex();
 
                 h3{
-                    @include sizes(65%);
+                    @include sizes(100%);
                     @include displayFlex();
-                    font-size: $lg;
+                    font-size: $md;
+                    height: 30px;
                     font-weight: $noBold;
                     border-bottom-right-radius: 15px;
                     border-bottom-left-radius: 15px;
