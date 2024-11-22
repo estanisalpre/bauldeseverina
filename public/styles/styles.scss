@@ -342,6 +342,8 @@ main{
                     font-size: $md;
                     margin-top: -10px;
                     height: 30px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
                     position: relative;
                     font-weight: $noBold;
                     background-image: $secondBackgroundImage;
