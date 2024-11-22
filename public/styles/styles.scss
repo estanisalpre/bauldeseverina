@@ -537,7 +537,7 @@ main{
 
 //Footer
 footer{
-    @include sizes($height: 300px);
+    @include sizes($height: 400px);
     @include displayFlex($flexDirection:row);
     z-index: 10999;
     box-shadow: 0px 0px 20px 1px $shadow;
