@@ -319,7 +319,7 @@ main{
 
         div{
             @include sizes(40%,$height: 300px);
-            @include displayFlex($justifyContent:space-between);
+            @include displayFlex();
         }
         .firstCategory, .secondCategory, .thirdCategory, .fourthCategory,
         .fifthCategory, .sixthCategory, .seventhCategory, .eigthCategory, .ninethCategory{
@@ -327,6 +327,7 @@ main{
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            overflow: hidden;
             cursor: default;
             @include displayFlex($justifyContent: space-between);
             border-radius: 5px;

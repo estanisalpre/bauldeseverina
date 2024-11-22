@@ -314,7 +314,7 @@ main #categoriesSection div {
   width: 40%;
   height: 300px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
@@ -324,6 +324,7 @@ main #categoriesSection .fifthCategory, main #categoriesSection .sixthCategory, 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
   cursor: default;
   display: flex;
   justify-content: space-between;
