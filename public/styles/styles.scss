@@ -322,7 +322,7 @@ main{
         }
         .firstCategory, .secondCategory, .thirdCategory, .fourthCategory,
         .fifthCategory, .sixthCategory, .seventhCategory, .eigthCategory, .ninethCategory{
-            background-image: url(/src/assets/img/categories/bolsosCategory.jpeg);
+            background-image: url(/public/imgs/categories/bolsosCategory.jpeg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -335,7 +335,7 @@ main{
                 align-items: flex-start;
 
                 h3{
-                    @include sizes(60%);
+                    @include sizes(65%);
                     @include displayFlex();
                     align-items: flex-start;
                     padding-left: 10px;
@@ -349,22 +349,22 @@ main{
             }
         }
         .secondCategory{
-            background-image: url(/src/assets/img/categories/pantalonesJeansCategory.jpeg);
+            background-image: url(/public/imgs/categories/pantalonesJeansCategory.jpeg);
         }
         .thirdCategory{
-            background-image: url(/src/assets/img/categories/blusasTopsCategory.jpeg);
+            background-image: url(/public/imgs/categories/blusasTopsCategory.jpeg);
         }
         .fourthCategory{
-            background-image: url(/src/assets/img/categories/tenisCategory.jpeg);
+            background-image: url(/public/imgs/categories/tenisCategory.jpeg);
         }
         .fifthCategory{
-            background-image: url(/src/assets/img/categories/vestidosCategory.jpeg);
+            background-image: url(/public/imgs/categories/vestidosCategory.jpeg);
         }
         .toBriefcaseSection{
             @include sizes(100%,250px);
             @include displayFlex();
             gap: 5px;
-            background-image: url(/src/assets/img/backgroundOpacity.png);
+            background-image: url(/public/imgs/backgroundOpacity.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -389,16 +389,16 @@ main{
             }
         }
         .sixthCategory{
-            background-image: url(/src/assets/img/categories/ropaDeportivaCategory.jpeg);
+            background-image: url(/public/imgs/categories/ropaDeportivaCategory.jpeg);
         }
         .seventhCategory{
-            background-image: url(/src/assets/img/categories/hoodiesSueterCategory.jpeg);
+            background-image: url(/public/imgs/categories/hoodiesSueterCategory.jpeg);
         }
         .eigthCategory{
-            background-image: url(/src/assets/img/categories/zapatosTaconesCategory.jpeg);
+            background-image: url(/public/imgs/categories/zapatosTaconesCategory.jpeg);
         }
         .ninethCategory{
-            background-image: url(/src/assets/img/categories/abrigosCategory.jpeg);
+            background-image: url(/public/imgs/categories/abrigosCategory.jpeg);
         }
         #buttonSection{
             @include sizes(100%,80px);
@@ -419,7 +419,7 @@ main{
         #contact{
             @include sizes($height: 280px);
             @include displayFlex();
-            background-image: url(/src/assets/img/backgroundOpacity.png);
+            background-image: url(/public/imgs/backgroundOpacity.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
