@@ -365,61 +365,70 @@ main{
             background-size: cover;
             z-index: 10000;
 
-            h3{
-                font-size: $lg;
-            }
-            
-            button{
-                @include buttonDesign(70%);
-                box-shadow: none;
-                @include displayFlex($flexDirection:row);
-
-                img{
-                    @include sizes(30px,auto);
-                }
-            }
-            button:hover{
-                transform: scale(1.05);
-            }
-            h2{
-                @include sizes($height: 50px);
-                @include displayFlex();
-            }
-            div{
+            .catalogoSection{
                 @include sizes();
                 @include displayFlex();
-                padding: 2px;
-                margin-top: 30px;
-
-                ul{
-                    @include sizes($height: 60px);
-                    @include displayFlex($flexDirection:row, $justifyContent: space-around);
-                    align-items: flex-end;
+                
+                h3{
+                    font-size: $lg;
+                }
+                
+                button{
+                    @include buttonDesign(70%);
+                    box-shadow: none;
+                    @include displayFlex($flexDirection:row);
     
-                    li{
-                        list-style: none;
-                        color: $darkFontColor;
-                        @include displayFlex();
-                        @include sizes(100%);
-                        justify-content: flex-end;
-
-                        img{
-                            @include sizes(60px,auto);
-                            transition: all 0.3s ease;
-                            cursor: pointer;
-                        }
-                        img:hover{
-                            transform: scale(1.05)
+                    img{
+                        @include sizes(30px,auto);
+                    }
+                }
+                button:hover{
+                    transform: scale(1.05);
+                }
+            }
+            .contactSection{
+                @include displayFlex();
+                @include sizes();
+                h2{
+                    @include sizes($height: 50px);
+                    @include displayFlex();
+                }
+                div{
+                    @include sizes();
+                    @include displayFlex();
+                    padding: 2px;
+                    margin-top: 30px;
+    
+                    ul{
+                        @include sizes($height: 60px);
+                        @include displayFlex($flexDirection:row, $justifyContent: space-around);
+                        align-items: flex-end;
+        
+                        li{
+                            list-style: none;
+                            color: $darkFontColor;
+                            @include displayFlex();
+                            @include sizes(100%);
+                            justify-content: flex-end;
+    
+                            img{
+                                @include sizes(60px,auto);
+                                transition: all 0.3s ease;
+                                cursor: pointer;
+                            }
+                            img:hover{
+                                transform: scale(1.05)
+                            }
                         }
                     }
                 }
-            }
-            div ul:nth-child(2){
-                height: 40px;
-
-                li{
-                    justify-content: flex-start;
-                    font-size: $lg;
+                div ul:nth-child(2){
+                    height: 40px;
+    
+                    li{
+                        justify-content: flex-start;
+                        font-size: $lg;
+                    }
                 }
             }
         }

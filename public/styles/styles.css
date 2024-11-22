@@ -374,10 +374,18 @@ main #categoriesSection .toBriefcaseSection {
   background-size: cover;
   z-index: 10000;
 }
-main #categoriesSection .toBriefcaseSection h3 {
+main #categoriesSection .toBriefcaseSection .catalogoSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main #categoriesSection .toBriefcaseSection .catalogoSection h3 {
   font-size: 23px;
 }
-main #categoriesSection .toBriefcaseSection button {
+main #categoriesSection .toBriefcaseSection .catalogoSection button {
   padding: 5px;
   border: 1px solid #353535;
   border-radius: 30px;
@@ -397,14 +405,22 @@ main #categoriesSection .toBriefcaseSection button {
   flex-direction: row;
   align-items: center;
 }
-main #categoriesSection .toBriefcaseSection button img {
+main #categoriesSection .toBriefcaseSection .catalogoSection button img {
   width: 30px;
   height: auto;
 }
-main #categoriesSection .toBriefcaseSection button:hover {
+main #categoriesSection .toBriefcaseSection .catalogoSection button:hover {
   transform: scale(1.05);
 }
-main #categoriesSection .toBriefcaseSection h2 {
+main #categoriesSection .toBriefcaseSection .contactSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+main #categoriesSection .toBriefcaseSection .contactSection h2 {
   width: 100%;
   height: 50px;
   display: flex;
@@ -412,7 +428,7 @@ main #categoriesSection .toBriefcaseSection h2 {
   flex-direction: column;
   align-items: center;
 }
-main #categoriesSection .toBriefcaseSection div {
+main #categoriesSection .toBriefcaseSection .contactSection div {
   width: 100%;
   height: 100%;
   display: flex;
@@ -422,7 +438,7 @@ main #categoriesSection .toBriefcaseSection div {
   padding: 2px;
   margin-top: 30px;
 }
-main #categoriesSection .toBriefcaseSection div ul {
+main #categoriesSection .toBriefcaseSection .contactSection div ul {
   width: 100%;
   height: 60px;
   display: flex;
@@ -431,7 +447,7 @@ main #categoriesSection .toBriefcaseSection div ul {
   align-items: center;
   align-items: flex-end;
 }
-main #categoriesSection .toBriefcaseSection div ul li {
+main #categoriesSection .toBriefcaseSection .contactSection div ul li {
   list-style: none;
   color: #353535;
   display: flex;
@@ -442,19 +458,19 @@ main #categoriesSection .toBriefcaseSection div ul li {
   height: 100%;
   justify-content: flex-end;
 }
-main #categoriesSection .toBriefcaseSection div ul li img {
+main #categoriesSection .toBriefcaseSection .contactSection div ul li img {
   width: 60px;
   height: auto;
   transition: all 0.3s ease;
   cursor: pointer;
 }
-main #categoriesSection .toBriefcaseSection div ul li img:hover {
+main #categoriesSection .toBriefcaseSection .contactSection div ul li img:hover {
   transform: scale(1.05);
 }
-main #categoriesSection .toBriefcaseSection div ul:nth-child(2) {
+main #categoriesSection .toBriefcaseSection .contactSection div ul:nth-child(2) {
   height: 40px;
 }
-main #categoriesSection .toBriefcaseSection div ul:nth-child(2) li {
+main #categoriesSection .toBriefcaseSection .contactSection div ul:nth-child(2) li {
   justify-content: flex-start;
   font-size: 23px;
 }
