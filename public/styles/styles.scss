@@ -340,7 +340,7 @@ main{
                     @include displayFlex();
                     align-items: flex-start;
                     //padding-left: 10px;
-                    font-size: $slg;
+                    font-size: $lg;
                     font-weight: $noBold;
                     border-top-right-radius: 15px;
                     border-bottom-right-radius: 15px;
@@ -402,17 +402,17 @@ main{
             background-image: url(/public/imgs/categories/abrigosCategory.jpeg);
         }
         #buttonSection{
-            @include sizes(100%,80px);
+            @include sizes(100%,40px);
             @include displayFlex($flexDirection:row);
-            gap: 10px;
-            padding: 20px;
 
             button{
-                @include buttonDesign($width: 250px);
-                margin-bottom: 25px;
+                @include buttonDesign($width: 90%);
+                margin-top: 25px;
+                height: 30px;
+                font-size: $md;
             }
             button:hover{
-                transform: scale(1.02)
+                transform: scale(1.02);
             }
         }
 
