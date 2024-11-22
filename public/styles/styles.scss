@@ -330,6 +330,7 @@ main{
             cursor: default;
             @include displayFlex($justifyContent: space-between);
             border-radius: 5px;
+            box-shadow: 0px 0px 30px 1px $shadow;
 
             div{
                 @include sizes(100%,40px);
@@ -341,8 +342,6 @@ main{
                     font-size: $md;
                     height: 30px;
                     font-weight: $noBold;
-                    border-bottom-right-radius: 15px;
-                    border-bottom-left-radius: 15px;
                     background-image: $secondBackgroundImage;
                     
                 }
