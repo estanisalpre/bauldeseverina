@@ -83,7 +83,7 @@
             <div class="fourthCategory">
                 <div><h3>Tenis</h3></div>
                 <div id="buttonSection">
-                    <button id="toBriefcase"><img src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
+                    <button id="toBriefcase"><img id="moreImg" src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
                 </div> 
             </div>
             <div class="fifthCategory">
