@@ -151,19 +151,12 @@
     <!--FOOTER-->
     <footer>
         <img src="/public/imgs/logos/logo.png" alt="El Baul de Severina Logo">
-        <div class="socialMedia">
-            <h3>¡Síguenos!</h3>
-            <img src="/public/imgs/icons/instagram.png" alt="Instagram Icon">
-            <img src="/public/imgs/icons/facebook.png" alt="Facebook Icon">
-        </div>
         <div>
             <ul>
+                <span id="toIndex">Inicio</span>
                 <span id="toBriefcase">Catálogo</span>
                 <span id="toContact">Contacto</span>
-            </ul>
-            <ul>
-                <li>📱 +57 301 2397022</li>
-                <li>📍 Medellín, CO</li>
+                <span id="toContact">Sobre Nosotros</span>
             </ul>
         </div>
     </footer>
