@@ -337,20 +337,14 @@ main{
 
                 h3{
                     @include sizes(100%);
-                    @include displayFlex($flexDirection:row);
-                    gap: 5px;
+                    @include displayFlex();
                     font-size: $md;
                     margin-top: -13px;
                     height: 30px;
                     border-top-left-radius: 5px;
                     border-top-right-radius: 5px;
-                    position: relative;
                     font-weight: $noBold;
                     background-image: $secondBackgroundImage;
-
-                    #moreImg{
-                        @include sizes(20px,auto);
-                    }
                 }
             }
         }
@@ -397,6 +391,8 @@ main{
 
             button{
                 @include buttonDesign($width: 100%);
+                @include displayFlex($flexDirection:row);
+                gap: 5px;
                 margin-top: 12px;
                 border-radius: 0px;
                 border-bottom-left-radius: 5px;
@@ -405,6 +401,10 @@ main{
                 font-weight: $bold;
                 font-size: $md;
                 border: 0px;
+
+                #moreImg{
+                    @include sizes(20px,auto);
+                }
             }
             button:hover{
                 transform: scale(1.02);

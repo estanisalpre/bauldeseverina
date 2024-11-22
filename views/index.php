@@ -108,7 +108,7 @@
             <!--CATALOGO-->
             <div class="toBriefcaseSection">
                 <h3>¿Quieres ver el catálogo completo?</h3>
-                <button id="toBriefcase"><img id="moreImg" src="/public/imgs/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
+                <button id="toBriefcase"><img src="/public/imgs/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
             </div>
              <!--CONTACTO-->
              <section id="contact">

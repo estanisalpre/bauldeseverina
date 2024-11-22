@@ -344,21 +344,15 @@ main #categoriesSection .secondCategory div h3, main #categoriesSection .fourthC
   height: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 5px;
   font-size: 16px;
   margin-top: -13px;
   height: 30px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  position: relative;
   font-weight: 400;
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-}
-main #categoriesSection .secondCategory div h3 #moreImg, main #categoriesSection .fourthCategory div h3 #moreImg, main #categoriesSection .fifthCategory div h3 #moreImg, main #categoriesSection .seventhCategory div h3 #moreImg {
-  width: 20px;
-  height: auto;
 }
 main #categoriesSection .secondCategory {
   background-image: url(/public/imgs/categories/pantalonesJeansCategory.jpeg);
@@ -436,6 +430,11 @@ main #categoriesSection #buttonSection button {
   color: #353535;
   cursor: pointer;
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
   margin-top: 12px;
   border-radius: 0px;
   border-bottom-left-radius: 5px;
@@ -444,6 +443,10 @@ main #categoriesSection #buttonSection button {
   font-weight: 600;
   font-size: 16px;
   border: 0px;
+}
+main #categoriesSection #buttonSection button #moreImg {
+  width: 20px;
+  height: auto;
 }
 main #categoriesSection #buttonSection button:hover {
   transform: scale(1.02);
