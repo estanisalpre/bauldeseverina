@@ -434,7 +434,7 @@ main #categoriesSection #buttonSection button {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
   margin-top: 12px;
   border-radius: 0px;
   border-bottom-left-radius: 5px;
@@ -445,7 +445,7 @@ main #categoriesSection #buttonSection button {
   border: 0px;
 }
 main #categoriesSection #buttonSection button #moreImg {
-  width: 20px;
+  width: 15px;
   height: auto;
 }
 main #categoriesSection #buttonSection button:hover {
