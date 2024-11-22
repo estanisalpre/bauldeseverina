@@ -367,13 +367,10 @@ main #categoriesSection .toBriefcaseSection {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  background-image: url(/public/imgs/backgroundOpacity.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 10000;
-  margin-top: 50px;
 }
 main #categoriesSection .toBriefcaseSection .catalogoSection {
   width: 100%;

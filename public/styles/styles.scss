@@ -358,13 +358,11 @@ main{
         .toBriefcaseSection{
             @include sizes(100%,400px);
             @include displayFlex();
-            gap: 15px;
-            background-image: url(/public/imgs/backgroundOpacity.png);
+            //background-image: url(/public/imgs/backgroundOpacity.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             z-index: 10000;
-            margin-top: 50px;
 
             .catalogoSection{
                 @include sizes();
