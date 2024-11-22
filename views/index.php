@@ -127,6 +127,12 @@
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
+            <div class="eigthCategory">
+                <div><h3>Sandalias & Tacones</h3></div>
+                <div id="buttonSection">
+                    <button id="toBriefcase">VER MÁS</button>
+                </div> 
+            </div>
             <!--CONTACTO-->
             <section id="contact">
                 <h2>¡Contáctanos!</h2>
@@ -151,13 +157,13 @@
                     </ul>
                 </div>
             </section>
-            <div class="eigthCategory">
-                <div><h3>Sandalias & Tacones</h3></div>
+            <div class="ninethCategory">
+                <div><h3>Chaquetas & Abrigos</h3></div>
                 <div id="buttonSection">
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
-            <div class="ninethCategory">
+            <div class="tenCategory">
                 <div><h3>Chaquetas & Abrigos</h3></div>
                 <div id="buttonSection">
                     <button id="toBriefcase">VER MÁS</button>
