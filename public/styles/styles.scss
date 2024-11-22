@@ -356,7 +356,7 @@ main{
         }
         //Contenedor de catalogo
         .toBriefcaseSection{
-            @include sizes(100%,400px);
+            @include sizes(100%,350px);
             @include displayFlex();
             gap: 15px;
             background-image: url(/public/imgs/backgroundOpacity.png);
@@ -368,7 +368,7 @@ main{
             .catalogoSection{
                 @include sizes();
                 @include displayFlex();
-                
+
                 h3{
                     font-size: $lg;
                 }
@@ -389,6 +389,7 @@ main{
             .contactSection{
                 @include displayFlex();
                 @include sizes();
+
                 h2{
                     @include sizes($height: 50px);
                     @include displayFlex();
@@ -397,7 +398,6 @@ main{
                     @include sizes();
                     @include displayFlex();
                     padding: 2px;
-                    margin-top: 30px;
     
                     ul{
                         @include sizes($height: 60px);
@@ -422,12 +422,19 @@ main{
                         }
                     }
                 }
-                div ul:nth-child(2){
+                .numeroCiudad{
                     height: 40px;
-    
-                    li{
-                        justify-content: flex-start;
-                        font-size: $lg;
+                    
+                    ul{
+                        @include sizes();
+                        @include displayFlex($flexDirection:row);
+                        gap: 15px;
+                        padding: 10px;
+                        
+                        li{
+                            justify-content: flex-start;
+                            font-size: $lg;
+                        }
                     }
                 }
             }

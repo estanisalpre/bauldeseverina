@@ -121,7 +121,7 @@
                             <li><img src="/public/imgs/icons/gmail.png" alt="Ícono de Correo Electrónico"></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="numeroCiudad">
                         <ul>
                             <li>📱 +57 301 2397022 </li>
                             <li>📍 Medellín, CO</li>  
