@@ -411,12 +411,13 @@ main{
 
             button{
                 @include buttonDesign($width: 100%);
-                margin-top: 25px;
+                margin-top: 12px;
+                border-radius: 0px;
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
                 height: 30px;
                 font-weight: $bold;
-                font-size: $lg;
+                font-size: $md;
                 border: 0px;
             }
             button:hover{
