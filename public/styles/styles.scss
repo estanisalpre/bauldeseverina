@@ -337,7 +337,8 @@ main{
 
                 h3{
                     @include sizes(100%);
-                    @include displayFlex();
+                    @include displayFlex($flexDirection:row);
+                    gap: 5px;
                     font-size: $md;
                     margin-top: -13px;
                     height: 30px;

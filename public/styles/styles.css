@@ -344,8 +344,9 @@ main #categoriesSection .secondCategory div h3, main #categoriesSection .fourthC
   height: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 5px;
   font-size: 16px;
   margin-top: -13px;
   height: 30px;
