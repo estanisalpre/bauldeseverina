@@ -45,8 +45,8 @@ try {
    <nav id="nav">
         <header>
             <img id="toBriefcase" src="/public/imgs/icons/catalogo.png" alt="Ícono catálogo de productos">
-            <img id="logout" src="/public/imgs/icons/logout.png" alt="Ícono para cerrar sesión">
             <img id="transportButton" src="/public/imgs/icons/envios.png" alt="Ícono para envíos a nivel nacional">
+            <img id="logout" src="/public/imgs/icons/logout.png" alt="Ícono para cerrar sesión">
         </header>
     </nav>
     <!--MAIN / CONTENIDO PRINCIPAL-->

@@ -5,7 +5,7 @@
     $queryTransport = "SELECT transportPrice FROM transport";
     $stmtTransport = $pdo->prepare($queryTransport);
     $stmtTransport->execute();
-    $productosTransport = $stmtTransport->fetchAll(PDO::FETCH_ASSOC);
+    $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +27,18 @@
     <!--NAV-->
     <nav id="nav">
         <div class="topNav">
-            <img src="/public/imgs/icons/envios.png" alt="Ícono carro de envíos"><p>Envío gratis a todo Colombia a partir de <span id="minAmount">$100,000</span></p>
+            <img src="/public/imgs/icons/envios.png" alt="Ícono carro de envíos">
+                <p>Envío gratis a todo Colombia a partir de 
+                    <span id="minAmount">
+                        <?php 
+                            if (!empty($precioTransport)) {
+                                echo "$" . htmlspecialchars($precioTransport['transportPrice']);
+                            } else {
+                                echo "00,00";
+                            }
+                        ?>
+                    </span>
+                </p>
         </div>
         <header>
             <div id="mobileHeader" class="mobileHeader">
