@@ -123,10 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const editTransport = document.getElementById('editTransport')
             const editTransportValue = document.getElementById("editTransportValue");
             const submitTransportButton = document.getElementById("submitTransportButton");
-
-            const transportValue = productElement.querySelector('p').textContent.replace('Precio: $', '');
-                
-            editTransportValue.value = transportValue;
             editTransport.style.display = 'block'
 
             // Enviar los datos al servidor para actualizar el producto
