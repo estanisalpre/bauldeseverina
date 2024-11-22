@@ -363,6 +363,7 @@ main{
             }
             .product-buttons{
                 width: 350px;
+                @include displayFlex();
 
                 button{
                     @include buttonDesign(80px);

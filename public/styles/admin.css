@@ -402,6 +402,10 @@ main #productList .product div img {
 }
 main #productList .product .product-buttons {
   width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 main #productList .product .product-buttons button {
   padding: 2px;

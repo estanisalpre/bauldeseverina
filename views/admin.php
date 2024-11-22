@@ -94,7 +94,6 @@ try {
                     foreach ($products as $product): ?>
                         <div class="product" data-id="<?= $product['id_producto']; ?>">
                             <div>
-                                <h2><?= htmlspecialchars($product['id_producto']); ?></h2>
                                 <h4><?= htmlspecialchars($product['productName']); ?></h4>
                                 <p>Precio: $<?= htmlspecialchars($product['productPrice']); ?></p>
                                 <img src="<?= htmlspecialchars($product['productImg']); ?>" alt="Imagen de <?= htmlspecialchars($product['productName']); ?>">
