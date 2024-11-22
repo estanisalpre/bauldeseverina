@@ -338,7 +338,7 @@ main{
             height: 20px;
         }
         .product{
-            @include sizes();
+            @include sizes($height:80%);
             @include displayFlex($flexDirection:row, $justifyContent: space-between);
             gap: 5px;
             padding-left: 5px;
