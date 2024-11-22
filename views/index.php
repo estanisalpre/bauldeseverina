@@ -80,24 +80,6 @@
         </section>
         <!--SECCIÓN DE CATEGORÍAS-->
         <section id="categoriesSection">
-            <div class="firstCategory">
-                <div><h3>Bolsos</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
-                </div> 
-            </div>
-            <div class="secondCategory">
-                <div><h3>Pantalones & Jeans</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
-                </div> 
-            </div>
-            <div class="thirdCategory">
-                <div><h3>Blusas</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
-                </div> 
-            </div>
             <div class="fourthCategory">
                 <div><h3>Tenis</h3></div>
                 <div id="buttonSection">
@@ -110,38 +92,19 @@
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
-            <!--CLIENTES FELICES-->
-            <div class="sixthCategory">
-                <div><h3>Ropa deportiva</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
-                </div> 
-            </div>
             <div class="seventhCategory">
                 <div><h3>Hoodies & Sueters</h3></div>
                 <div id="buttonSection">
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
-            <div class="eigthCategory">
-                <div><h3>Sandalias & Tacones</h3></div>
+            <div class="secondCategory">
+                <div><h3>Pantalones & Jeans</h3></div>
                 <div id="buttonSection">
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
-           
-            <div class="ninethCategory">
-                <div><h3>Chaquetas & Abrigos</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
-                </div> 
-            </div>
-            <div class="tenCategory">
-                <div><h3>¡Más para ti!</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
-                </div> 
-            </div>
+            <!--CLIENTES FELICES-->
             <!--CATALOGO-->
             <div class="toBriefcaseSection">
                 <h3>¿Quieres ver el catálogo completo?</h3>
