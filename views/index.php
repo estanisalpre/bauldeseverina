@@ -104,10 +104,6 @@
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
-            <div class="toBriefcaseSection">
-                <h3>¿Quieres ver el catálogo completo?</h3>
-                <button id="toBriefcase"><img src="/public/imgs/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
-            </div>
             <div class="fifthCategory">
                 <div><h3>Vestidos & Faldas</h3></div>
                 <div id="buttonSection">
@@ -133,30 +129,7 @@
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
-            <!--CONTACTO-->
-            <section id="contact">
-                <h2>¡Contáctanos!</h2>
-                <div>
-                    <ul>
-                        <li><img src="/public/imgs/icons/facebook.png" alt="Ícono de Facebook"></li>
-                        <li><img src="/public/imgs/icons/instagram.png" alt="Ícono de Instagram"></li>
-                        <li><img src="/public/imgs/icons/whatsapp.png" alt="Ícono de Whatsapp"></li>
-                        <li><img src="/public/imgs/icons/gmail.png" alt="Ícono de Correo Electrónico"></li>
-                    </ul>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Whatsapp</li>
-                        <li>Correo</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>📱 +57 301 2397022 </li>
-                        <li>📍 Medellín, CO</li>  
-                    </ul>
-                </div>
-            </section>
+           
             <div class="ninethCategory">
                 <div><h3>Chaquetas & Abrigos</h3></div>
                 <div id="buttonSection">
@@ -169,6 +142,29 @@
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
+            <!--CATALOGO-->
+            <div class="toBriefcaseSection">
+                <h3>¿Quieres ver el catálogo completo?</h3>
+                <button id="toBriefcase"><img src="/public/imgs/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
+            </div>
+             <!--CONTACTO-->
+             <section id="contact">
+                <h2>¡Contáctanos!</h2>
+                <div>
+                    <ul>
+                        <li><img src="/public/imgs/icons/facebook.png" alt="Ícono de Facebook"></li>
+                        <li><img src="/public/imgs/icons/instagram.png" alt="Ícono de Instagram"></li>
+                        <li><img src="/public/imgs/icons/whatsapp.png" alt="Ícono de Whatsapp"></li>
+                        <li><img src="/public/imgs/icons/gmail.png" alt="Ícono de Correo Electrónico"></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>📱 +57 301 2397022 </li>
+                        <li>📍 Medellín, CO</li>  
+                    </ul>
+                </div>
+            </section>
         </section>
         <!--LOGIN-->
         <section id="sectionForm" class="sectionForm">

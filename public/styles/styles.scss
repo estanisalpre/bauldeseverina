@@ -14,7 +14,7 @@ $shadow: #414141;
 $errorColor: rgb(245, 106, 106);
 $sm: 14px;
 $md: 16px;
-$lg: 22px;
+$lg: 23px;
 $slg: 28px;
 $noBold: 400;
 $bold: 600;
@@ -439,8 +439,6 @@ main{
                 @include sizes($height: 50px);
                 @include displayFlex();
                 background-image: $secondBackgroundImage;
-                border-bottom-left-radius: 60px;
-                border-bottom-right-radius: 60px;
             }
             div{
                 @include sizes();
@@ -461,7 +459,7 @@ main{
                         justify-content: flex-end;
 
                         img{
-                            @include sizes(70px,auto);
+                            @include sizes(60px,auto);
                             transition: all 0.3s ease;
                             cursor: pointer;
                         }
