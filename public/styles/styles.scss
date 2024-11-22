@@ -364,6 +364,7 @@ main{
             background-repeat: no-repeat;
             background-size: cover;
             z-index: 10000;
+            margin-top: 50px;
 
             .catalogoSection{
                 @include sizes();
