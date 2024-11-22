@@ -354,6 +354,7 @@ main{
         .fourthCategory{
             background-image: url(/public/imgs/categories/tenisCategory.jpeg);
         }
+        //Contenedor de catalogo
         .toBriefcaseSection{
             @include sizes(100%,250px);
             @include displayFlex();
@@ -370,7 +371,7 @@ main{
             }
             
             button{
-                @include buttonDesign(50%);
+                @include buttonDesign(70%);
                 box-shadow: none;
                 @include displayFlex($flexDirection:row);
 
