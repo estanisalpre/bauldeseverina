@@ -98,15 +98,15 @@
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
             </div>
-            <div class="toBriefcaseSection">
-                <h3>¿Quieres ver el catálogo completo?</h3>
-                <button id="toBriefcase"><img src="/public/imgs/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
-            </div>
             <div class="fourthCategory">
                 <div><h3>Tenis</h3></div>
                 <div id="buttonSection">
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
+            </div>
+            <div class="toBriefcaseSection">
+                <h3>¿Quieres ver el catálogo completo?</h3>
+                <button id="toBriefcase"><img src="/public/imgs/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
             </div>
             <div class="fifthCategory">
                 <div><h3>Vestidos & Faldas</h3></div>
@@ -159,12 +159,6 @@
             </div>
             <div class="ninethCategory">
                 <div><h3>Chaquetas & Abrigos</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase">VER MÁS</button>
-                </div> 
-            </div>
-            <div class="tenCategory">
-                <div><h3>¡Más para ti!</h3></div>
                 <div id="buttonSection">
                     <button id="toBriefcase">VER MÁS</button>
                 </div> 
