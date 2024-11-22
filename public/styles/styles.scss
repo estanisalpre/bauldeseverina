@@ -348,7 +348,7 @@ main{
                     font-weight: $noBold;
                     background-image: $secondBackgroundImage;
 
-                    img{
+                    #moreImg{
                         @include sizes(20px,auto);
                     }
                 }
