@@ -356,9 +356,9 @@ main{
         }
         //Contenedor de catalogo
         .toBriefcaseSection{
-            @include sizes(100%,500px);
+            @include sizes(100%,400px);
             @include displayFlex();
-            gap: 5px;
+            gap: 15px;
             background-image: url(/public/imgs/backgroundOpacity.png);
             background-position: center;
             background-repeat: no-repeat;
@@ -384,7 +384,6 @@ main{
             h2{
                 @include sizes($height: 50px);
                 @include displayFlex();
-                background-image: $secondBackgroundImage;
             }
             div{
                 @include sizes();
