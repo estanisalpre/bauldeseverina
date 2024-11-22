@@ -330,7 +330,7 @@ main #categoriesSection .fifthCategory, main #categoriesSection .sixthCategory, 
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  box-shadow: 0px 0px 30px 1px #414141;
+  box-shadow: 0px 0px 20px 1px #b1b1b1;
 }
 main #categoriesSection .firstCategory div, main #categoriesSection .secondCategory div, main #categoriesSection .thirdCategory div, main #categoriesSection .fourthCategory div,
 main #categoriesSection .fifthCategory div, main #categoriesSection .sixthCategory div, main #categoriesSection .seventhCategory div, main #categoriesSection .eigthCategory div, main #categoriesSection .ninethCategory div {

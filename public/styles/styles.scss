@@ -330,7 +330,7 @@ main{
             cursor: default;
             @include displayFlex($justifyContent: space-between);
             border-radius: 5px;
-            box-shadow: 0px 0px 30px 1px $shadow;
+            box-shadow: 0px 0px 20px 1px #b1b1b1;
 
             div{
                 @include sizes(100%,40px);
