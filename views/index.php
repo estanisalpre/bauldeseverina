@@ -44,7 +44,6 @@
             <div id="mobileHeader" class="mobileHeader">
                 <img id="toIndex" src="/public/imgs/logos/logo.png" alt="El Baul de Severina Logo">
                 <ul>
-                    <li id="toContact"><span class="contactSpan">Contacto</span></li>
                     <li id="toBriefcase"><img id="catalogoImg" src="/public/imgs/icons/catalogo.png" alt="Ícono catálogo de productos"></li>
                     <li><img id="menu" src="/public/imgs/icons/menu.png" alt="Menu Icon"></li>
                 </ul>
