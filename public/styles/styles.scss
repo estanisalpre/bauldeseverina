@@ -314,11 +314,11 @@ main{
     #categoriesSection{
         @include sizes();
         @include displayFlex($flexDirection:row);
-        gap: 25px;
+        gap: 10px;
         flex-wrap: wrap;
 
         div{
-            @include sizes(40%,$height: 300px);
+            @include sizes(45%,$height: 300px);
             @include displayFlex();
         }
         .firstCategory, .secondCategory, .thirdCategory, .fourthCategory,

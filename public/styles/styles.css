@@ -307,11 +307,11 @@ main #categoriesSection {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 main #categoriesSection div {
-  width: 40%;
+  width: 45%;
   height: 300px;
   display: flex;
   justify-content: center;
