@@ -329,6 +329,7 @@ main #categoriesSection .fifthCategory, main #categoriesSection .sixthCategory, 
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
 }
 main #categoriesSection .firstCategory div, main #categoriesSection .secondCategory div, main #categoriesSection .thirdCategory div, main #categoriesSection .fourthCategory div,
 main #categoriesSection .fifthCategory div, main #categoriesSection .sixthCategory div, main #categoriesSection .seventhCategory div, main #categoriesSection .eigthCategory div, main #categoriesSection .ninethCategory div {
@@ -347,11 +348,10 @@ main #categoriesSection .fifthCategory div h3, main #categoriesSection .sixthCat
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  align-items: flex-start;
   font-size: 22px;
   font-weight: 400;
-  border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 main #categoriesSection .secondCategory {

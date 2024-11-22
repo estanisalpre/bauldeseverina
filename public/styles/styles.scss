@@ -314,7 +314,6 @@ main{
     #categoriesSection{
         @include sizes();
         @include displayFlex($flexDirection:row);
-        //justify-content: flex-start;
         gap: 25px;
         flex-wrap: wrap;
 
@@ -330,6 +329,7 @@ main{
             background-position: center;
             cursor: default;
             @include displayFlex($justifyContent: space-between);
+            border-radius: 5px;
 
             div{
                 @include sizes(100%,40px);
@@ -338,12 +338,10 @@ main{
                 h3{
                     @include sizes(65%);
                     @include displayFlex();
-                    align-items: flex-start;
-                    //padding-left: 10px;
                     font-size: $lg;
                     font-weight: $noBold;
-                    border-top-right-radius: 15px;
                     border-bottom-right-radius: 15px;
+                    border-bottom-left-radius: 15px;
                     background-image: $secondBackgroundImage;
                     
                 }
