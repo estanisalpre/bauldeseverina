@@ -338,14 +338,16 @@ main{
         }
         .product{
             @include sizes();
-            @include displayFlex($flexDirection:row, $justifyContent: space-around);
+            @include displayFlex($flexDirection:row, $justifyContent: space-between);
             gap: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-bottom: 1px dashed $shadow;
 
             div{
                 @include displayFlex($flexDirection:row);
                 @include sizes($height: 100px);
                 gap: 5px;
-                border-bottom: 1px solid black;
 
                 h4,h2{
                     @include sizes();
@@ -362,7 +364,7 @@ main{
                 }
             }
             .product-buttons{
-                width: 350px;
+                width: 250px;
                 @include displayFlex();
 
                 button{
