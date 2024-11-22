@@ -313,9 +313,10 @@ main{
     //Contenedor de categorias
     #categoriesSection{
         @include sizes();
-        @include displayFlex();
+        @include displayFlex($flexDirection:row);
         justify-content: flex-start;
         gap: 25px;
+        flex-wrap: wrap;
 
         div{
             @include sizes(80%,$height: 500px);

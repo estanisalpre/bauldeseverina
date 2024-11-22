@@ -305,10 +305,11 @@ main #categoriesSection {
   height: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 25px;
+  flex-wrap: wrap;
 }
 main #categoriesSection div {
   width: 80%;
