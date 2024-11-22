@@ -262,7 +262,7 @@ main{
         }
     }
     #addProduct, #productList{
-        @include sizes($height: 90%);
+        @include sizes($height: 600px);
         @include displayFlex($justifyContent: space-between);
         display: none;
 
@@ -331,6 +331,7 @@ main{
         overflow-y: scroll;
         overflow-x: hidden;
         gap: 5px;
+        height: 70%;
         background-image: $secondBackgroundImage;
 
         h3{
