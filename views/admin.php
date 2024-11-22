@@ -54,7 +54,7 @@ try {
         <!--OPCIONES A ELEGIR-->
         <section id="options">
             <div>
-                <button id="addProductButton">Agregar nuevo producto</button>
+                <button id="addProductButton">Agregar productos</button>
             </div>
             <div>
                 <button id="showListButton">Lista de productos</button>
@@ -83,7 +83,6 @@ try {
                 <label for="available">Disponible:</label>
                 <input type="checkbox" name="available" id="available">
                 <input type="submit" id="addProductButton" value="Cargar">
-                <button id="cancelButton" class="cancelButton">Cancelar</button>
             </form>
         </section>
         <!--LISTA DE PRODUCTOS-->
