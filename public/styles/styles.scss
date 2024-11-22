@@ -537,7 +537,7 @@ main{
 
 //Footer
 footer{
-    @include sizes($height: 300px);
+    @include sizes();
     @include displayFlex($flexDirection:row, $justifyContent:space-around);
     z-index: 10999;
 
@@ -550,22 +550,11 @@ footer{
         gap: 10px;
         cursor: default;
 
-        img{
-            cursor: pointer;
-            @include sizes(30%,auto);
-            transition: all 0.3s ease;
-        }
-        img:hover{
-            transform: scale(1.05);
-        }
         ul{
-            @include sizes();
+            @include sizes(50%,100%);
             @include displayFlex();
             align-items: flex-start;
-
-            li{
-                list-style: none;
-            }
+            padding-left: 10px;
         }
     }
 }
