@@ -379,7 +379,7 @@ main{
             }
         }
     }
-    #editForm{
+    #editForm, #editTransport{
         @include sizes(90%,$height: 500px);
         @include displayFlex();
         box-shadow: 0px 0px 10px 1px black;
