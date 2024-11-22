@@ -538,8 +538,10 @@ main{
 //Footer
 footer{
     @include sizes();
-    @include displayFlex($flexDirection:row, $justifyContent:space-around);
+    @include displayFlex($flexDirection:row);
     z-index: 10999;
+    box-shadow: 0px 0px 20px 1px $shadow;
+    background-image: $secondBackgroundImage;
 
     img{
         @include sizes(30%,auto);
