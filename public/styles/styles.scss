@@ -327,7 +327,6 @@ main{
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            overflow: hidden;
             cursor: default;
             @include displayFlex($justifyContent: space-between);
             border-radius: 5px;
@@ -342,6 +341,7 @@ main{
                     @include displayFlex();
                     font-size: $md;
                     height: 30px;
+                    position: relative;
                     font-weight: $noBold;
                     background-image: $secondBackgroundImage;
                     
