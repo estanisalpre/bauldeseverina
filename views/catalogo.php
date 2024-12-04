@@ -1,5 +1,5 @@
 <?php
-    include 'db.php';
+    include '../db.php';
 
     //Bolsos
     $queryBolsos = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 1";
@@ -91,7 +91,6 @@
         <ul>
             <li id="toIndex">INICIO</li>
             <li id="toAboutUs">SOBRE NOSOTROS</li>
-            <li id="toHappyClients">CLIENTES FELICES</li>
             <li id="toContact">CONTACTO</li>
         </ul>
         <div class="socialMedia">
@@ -227,7 +226,9 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($deportiva['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($deportiva['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($deportiva['productPrice']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($deportiva['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button></span>
+                                <!--AQUI PONER BOTON PARA COMPRAR EL PRODUCTO CON NOMBRE Y REDIRECCION A WHATSAPP-->
+
                             </div>
                         </div>
                     <?php endforeach; ?>

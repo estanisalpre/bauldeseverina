@@ -367,30 +367,30 @@ main{
             @include displayFlex();
             flex-wrap: wrap;
             overflow-y: scroll;
-            overflow-x: hidden; 
         }
         #productos-bolsos, #productos-tenis{
             @include displayFlex($flexDirection:row);
             @include sizes();
-            overflow: scroll;
+            overflow: hidden;
             flex-wrap: wrap;
-            padding: 10px;
             gap: 5px;
             
             div{
-                @include sizes(350px,500px);
+                @include sizes(90%,90%);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+                overflow: hidden;
 
                 div{
                     @include sizes();
+                    overflow: hidden;
                     span{
                         @include sizes(100%,50px);
                         @include displayFlex();
-                        font-size: $sm;
+                        font-size: $lg;
                         background-image: $secondBackgroundImage;
                     }
                 }
@@ -402,7 +402,7 @@ main{
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
                     height: 40px;
-                    font-size: $md;
+                    font-size: $slg;
                     font-weight: $bold;
                 }
             } 

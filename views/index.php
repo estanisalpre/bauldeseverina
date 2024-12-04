@@ -57,7 +57,6 @@
         <ul>
             <li id="toAboutUs">SOBRE NOSOTROS</li>
             <li id="toBriefcase">CATÁLOGO</li>
-            <li id="toHappyClients">CLIENTES FELICES</li>
             <li id="toContact">CONTACTO</li>
         </ul>
         <div class="socialMedia">

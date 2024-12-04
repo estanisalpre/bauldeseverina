@@ -379,7 +379,6 @@ main .category div {
   align-items: center;
   flex-wrap: wrap;
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 main .category #productos-bolsos, main .category #productos-tenis {
   display: flex;
@@ -388,14 +387,13 @@ main .category #productos-bolsos, main .category #productos-tenis {
   align-items: center;
   width: 100%;
   height: 100%;
-  overflow: scroll;
+  overflow: hidden;
   flex-wrap: wrap;
-  padding: 10px;
   gap: 5px;
 }
 main .category #productos-bolsos div, main .category #productos-tenis div {
-  width: 350px;
-  height: 500px;
+  width: 90%;
+  height: 90%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -404,10 +402,12 @@ main .category #productos-bolsos div, main .category #productos-tenis div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 main .category #productos-bolsos div div, main .category #productos-tenis div div {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 main .category #productos-bolsos div div span, main .category #productos-tenis div div span {
   width: 100%;
@@ -416,7 +416,7 @@ main .category #productos-bolsos div div span, main .category #productos-tenis d
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-size: 14px;
+  font-size: 22px;
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 main .category #productos-bolsos div div span:first-child, main .category #productos-tenis div div span:first-child {
@@ -427,7 +427,7 @@ main .category #productos-bolsos div div span:nth-child(2), main .category #prod
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 40px;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 600;
 }
 main .category p {
