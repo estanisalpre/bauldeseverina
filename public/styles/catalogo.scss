@@ -392,6 +392,15 @@ main{
                         @include displayFlex($flexDirection:row, $justifyContent: space-around);
                         font-size: $lg;
                         background-image: $secondBackgroundImage;
+
+                        button{
+                            @include buttonDesign(100px);
+                            background-image: $secondBackgroundImage;
+                            border: 1px solid $darkFontColor;
+                        }
+                        button:hover{
+                            transform: scale(1.05);
+                        }
                     }
                 }
                 div span:first-child{
