@@ -131,7 +131,7 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($bolso['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($bolso['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($bolso['productPrice']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($bolso['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -150,7 +150,7 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($jeans['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($jeans['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($jeans['productPrice']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($jeans['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -169,7 +169,7 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($blusa['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($blusa['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($blusa['productPrice']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($blusa['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -188,7 +188,7 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($tenis['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($tenis['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($tenis['productPrice']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($tenis['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -207,7 +207,7 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($vestido['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($vestido['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($vestido['productPrice']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($vestido['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -227,8 +227,6 @@
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($deportiva['productName']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($deportiva['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button></span>
-                                <!--AQUI PONER BOTON PARA COMPRAR EL PRODUCTO CON NOMBRE Y REDIRECCION A WHATSAPP-->
-
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -247,7 +245,7 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($hoodies['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($hoodies['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($hoodies['productPrice']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($hoodies['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -266,7 +264,7 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($sandalia['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($sandalia['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($sandalia['productPrice']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($sandalia['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -285,7 +283,7 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($abrigo['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($abrigo['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($abrigo['productPrice']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($abrigo['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -304,7 +302,7 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($otros['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($otros['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($otros['productPrice']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($otros['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
                     <?php endforeach; ?>

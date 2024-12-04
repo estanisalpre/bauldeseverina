@@ -389,7 +389,7 @@ main{
                     overflow: hidden;
                     span{
                         @include sizes(100%,50px);
-                        @include displayFlex();
+                        @include displayFlex($flexDirection:row, $justifyContent: space-around);
                         font-size: $lg;
                         background-image: $secondBackgroundImage;
                     }
