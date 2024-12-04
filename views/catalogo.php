@@ -1,5 +1,5 @@
 <?php
-    include '../db.php';
+    include 'db.php';
 
     //Bolsos
     $queryBolsos = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 1";
