@@ -394,7 +394,7 @@ main{
                         background-image: $secondBackgroundImage;
 
                         button{
-                            @include buttonDesign(100px);
+                            @include buttonDesign(200px);
                             background-image: $secondBackgroundImage;
                             border: 1px solid $darkFontColor;
                         }
