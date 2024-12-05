@@ -34,9 +34,7 @@ export function imgSlider(){
 
     slides.addEventListener('touchmove', (e) => {
         if (currentIndex < images.length - 1 || startY > endY) {
-            if (currentIndex < images.length - 1 || startY > endY) {
-                e.preventDefault();
-            }
+            e.preventDefault();
         }
     });
 
