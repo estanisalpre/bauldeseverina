@@ -359,12 +359,12 @@ main{
             border-bottom-left-radius: 60px;
             border-bottom-right-radius: 60px;
         }
-        div{
+     /*    div{
             @include sizes();
             @include displayFlex();
             flex-wrap: wrap;
             overflow-y: scroll;
-        }
+        } */
         #productos-bolsos, #productos-tenis{
             @include displayFlex($flexDirection:row);
             @include sizes();
