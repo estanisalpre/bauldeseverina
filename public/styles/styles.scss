@@ -78,7 +78,7 @@ $fontPlaywrite: "Playwrite CU", cursive;
 
 //Html
 html{
-    @include sizes($height: 100%);
+    @include sizes($height: 2200px);
     @include displayFlex();
     scroll-behavior: smooth;
     scroll-padding: 2rem;
@@ -269,11 +269,12 @@ main{
     
     //Contenedor de imagenes principal
     #firstContent{
-        @include sizes(100%,900px);
+        @include sizes();
         overflow: hidden;
         position: relative;
 
         .slides{
+            @include sizes();
             display: flex;
             flex-direction: column;
             transition: transform 0.5s ease-in-out;
