@@ -274,13 +274,14 @@ main{
         position: relative;
 
         .slides{
-            @include sizes();
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            transition: transform 0.5s ease-in-out;
+            transition: transform 0.8s ease-in-out;
 
             img{
-                @include sizes(100%,900px);
+                width: 100%;
+                min-height: 100vh;
                 object-fit: cover;
             }
         }
