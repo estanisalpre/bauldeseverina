@@ -346,9 +346,9 @@ main{
 
     //Categorias
     .category{
-        @include sizes($width: 450px, $height: 700px);
+        @include sizes($height: 700px);
         @include displayFlex($justifyContent: space-between);
-        //overflow: hidden;
+        overflow: hidden;
         border-bottom: 1px dashed rgb(181, 181, 181);
 
         h2{
@@ -360,24 +360,20 @@ main{
             border-bottom-right-radius: 60px;
         }
         div{
-            @include sizes(9000px,100%);
+            @include sizes();
             @include displayFlex($flexDirection:row);
-            overflow-x: auto;
+            overflow-y: auto;
             scroll-behavior: smooth;
             gap: 5px;
         
             div{
-                @include sizes(380px,95%);
+                @include sizes(95%,95%);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                overflow: hidden;
 
                 div{
                     @include sizes();
-                    overflow: hidden;
+                    
                     span{
                         @include sizes(100%,50px);
                         @include displayFlex($flexDirection:row, $justifyContent: space-around);
