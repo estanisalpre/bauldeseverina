@@ -302,6 +302,15 @@ main{
                     background-image: $secondBackgroundImage;
                 }
             }
+            #startImg1{
+                background-image: url(/public/imgs/img1.jpg);
+            }
+            #startImg2{
+                background-image: url(/public/imgs/img2.jpg);
+            }
+            #startImg3{
+                background-image: url(/public/imgs/img3.jpg);
+            }
         }
     }
     //Contenedor de presentación

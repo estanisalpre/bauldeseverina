@@ -287,6 +287,15 @@ main #firstContent .slides div button {
 main #firstContent .slides div button:hover {
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
+main #firstContent .slides #startImg1 {
+  background-image: url(/public/imgs/img1.jpg);
+}
+main #firstContent .slides #startImg2 {
+  background-image: url(/public/imgs/img2.jpg);
+}
+main #firstContent .slides #startImg3 {
+  background-image: url(/public/imgs/img3.jpg);
+}
 main #presentation {
   width: 100%;
   height: 900px;
