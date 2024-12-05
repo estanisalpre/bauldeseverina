@@ -6,7 +6,7 @@
 
 html {
   width: 100%;
-  height: 2900px;
+  height: 3000px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -319,7 +319,7 @@ main #presentation .textPresentation {
   gap: 10px;
 }
 main #presentation .textPresentation img {
-  width: 40%;
+  width: 50%;
   height: auto;
 }
 main #presentation .textPresentation h1 {
