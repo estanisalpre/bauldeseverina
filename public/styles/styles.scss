@@ -81,7 +81,7 @@ html{
     @include sizes($height: 3000px);
     @include displayFlex();
     scroll-behavior: smooth;
-    scroll-padding: 3rem;
+    scroll-padding: 5rem;
     justify-content: flex-start;
     overflow-x: hidden;
 }

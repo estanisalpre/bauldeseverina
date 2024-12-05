@@ -12,7 +12,7 @@ html {
   flex-direction: column;
   align-items: center;
   scroll-behavior: smooth;
-  scroll-padding: 3rem;
+  scroll-padding: 5rem;
   justify-content: flex-start;
   overflow-x: hidden;
 }
