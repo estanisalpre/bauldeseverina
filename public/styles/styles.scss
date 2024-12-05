@@ -282,7 +282,6 @@ main{
                 width: 100%;
                 min-height: 100vh;
                 @include displayFlex();
-                position: relative;
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -292,15 +291,12 @@ main{
                     @include displayFlex();
                     border: 1px solid $lightFontColor;
                     border-radius: 60px;
-                    backdrop-filter: blur(3px);
+                    background-image: $secondBackgroundImage;
                     color: $darkFontColor;
                     font-weight: $bold;
                     font-family: $afacadFont;
-                    font-size: $md;
-                    bottom: 100px;
-                }
-                button:hover{
-                    background-image: $secondBackgroundImage;
+                    font-size: $lg;
+                    margin-bottom: -100px;
                 }
             }
             #startImg1{

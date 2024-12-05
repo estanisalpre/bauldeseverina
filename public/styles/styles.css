@@ -263,7 +263,6 @@ main #firstContent .slides div {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -277,16 +276,12 @@ main #firstContent .slides div button {
   align-items: center;
   border: 1px solid #e3e3e3;
   border-radius: 60px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   color: #353535;
   font-weight: 600;
   font-family: "Afacad Flux", sans-serif;
-  font-size: 16px;
-  bottom: 100px;
-}
-main #firstContent .slides div button:hover {
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  font-size: 23px;
+  margin-bottom: -100px;
 }
 main #firstContent .slides #startImg1 {
   background-image: url(/public/imgs/img1.jpg);
