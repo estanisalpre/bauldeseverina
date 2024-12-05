@@ -326,7 +326,7 @@ main{
     .textPresentation{
         @include sizes();
         @include displayFlex($justifyContent: space-around);
-        gap: 20px;
+        gap: 25px;
 
         img{
             @include sizes(50%,auto);
@@ -334,7 +334,7 @@ main{
         h1{
             @include sizes($height:40px);
             font-weight: $bold;
-            font-size: $slg;
+            font-size: $lg;
         }
         p{
             @include sizes();
@@ -350,7 +350,6 @@ main{
         align-items: flex-start;
         padding-left: 20px;
         margin-top: 50px;
-        margin-bottom: -30px;
     }
     //Contenedor de categorias
     #categoriesSection{
