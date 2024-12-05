@@ -299,7 +299,7 @@ main{
             gap: 15px;
 
             div{
-                @include sizes(130px,120px);
+                @include sizes();
                 @include displayFlex();
                 border-radius: 100%;
                 padding: 10px;
