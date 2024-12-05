@@ -364,10 +364,11 @@ main{
             @include displayFlex($flexDirection:row);
             overflow-x: scroll;
             overflow-y: hidden;
+            position: relative;
             gap: 5px;
         
             div{
-                @include sizes(auto,90%);
+                @include sizes(auto,95%);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
                 background-repeat: no-repeat;
@@ -385,7 +386,7 @@ main{
                         background-image: $secondBackgroundImage;
 
                         button{
-                            @include sizes(170px, 30px);
+                            @include sizes(120px, 30px);
                             background-image: $secondBackgroundImage;
                             border: 1px solid $darkFontColor;
                             border-radius: 60px;
