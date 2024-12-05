@@ -133,7 +133,7 @@
                 <div class="toCategory" data-id="suetersCategory"><span>Sueters</span><img src="/public/imgs/icons/sueters.png" alt="Ícono de Categoria de Hoodies y Sueters"></div>
                 <div class="toCategory" data-id="taconesCategory"><span>Tacones</span><img src="/public/imgs/icons/tacones.png" alt="Ícono de Categoria de Sandalias y Tacones"></div>
                 <div class="toCategory" data-id="abrigosCategory"><span>Abrigos</span><img src="/public/imgs/icons/abrigos.png" alt="Ícono de Categoria de Abrigos"></div>
-                <div class="toCategory" data-id="moreCategory"><span>Otros</span><img src="/public/imgs/icons/abrigos.png" alt="Ícono de Categoria de Abrigos"></div>
+                <div class="toCategory" data-id="moreCategory"><span>Otros</span><img src="/public/imgs/icons/boutique.png" alt="Ícono de Categoria de Abrigos"></div>
             </div>
         </section>
         <section id="selectCategory">

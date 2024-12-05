@@ -81,7 +81,6 @@ html{
     @include sizes();
     @include displayFlex();
     overflow-x: hidden;
-    border: 1px solid red;
 }
 
 //Body
@@ -90,8 +89,6 @@ body{
     @include displayFlex();
     background-image: $secondBackgroundImage;
     font-family: $afacadFont;
-    gap: 25px;
-    border: 1px solid black;
 }
 
 //Nav
@@ -344,7 +341,6 @@ main{
     #selectCategory{
         @include sizes();
         position: fixed;
-        top: 150px;
         backdrop-filter: blur(8px);
         @include displayFlex();
         display: none;
