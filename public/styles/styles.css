@@ -300,6 +300,15 @@ main #presentation .textPresentation p, main #presentation .links p {
   flex-direction: column;
   align-items: center;
 }
+main h4 {
+  width: 90%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
 main #categoriesSection {
   width: 100%;
   height: 100%;
@@ -309,15 +318,6 @@ main #categoriesSection {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-}
-main #categoriesSection h4 {
-  width: 90%;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
 }
 main #categoriesSection div {
   width: 45%;

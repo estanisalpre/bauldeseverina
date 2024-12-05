@@ -78,8 +78,8 @@
             <h2 id="comenzarButton"><img src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online"> Comenzar</h2>
         </section>
         <!--SECCIÓN DE CATEGORÍAS-->
+        <h4>Categorias</h4>
         <section id="categoriesSection">
-            <h4>Categorias</h4>
             <div class="fourthCategory">
                 <div><h3>Tenis</h3></div>
                 <div id="buttonSection">
