@@ -397,6 +397,8 @@ main{
                             @include buttonDesign(200px);
                             background-image: $secondBackgroundImage;
                             border: 1px solid $darkFontColor;
+                            height: 40px;
+                            font-size: $md;
                         }
                         button:hover{
                             transform: scale(1.05);
