@@ -261,7 +261,7 @@ nav{
 main{
     @include sizes();
     @include displayFlex();
-    margin-top: 120px;
+    padding-top: 120px;
     gap: 20px;
     
     //Contenedor de categorias
