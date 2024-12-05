@@ -358,7 +358,6 @@ main{
         .toBriefcaseSection{
             @include sizes(100%,400px);
             @include displayFlex();
-            //background-image: url(/public/imgs/backgroundOpacity.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -432,7 +431,7 @@ main{
 
                         li{
                             justify-content: flex-start;
-                            font-size: $md;
+                            font-size: $lg;
                         }
                     }
                 }
@@ -512,7 +511,7 @@ main{
         }
         button{
             margin-top: -60px;
-            @include buttonDesign(40%);
+            @include buttonDesign(90%);
         }
         button:hover{
             background-image: $backgroundImage;
