@@ -296,18 +296,18 @@ main{
         transform: translateY(-5px);
         background-image: $secondBackgroundImage;
     }
-        .textPresentation, .links{
-            @include sizes($height: 50%);
-            @include displayFlex();
+    .textPresentation, .links{
+        @include sizes();
+        @include displayFlex();
 
-            img{
-                @include sizes(40%,auto);
-            }
-            p{
-                @include sizes();
-                @include displayFlex();
-            }
+        img{
+            @include sizes(40%,auto);
         }
+        p{
+            @include sizes();
+            @include displayFlex();
+        }
+    }
     }
 
     //Contenedor de categorias
@@ -317,6 +317,10 @@ main{
         gap: 10px;
         flex-wrap: wrap;
 
+        h2{
+            @include sizes(90%,40px);
+            @include displayFlex();
+        }
         div{
             @include sizes(45%,$height: 300px);
             @include displayFlex();

@@ -452,14 +452,14 @@ main .category p {
   align-items: flex-start;
 }
 main #whatsapp {
-  width: 60px;
+  width: 80px;
   height: auto;
   cursor: pointer;
   position: fixed;
   left: 20px;
   bottom: 20px;
   transition: all 0.3s ease;
-  z-index: 10000;
+  z-index: 10998;
 }
 main #whatsapp:hover {
   transform: scale(1.05);

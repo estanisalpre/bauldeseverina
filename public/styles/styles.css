@@ -282,7 +282,7 @@ main #presentation h2:hover {
 }
 main #presentation .textPresentation, main #presentation .links {
   width: 100%;
-  height: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -309,6 +309,14 @@ main #categoriesSection {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+main #categoriesSection h2 {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 main #categoriesSection div {
   width: 45%;
