@@ -109,7 +109,7 @@
                     <h3>¿Quieres ver el catálogo completo?</h3>
                     <button id="toBriefcase"><img src="/public/imgs/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
                 </div>
-                <div class="contactSection">
+                <div id="contactSection" class="contactSection">
                     <h2>¡Contáctanos!</h2>
                     <div>
                         <ul>

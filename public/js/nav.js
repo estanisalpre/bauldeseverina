@@ -23,7 +23,7 @@ function allButtons(){
         })
         contact.forEach(function(contact){
             contact.addEventListener('click', () => {
-                location.href = '/'
+                location.href = '/#contactSection'
             })
         })
         briefcase.forEach(function(briefcase){
