@@ -29,6 +29,7 @@ function categoryButtons(){
             const categoryId = category.dataset.id;
 
             if(categoryId){
+                closeCategories();
                 openCategory(categoryId)
                 location.href = `catalogo#${categoryId}`;
             } else {
@@ -42,12 +43,14 @@ function categoryButtons(){
 function openCategory(id){
     if(id){
         console.log(id)
+        id.style.display = 'flex'
     }
 }
 
 //Cerramos las categorias
 function closeCategories(){
-
+    const categories = document.querySelectorAll('.toCategory')
+    categories.style.display = 'none'
 }
 
 //Funcionalidad boton whatsapp para consultar producto
