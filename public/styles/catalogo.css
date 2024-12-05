@@ -39,7 +39,8 @@ nav {
   align-items: center;
   position: fixed;
   top: 0px;
-  background-color: #e3e3e3;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   z-index: 10500;
   gap: 20px;
   box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
@@ -436,13 +437,17 @@ main .category div div div span:nth-child(2) {
   font-weight: 600;
 }
 main .category p {
-  width: 90%;
+  width: 300px;
   height: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   align-items: flex-start;
+  border-radius: 60px;
+  font-weight: 600;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  border: 1px solid #353535;
 }
 
 #whatsapp {

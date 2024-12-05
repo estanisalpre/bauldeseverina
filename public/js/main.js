@@ -33,13 +33,15 @@ function comenzar(){
 
 //Boton para loguearse
 function loginButton(){
-    const toAdmin = document.getElementById('toAdmin')
+    const toAdmin = document.querySelectorAll('#toAdmin')
     const sectionForm = document.getElementById('sectionForm')
     const backButton = document.getElementById('backButton')
 
     if(toAdmin){
-        toAdmin.addEventListener('click', () => {
-            sectionForm.style.display = 'flex'
+        toAdmin.forEach(function(admin){
+            admin.addEventListener('click', () => {
+                sectionForm.style.display = 'flex'
+            })
         })
     }
     if(backButton){

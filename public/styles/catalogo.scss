@@ -103,7 +103,7 @@ nav{
     @include displayFlex();
     position: fixed;
     top:0px;
-    background-color: $lightFontColor;
+    backdrop-filter: blur(3px);
     z-index: 10500;
     gap: 20px;
     box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
@@ -417,9 +417,13 @@ main{
             } 
         }
         p{
-            @include sizes(90%,30px);
+            @include sizes(300px,30px);
             @include displayFlex();
             align-items: flex-start;
+            border-radius: 60px;
+            font-weight: $bold;
+            background-image: $secondBackgroundImage;
+            border: 1px solid $darkFontColor;
         }
     }
 }
