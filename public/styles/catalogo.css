@@ -354,12 +354,7 @@ main .category {
   align-items: center;
   overflow: hidden;
   border-bottom: 1px dashed rgb(181, 181, 181);
-  /*    div{
-         @include sizes();
-         @include displayFlex();
-         flex-wrap: wrap;
-         overflow-y: scroll;
-     } */
+  border: 1px solid black;
 }
 main .category h2 {
   width: 100%;
@@ -373,18 +368,18 @@ main .category h2 {
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
 }
-main .category #productos-bolsos, main .category #productos-tenis {
+main .category div {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow-y: hidden;
   overflow-x: scroll;
+  overflow-y: hidden;
   gap: 5px;
 }
-main .category #productos-bolsos div, main .category #productos-tenis div {
+main .category div div {
   width: 90%;
   height: 90%;
   display: flex;
@@ -397,12 +392,12 @@ main .category #productos-bolsos div, main .category #productos-tenis div {
   background-position: center;
   overflow: hidden;
 }
-main .category #productos-bolsos div div, main .category #productos-tenis div div {
+main .category div div div {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-main .category #productos-bolsos div div span, main .category #productos-tenis div div span {
+main .category div div div span {
   width: 100%;
   height: 50px;
   display: flex;
@@ -412,7 +407,7 @@ main .category #productos-bolsos div div span, main .category #productos-tenis d
   font-size: 22px;
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
-main .category #productos-bolsos div div span button, main .category #productos-tenis div div span button {
+main .category div div div span button {
   width: 170px;
   height: 30px;
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
@@ -423,14 +418,14 @@ main .category #productos-bolsos div div span button, main .category #productos-
   transition: all 0.3s ease;
   font-family: "Afacad Flux", sans-serif;
 }
-main .category #productos-bolsos div div span button:hover, main .category #productos-tenis div div span button:hover {
+main .category div div div span button:hover {
   transform: scale(1.05);
 }
-main .category #productos-bolsos div div span:first-child, main .category #productos-tenis div div span:first-child {
+main .category div div div span:first-child {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-main .category #productos-bolsos div div span:nth-child(2), main .category #productos-tenis div div span:nth-child(2) {
+main .category div div div span:nth-child(2) {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 40px;
@@ -446,7 +441,8 @@ main .category p {
   align-items: center;
   align-items: flex-start;
 }
-main #whatsapp {
+
+#whatsapp {
   width: 80px;
   height: auto;
   cursor: pointer;
@@ -456,7 +452,8 @@ main #whatsapp {
   transition: all 0.3s ease;
   z-index: 10998;
 }
-main #whatsapp:hover {
+
+#whatsapp:hover {
   transform: scale(1.05);
 }
 

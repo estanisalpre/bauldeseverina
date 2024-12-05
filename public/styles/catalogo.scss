@@ -350,6 +350,7 @@ main{
         @include displayFlex($justifyContent: space-between);
         overflow: hidden;
         border-bottom: 1px dashed rgb(181, 181, 181);
+        border: 1px solid black;
 
         h2{
             @include sizes($height: 40px);
@@ -359,20 +360,14 @@ main{
             border-bottom-left-radius: 60px;
             border-bottom-right-radius: 60px;
         }
-     /*    div{
+        div{
             @include sizes();
-            @include displayFlex();
-            flex-wrap: wrap;
-            overflow-y: scroll;
-        } */
-        #productos-bolsos, #productos-tenis{
             @include displayFlex($flexDirection:row);
-            @include sizes();
-            overflow-y: hidden;
-            overflow-x: scroll;
             //flex-wrap: wrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
             gap: 5px;
-            
+        
             div{
                 @include sizes(90%,90%);
                 @include displayFlex($justifyContent: space-between); 
@@ -425,6 +420,7 @@ main{
             align-items: flex-start;
         }
     }
+}
 
     //Whatsapp logo
     #whatsapp{
@@ -439,7 +435,6 @@ main{
     #whatsapp:hover{
         transform: scale(1.05);
     }
-}
 
 //Footer
 footer{
