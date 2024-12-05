@@ -308,7 +308,7 @@ main h4 {
   flex-direction: column;
   align-items: center;
   font-size: 23px;
-  margin-top: 75px;
+  margin-bottom: -50px;
 }
 main #categoriesSection {
   width: 100%;
