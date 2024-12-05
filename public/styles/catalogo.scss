@@ -366,7 +366,7 @@ main{
             scroll-behavior: smooth;
             flex-wrap: wrap;
             gap: 5px;
-            cursor: all-scroll;
+            cursor: n-resize;
         
             div{
                 @include sizes(95%,95%);
