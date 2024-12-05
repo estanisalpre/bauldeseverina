@@ -25,22 +25,22 @@ export function imgSlider(){
     //Actualizar la posición del slider
     function updateSlider() {
         const width = slides.clientWidth; 
-        slides.style.transform = `translateY(-${currentIndex * width}px)`; 
+        slides.style.transform = `translateY(-${currentIndex * height}px)`; 
     }
 
     //Detectar eventos de deslizamiento
-    let startX = 0;
-    let endX = 0;
+    let startY = 0;
+    let endY = 0;
 
     slides.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
     });
 
     slides.addEventListener('touchend', (e) => {
-        endX = e.changedTouches[0].clientX;
-        if (startX > endX + 50) {
+        endY = e.changedTouches[0].clientY;
+        if (startY > endY + 50) {
             slideNext(); 
-        } else if (startX < endX - 50) {
+        } else if (startY < endY - 50) {
             slidePrev();
         }
     });
