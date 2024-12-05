@@ -13,7 +13,6 @@ html {
   align-items: center;
   scroll-behavior: smooth;
   scroll-padding: 7.5rem;
-  justify-content: flex-start;
   overflow-x: hidden;
 }
 
@@ -240,7 +239,6 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   margin-top: 200px;
   gap: 20px;
 }
@@ -356,6 +354,7 @@ main #selectCategory {
   flex-direction: column;
   align-items: center;
   display: none;
+  z-index: 10450;
 }
 main #selectCategory img {
   width: 50px;

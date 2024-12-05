@@ -82,7 +82,6 @@ html{
     @include displayFlex();
     scroll-behavior: smooth;
     scroll-padding: 7.5rem;
-    justify-content: flex-start;
     overflow-x: hidden;
 }
 
@@ -262,7 +261,6 @@ nav{
 main{
     @include sizes();
     @include displayFlex();
-    justify-content: flex-start;
     margin-top: 200px;
     gap: 20px;
     
@@ -349,6 +347,7 @@ main{
         backdrop-filter: blur(8px);
         @include displayFlex();
         display: none;
+        z-index: 10450;
 
         img{
             @include sizes(50px,auto);
