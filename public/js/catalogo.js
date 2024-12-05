@@ -21,6 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Admin
     loginButton();
+
+    //Cerrar modal categorias
+    const closeCategories = document.getElementById('closeCategories')
+    const categoryModal = document.getElementById('selectCategory')
+
+    if(closeCategories){
+        closeCategories.addEventListener('click', () => {
+            categoryModal.style.display = 'none'
+        })
+    }
 })
 
 //Funcionalidad botones de categoría
@@ -57,8 +67,10 @@ function openCategory(id){
 function closeCategories(){
     const categorySection = document.getElementById("categorySection")
     const categories = document.querySelectorAll('.category')
+    const categoryModal = document.getElementById('selectCategory')
 
     categorySection.style.display = 'none'
+    categoryModal.style.display = 'none'
 
     categories.forEach(category => {
         category.style.display = 'none'

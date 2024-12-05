@@ -136,6 +136,7 @@
             </div>
         </section>
         <section id="selectCategory">
+            <img id="closeCategories" src="/public/imgs/icons/exit.png" alt="Ícono para cerrar categorías de ropa">
             <ul>
                 <li class="toCategory" data-id="bolsosCategory">Bolsos</li>
                 <li class="toCategory" data-id="jeansCategory">Jeans & Pantalones</li>

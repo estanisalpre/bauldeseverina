@@ -350,13 +350,17 @@ main #selectCategory {
   width: 100%;
   height: 100%;
   position: fixed;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   display: none;
+}
+main #selectCategory img {
+  width: 50px;
+  height: auto;
 }
 main #selectCategory ul {
   width: 70%;
@@ -370,6 +374,7 @@ main #selectCategory ul li {
   list-style: none;
   cursor: pointer;
   font-size: 23px;
+  color: #e3e3e3;
 }
 main #selectCategory ul li:hover {
   border-bottom: 1px solid #353535;

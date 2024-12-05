@@ -347,10 +347,13 @@ main{
     #selectCategory{
         @include sizes();
         position: fixed;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(8px);
         @include displayFlex();
         display: none;
 
+        img{
+            @include sizes(50px,auto);
+        }
         ul{
             @include sizes(70%,70%);
             @include displayFlex();
@@ -359,6 +362,7 @@ main{
                 list-style: none;
                 cursor: pointer;
                 font-size: $lg;
+                color: $lightFontColor;
             }
             li:hover{
                 border-bottom: 1px solid $darkFontColor;
