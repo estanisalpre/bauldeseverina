@@ -247,7 +247,7 @@ main {
 }
 main #categorySection {
   width: 100%;
-  height: 900px;
+  height: 70vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -346,6 +346,33 @@ main #categorySection .scrollSection img {
   height: auto;
   transform: rotate(-90deg);
 }
+main #selectCategory {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main #selectCategory ul {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main #selectCategory ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 23px;
+}
+main #selectCategory ul li:hover {
+  border-bottom: 1px solid #353535;
+}
 main .category {
   width: 100%;
   height: 100%;
@@ -356,18 +383,27 @@ main .category {
   overflow: hidden;
   border-bottom: 1px dashed rgb(181, 181, 181);
   display: none;
+  margin-top: 50px;
 }
 main .category h2 {
   width: 100%;
   height: 40px;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row;
   align-items: center;
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   padding-left: 10px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
+}
+main .category h2 span {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+}
+main .category h2 span:hover {
+  border-bottom: 1px solid #353535;
 }
 main .category div {
   width: 100%;
@@ -380,10 +416,9 @@ main .category div {
   scroll-behavior: smooth;
   flex-wrap: wrap;
   gap: 5px;
-  cursor: n-resize;
 }
 main .category div div {
-  width: 300px;
+  width: 350px;
   height: 500px;
   display: flex;
   justify-content: space-between;

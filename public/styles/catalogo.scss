@@ -269,7 +269,7 @@ main{
     
     //Contenedor de categorias
     #categorySection{
-    @include sizes($height: 900px);
+    @include sizes($height: 70vh);
     @include displayFlex();
     padding: 5px;
     cursor: default;
@@ -343,6 +343,27 @@ main{
         }
     }
 
+    //Seleccionar categorias
+    #selectCategory{
+        @include sizes();
+        position: fixed;
+        backdrop-filter: blur(5px);
+        @include displayFlex();
+
+        ul{
+            @include sizes(70%,70%);
+            @include displayFlex();
+
+            li{
+                list-style: none;
+                cursor: pointer;
+                font-size: $lg;
+            }
+            li:hover{
+                border-bottom: 1px solid $darkFontColor;
+            }
+        }
+    }
     //Categorias
     .category{
         @include sizes();
@@ -350,14 +371,24 @@ main{
         overflow: hidden;
         border-bottom: 1px dashed rgb(181, 181, 181);
         display: none;
+        margin-top: 50px;
 
         h2{
             @include sizes($height: 40px);
-            @include displayFlex();
+            @include displayFlex($flexDirection:row, $justifyContent: space-around);
             background-image: $secondBackgroundImage;
             padding-left: 10px;
             border-bottom-left-radius: 60px;
             border-bottom-right-radius: 60px;
+
+            span{
+                cursor: pointer;
+                font-size: $md;
+                font-weight: $noBold;
+            }
+            span:hover{
+                border-bottom: 1px solid $darkFontColor;
+            }
         }
         div{
             @include sizes();
@@ -366,10 +397,9 @@ main{
             scroll-behavior: smooth;
             flex-wrap: wrap;
             gap: 5px;
-            cursor: n-resize;
         
             div{
-                @include sizes(300px,500px);
+                @include sizes(350px,500px);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
                 background-repeat: no-repeat;

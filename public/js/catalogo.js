@@ -76,3 +76,8 @@ function whatsappRedirection(){
         })
     }
 }
+
+//Funcionalidad para escoger categorias nuevamente
+function selectCategory(){
+    
+}

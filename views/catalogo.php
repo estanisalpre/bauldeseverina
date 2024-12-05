@@ -132,14 +132,25 @@
                 <div class="toCategory" data-id="suetersCategory"><span>Sueters</span><img src="/public/imgs/icons/sueters.png" alt="Ícono de Categoria de Hoodies y Sueters"></div>
                 <div class="toCategory" data-id="taconesCategory"><span>Tacones</span><img src="/public/imgs/icons/tacones.png" alt="Ícono de Categoria de Sandalias y Tacones"></div>
                 <div class="toCategory" data-id="abrigosCategory"><span>Abrigos</span><img src="/public/imgs/icons/abrigos.png" alt="Ícono de Categoria de Abrigos"></div>
+                <div class="toCategory" data-id="moreCategory"><span>Otros</span><img src="/public/imgs/icons/abrigos.png" alt="Ícono de Categoria de Abrigos"></div>
             </div>
-            <!-- <div class="scrollSection">
-                <h3>¡Desliza para descubrir por tu cuenta!</h3>
-                <img src="/public/imgs/icons/scroll.png" alt="Ícono de Scroll para ver todo nuestro catálogo de indumentaria">
-            </div> -->
+        </section>
+        <section id="selectCategory">
+            <ul>
+                <li>Bolsos</li>
+                <li>Jeans & Pantalones</li>
+                <li>Blusas</li>
+                <li>Tenis</li>
+                <li>Vestidos & Faldas</li>
+                <li>Ropa Deportiva</li>
+                <li>Hoodies & Sueters</li>
+                <li>Tacones & Sandalias</li>
+                <li>Chaquetas & Abrigos</li>
+                <li>¡Más para ti!</li>
+            </ul>              
         </section>
         <section id="bolsosCategory" data-id="bolsosCategory" class="category">
-            <h2>Bolsos</h2>
+            <h2><span class="selectCategory">Categorías</span>Bolsos</h2>
             <div id="productos-bolsos">
                 <?php
                 if (!empty($productosBolsos)): ?>
@@ -157,7 +168,7 @@
                 ?>
             </div>
         </section>
-        <section id="jeansCategory" class="category">
+        <section id="jeansCategory" data-id="jeansCategory" class="category">
             <h2>Pantalones & Jeans</h2>
             <div id="productos-bolsos">
                 <?php
@@ -176,7 +187,7 @@
                 ?>
             </div>
         </section>
-        <section id="blusasCategory" class="category">
+        <section id="blusasCategory" data-id="blusasCategory" class="category">
             <h2>Blusas</h2>
             <div id="productos-bolsos">
                 <?php
@@ -195,7 +206,7 @@
                 ?>
             </div>
         </section>
-        <section id="tenisCategory" class="category">
+        <section id="tenisCategory"  data-id="tenisCategory" class="category">
             <h2>Tenis</h2>
             <div id="productos-bolsos">
                 <?php
@@ -214,7 +225,7 @@
                 ?>
             </div>
         </section>
-        <section id="vestidosCategory" class="category">
+        <section id="vestidosCategory" data-id="vestidosCategory" class="category">
             <h2>Vestidos & Faldas</h2>
             <div id="productos-bolsos">
                 <?php
@@ -233,7 +244,7 @@
                 ?>
             </div>
         </section>
-        <section id="deportivaCategory" class="category">
+        <section id="deportivaCategory" data-id="deportivaCategory" class="category">
             <h2>Ropa Deportiva</h2>
             <div id="productos-bolsos">
                 <?php
@@ -252,7 +263,7 @@
                 ?>
             </div>
         </section>
-        <section id="suetersCategory" class="category">
+        <section id="suetersCategory" data-id="suetersCategory" class="category">
             <h2>Hoodies & Sueters</h2>
             <div id="productos-bolsos">
                 <?php
@@ -271,7 +282,7 @@
                 ?>
             </div>
         </section>
-        <section id="taconesCategory" class="category">
+        <section id="taconesCategory" data-id="taconesCategory" class="category">
             <h2>Sandalias & Tacones</h2>
             <div id="productos-bolsos">
                 <?php
@@ -290,7 +301,7 @@
                 ?>
             </div>
         </section>
-        <section id="abrigosCategory" class="category">
+        <section id="abrigosCategory" data-id="abrigosCategory" class="category">
             <h2>Chaquetas & Abrigos</h2>
             <div id="productos-bolsos">
                 <?php
