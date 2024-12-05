@@ -138,7 +138,7 @@
                 <img src="/public/imgs/icons/scroll.png" alt="Ícono de Scroll para ver todo nuestro catálogo de indumentaria">
             </div> -->
         </section>
-        <section id="bolsosCategory" class="category">
+        <section id="bolsosCategory" data-id="bolsosCategory" class="category">
             <h2>Bolsos</h2>
             <div id="productos-bolsos">
                 <?php

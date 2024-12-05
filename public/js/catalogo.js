@@ -30,7 +30,7 @@ function categoryButtons(){
 
             if(categoryId){
                 closeCategories();
-                openCategory(categories)
+                openCategory(categoryId)
                 location.href = `catalogo#${categoryId}`;
             } else {
                 console.log('Categoria sin data-id')
@@ -41,9 +41,9 @@ function categoryButtons(){
 
 //Abrimos la categoria correspondiente
 function openCategory(id){
-    const categories = document.querySelectorAll('.toCategory')
+    const categorySection = document.querySelectorAll('.category')
 
-    categories.forEach(function(category){
+    categorySection.forEach(function(category){
         if (category.dataset.id === id){
             category.style.display = 'flex'
         }
