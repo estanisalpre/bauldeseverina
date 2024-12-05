@@ -301,13 +301,14 @@ main #presentation .textPresentation p, main #presentation .links p {
   align-items: center;
 }
 main h4 {
-  width: 90%;
+  width: 100%;
   height: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  font-size: 23px;
+  margin-top: 25px;
 }
 main #categoriesSection {
   width: 100%;

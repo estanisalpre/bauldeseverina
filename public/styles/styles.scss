@@ -310,9 +310,10 @@ main{
     }
     }
     h4{
-        @include sizes(90%,30px);
+        @include sizes(100%,30px);
         @include displayFlex();
-        border: 1px solid black;
+        font-size: $lg;
+        margin-top: 25px;
     }
     //Contenedor de categorias
     #categoriesSection{
