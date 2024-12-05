@@ -78,7 +78,7 @@ $fontPlaywrite: "Playwrite CU", cursive;
 
 //Html
 html{
-    @include sizes($height: 2500px);
+    @include sizes($height: 3100px);
     @include displayFlex();
     scroll-behavior: smooth;
     scroll-padding: 2rem;
@@ -290,6 +290,7 @@ main{
                     @include sizes(180px, 50px);
                     @include displayFlex($flexDirection: row);
                     gap: 5px;
+                    border: 0px;
                     border-radius: 60px;
                     background-image: $secondBackgroundImage;
                     color: $darkFontColor;

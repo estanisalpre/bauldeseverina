@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Button Comenzar
 function comenzar(){
-    const comenzar = document.getElementById('comenzarButton')
+    const comenzar = document.querySelectorAll('#comenzarButton')
 
     if(comenzar){
         comenzar.addEventListener('click', () => {
