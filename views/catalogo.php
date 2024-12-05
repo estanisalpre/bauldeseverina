@@ -321,7 +321,7 @@
                 ?>
             </div>
         </section>
-        <section id="otrosCategory" class="category">
+        <section id="otrosCategory" data-id="moreCategory" class="category">
             <h2><span class="selectCategory">Categorías</span>¡Más para ti!</h2>
             <div id="productos-bolsos">
                 <?php
@@ -330,7 +330,7 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($otros['productImg']); ?>');">
                             <div class="card-content">
                                 <span class="product-name"><?php echo htmlspecialchars($otros['productName']); ?></span>
-                                <span class="product-price">$<?php echo htmlspecialchars($otros['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
+                                <span class="product-price">$<?php echo htmlspecialchars($otros['productPrice']); ?><button class="buyButton">¡Quiero esto!</button</span>
                             </div>
                         </div>
                     <?php endforeach; ?>

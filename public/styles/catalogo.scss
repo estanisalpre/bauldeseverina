@@ -353,10 +353,14 @@ main{
 
         img{
             @include sizes(50px,auto);
+            cursor: pointer;
         }
         ul{
             @include sizes(70%,70%);
             @include displayFlex();
+            border-radius: 20px;
+            background-image: $secondBackgroundImage;
+            border: 1px solid $darkFontColor;
 
             li{
                 list-style: none;
