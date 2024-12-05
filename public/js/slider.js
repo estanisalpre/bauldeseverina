@@ -8,20 +8,18 @@ export function imgSlider(){
 
     //Función para deslizar a la siguiente imagen
     function slideNext() {
-        currentIndex++;
-        if (currentIndex >= images.length) {
-            currentIndex = 0;
+        if (currentIndex < images.length - 1) {
+            currentIndex++;
+            updateSlider();
         }
-        updateSlider();
     }
 
     //Función para deslizar a la imagen anterior
     function slidePrev() {
-        currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = images.length - 1;
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
         }
-        updateSlider();
     }
 
     //Actualizar la posición del slider
@@ -36,7 +34,9 @@ export function imgSlider(){
 
     slides.addEventListener('touchmove', (e) => {
         if (currentIndex < images.length - 1 || startY > endY) {
-            e.preventDefault();
+            if (currentIndex < images.length - 1 || startY > endY) {
+                e.preventDefault();
+            }
         }
     });
 
@@ -46,6 +46,14 @@ export function imgSlider(){
             slideNext(); 
         } else if (startY < endY - 50) {
             slidePrev();
+        }
+    });
+
+    document.addEventListener('wheel', (e) => {
+        if (currentIndex < images.length - 1) {
+            e.preventDefault();
+            if (e.deltaY > 0) slideNext(); 
+            if (e.deltaY < 0) slidePrev(); 
         }
     });
 }
