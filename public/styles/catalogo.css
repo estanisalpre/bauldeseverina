@@ -368,7 +368,7 @@ main .category h2 {
   border-bottom-right-radius: 60px;
 }
 main .category div {
-  width: 100%;
+  width: 9000px;
   height: 100%;
   display: flex;
   justify-content: center;

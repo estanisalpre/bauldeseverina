@@ -360,7 +360,7 @@ main{
             border-bottom-right-radius: 60px;
         }
         div{
-            @include sizes();
+            @include sizes(9000px,100%);
             @include displayFlex($flexDirection:row);
             flex-wrap: wrap;
             overflow-x: scroll;
