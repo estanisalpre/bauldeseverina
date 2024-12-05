@@ -358,18 +358,6 @@
             ?>
         </section>
     </main>
-   <!--FOOTER-->
-   <footer>
-        <img src="/public/imgs/logos/logo.png" alt="El Baul de Severina Logo">
-        <div>
-            <ul>
-                <span id="toIndex">Inicio</span>
-                <span id="toBriefcase">Catálogo</span>
-                <span id="toContact">Contacto</span>
-                <span id="toContact">Sobre Nosotros</span>
-            </ul>
-        </div>
-    </footer>
     <!--SCRIPTS-->
     <script type="module" src="/public/js/catalogo.js"></script>
 </body>

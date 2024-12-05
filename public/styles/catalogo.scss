@@ -528,39 +528,6 @@ main{
         transform: scale(1.05);
     }
 
-//Footer
-footer{
-    @include sizes($height: 300px);
-    @include displayFlex($flexDirection:row);
-    z-index: 10999;
-    box-shadow: 0px 0px 20px 1px $shadow;
-    background-image: $secondBackgroundImage;
-
-    img{
-        @include sizes(30%,auto);
-    }
-    div{
-        @include sizes();
-        @include displayFlex();
-        gap: 10px;
-        cursor: default;
-
-        ul{
-            @include sizes(50%,100%);
-            @include displayFlex();
-            align-items: flex-start;
-            padding-left: 10px;
-
-            span{
-                cursor: pointer;
-            }
-            span:hover{
-                border-bottom: 1px solid $darkFontColor;
-            }
-        }
-    }
-}
-
 //Animaciones
 @keyframes zoomAnimation {
     100%{transform: scale(1)};
