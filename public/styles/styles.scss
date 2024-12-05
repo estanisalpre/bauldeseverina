@@ -504,7 +504,7 @@ main{
                 font-family: $afacadFont;
             }
             button{
-                @include buttonDesign(90%);
+                @include buttonDesign(70%);
                 box-shadow: none;
                 margin-top: 0px;
             }
