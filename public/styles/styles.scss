@@ -269,8 +269,7 @@ main{
     
     //Contenedor de imagenes principal
     #firstContent{
-        @include sizes();
-        border: 1px solid black;
+        @include sizes(100%,900px);
         overflow: hidden;
         position: relative;
 
@@ -280,7 +279,7 @@ main{
             transition: transform 0.5s ease-in-out;
 
             img{
-                @include sizes($height: 100%);
+                @include sizes(100%,900px);
                 object-fit: cover;
             }
         }

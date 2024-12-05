@@ -246,8 +246,7 @@ main {
 }
 main #firstContent {
   width: 100%;
-  height: 100%;
-  border: 1px solid black;
+  height: 900px;
   overflow: hidden;
   position: relative;
 }
@@ -258,7 +257,7 @@ main #firstContent .slides {
 }
 main #firstContent .slides img {
   width: 100%;
-  height: 100%;
+  height: 900px;
   -o-object-fit: cover;
      object-fit: cover;
 }
