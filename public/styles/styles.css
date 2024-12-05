@@ -304,19 +304,18 @@ main #presentation {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
+  padding: 5px;
   cursor: default;
-  gap: 15px;
   margin-top: 50px;
 }
 main #presentation .textPresentation {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 main #presentation .textPresentation img {
   width: 50%;
@@ -346,7 +345,8 @@ main h4 {
   align-items: center;
   font-size: 23px;
   align-items: flex-start;
-  margin-top: 100px;
+  padding-left: 20px;
+  margin-top: 50px;
   margin-bottom: -30px;
 }
 main #categoriesSection {

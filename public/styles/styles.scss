@@ -319,15 +319,14 @@ main{
     #presentation{
     @include sizes($height: 900px);
     @include displayFlex();
-    padding: 15px;
+    padding: 5px;
     cursor: default;
-    gap: 15px;
     margin-top: 50px;
     
     .textPresentation{
         @include sizes();
-        @include displayFlex();
-        gap: 10px;
+        @include displayFlex($justifyContent: space-around);
+        gap: 20px;
 
         img{
             @include sizes(50%,auto);
@@ -349,7 +348,8 @@ main{
         @include displayFlex();
         font-size: $lg;
         align-items: flex-start;
-        margin-top: 100px;
+        padding-left: 20px;
+        margin-top: 50px;
         margin-bottom: -30px;
     }
     //Contenedor de categorias
