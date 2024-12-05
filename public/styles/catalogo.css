@@ -426,6 +426,7 @@ main .category #productos-bolsos div div span button, main .category #productos-
   border: 1px solid #353535;
   border-radius: 60px;
   font-size: 14px;
+  cursor: pointer;
 }
 main .category #productos-bolsos div div span button:hover, main .category #productos-tenis div div span button:hover {
   transform: scale(1.05);

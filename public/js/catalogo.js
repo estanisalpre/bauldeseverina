@@ -43,7 +43,7 @@ function whatsappRedirection(){
                 const productName = cardContent.querySelector('.product-name').textContent.trim();
 
                 // Redirigir a WhatsApp con el texto dinámico
-                location.href = `https://wa.me/573246541854?text=¡Hola!%20Vi%20en%20tu%20página%20web%20el%20siguiente%20producto:%20${encodeURIComponent(productName)}`;
+                window.open(`https://wa.me/573246541854?text=¡Hola!%20Vi%20en%20tu%20página%20web%20el%20siguiente%20producto:%20${encodeURIComponent(productName)}`);
             })
         })
     }
