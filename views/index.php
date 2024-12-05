@@ -79,7 +79,7 @@
         </section>
         <!--SECCIÓN DE CATEGORÍAS-->
         <section id="categoriesSection">
-            <h2>Categorias</h2>
+            <h4>Categorias</h4>
             <div class="fourthCategory">
                 <div><h3>Tenis</h3></div>
                 <div id="buttonSection">

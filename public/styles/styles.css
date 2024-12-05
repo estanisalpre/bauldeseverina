@@ -310,7 +310,7 @@ main #categoriesSection {
   gap: 10px;
   flex-wrap: wrap;
 }
-main #categoriesSection h2 {
+main #categoriesSection h4 {
   width: 90%;
   height: 30px;
   display: flex;

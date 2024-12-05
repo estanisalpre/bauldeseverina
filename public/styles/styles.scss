@@ -317,7 +317,7 @@ main{
         gap: 10px;
         flex-wrap: wrap;
 
-        h2{
+        h4{
             @include sizes(90%,30px);
             @include displayFlex();
             border: 1px solid black;
