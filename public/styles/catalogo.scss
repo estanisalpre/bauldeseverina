@@ -345,7 +345,7 @@ main{
 
     //Categorias
     .category{
-        @include sizes($height: 700px);
+        @include sizes();
         @include displayFlex($justifyContent: space-between);
         overflow: hidden;
         border-bottom: 1px dashed rgb(181, 181, 181);
@@ -369,7 +369,7 @@ main{
             cursor: n-resize;
         
             div{
-                @include sizes(300px,50%);
+                @include sizes(300px,500px);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
                 background-repeat: no-repeat;

@@ -52,7 +52,11 @@ function openCategory(id){
 
 //Cerramos las categorias
 function closeCategories(){
-    const categories = document.querySelectorAll('.toCategory')
+    const divLinks = document.querySelector(".links")
+    const categories = document.querySelectorAll('.category')
+
+    divLinks.style.display = 'none'
+    
     categories.forEach(category => {
         category.style.display = 'none'
     })
