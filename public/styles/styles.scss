@@ -320,26 +320,7 @@ main{
     animation: sideIn 0.5s ease forwards;
     gap: 15px;
     
-    h2{
-        @include sizes(50%,$height: 30px);
-        margin-bottom: 15px;
-        padding: 20px;
-        @include displayFlex($flexDirection:row, $justifyContent: space-between);
-        border-radius: 20px;
-        border: 1px solid $darkFontColor;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        gap: 5px;
-
-        img{
-            @include sizes(30px,auto);
-        }
-    }
-    h2:hover{
-        transform: translateY(-5px);
-        background-image: $secondBackgroundImage;
-    }
-    .textPresentation, .links{
+    .textPresentation{
         @include sizes();
         @include displayFlex();
 

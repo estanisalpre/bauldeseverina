@@ -73,13 +73,13 @@
         <section id="firstContent">
                 <div class="slides">
                     <div id="startImg1">
-                        <button id="startButton">COMENZAR</button>
+                        <button id="comenzarButton"><img src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
                     </div>
                     <div id="startImg2">
-                        <button id="startButton">COMENZAR</button>
+                        <button id="comenzarButton"><img src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
                     </div>
                     <div id="startImg3">
-                        <button id="startButton">COMENZAR</button>
+                        <button id="comenzarButton"><img src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
                     </div>
                 </div>
         </section>
@@ -89,7 +89,6 @@
                 <img src="/public/imgs/logos/logo.png" alt="Logo de El Baul de Severina">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> <br> Ex dicta sunt quaerat. Ex dicta sunt quaerat. Ex dicta sunt quaerat. Ex dicta sunt quaerat. Ex dicta sunt quaerat.</p>
             </div>
-            <h2 id="comenzarButton"><img src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online"> Comenzar</h2>
         </section>
         <!--SECCIÓN DE CATEGORÍAS-->
         <h4>Categorias</h4> 
