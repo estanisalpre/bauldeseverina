@@ -394,11 +394,11 @@ main{
                         background-image: $secondBackgroundImage;
 
                         button{
-                            @include buttonDesign(200px);
+                            @include sizes(200px, 30px);
                             background-image: $secondBackgroundImage;
                             border: 1px solid $darkFontColor;
-                            height: 40px;
-                            font-size: $md;
+                            border-radius: 60px;
+                            font-size: $sm;
                         }
                         button:hover{
                             transform: scale(1.05);
