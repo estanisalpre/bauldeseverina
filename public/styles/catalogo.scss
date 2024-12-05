@@ -369,7 +369,7 @@ main{
             cursor: n-resize;
         
             div{
-                @include sizes(95%,95%);
+                @include sizes(90%,80%);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
                 background-repeat: no-repeat;

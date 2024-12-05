@@ -381,8 +381,8 @@ main .category div {
   cursor: n-resize;
 }
 main .category div div {
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 80%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
