@@ -3,7 +3,6 @@ export function imgSlider(){
     const slides = document.querySelector('.slides');
     const images = document.querySelectorAll('.slides img');
     let currentIndex = 0;
-    //Detectar eventos de deslizamiento
     let startY = 0;
     let endY = 0;
 
@@ -37,7 +36,6 @@ export function imgSlider(){
 
     slides.addEventListener('touchmove', (e) => {
         if (currentIndex < images.length - 1 || startY > endY) {
-            // Prevenir el scroll solo si no estamos en la última imagen
             e.preventDefault();
         }
     });
