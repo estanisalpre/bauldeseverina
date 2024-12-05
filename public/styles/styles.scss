@@ -514,7 +514,7 @@ main{
         }
         button{
             margin-top: -60px;
-            @include buttonDesign(60%);
+            @include buttonDesign(70%);
         }
         button:hover{
             background-image: $backgroundImage;

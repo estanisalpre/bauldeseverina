@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Todas las redirecciones
     allRedirections();
-    
+
     //Botones categoría
     categoryButtons();
 
