@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     //Botones consultar whatsapp
     whatsappRedirection();
 
+    //Abrir modal de categorias
+    selectCategory();
+
     //Admin
     loginButton();
 })
@@ -79,5 +82,12 @@ function whatsappRedirection(){
 
 //Funcionalidad para escoger categorias nuevamente
 function selectCategory(){
-    
+    const categoryButton = document.querySelectorAll('.selectCategory')
+    const categoryModal = document.getElementById('selectCategory')
+
+    categoryButton.forEach(function(category) {
+        category.addEventListener('click', () => {
+            categoryModal.style.display = 'flex'
+        })
+    })
 }

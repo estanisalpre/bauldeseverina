@@ -137,16 +137,16 @@
         </section>
         <section id="selectCategory">
             <ul>
-                <li>Bolsos</li>
-                <li>Jeans & Pantalones</li>
-                <li>Blusas</li>
-                <li>Tenis</li>
-                <li>Vestidos & Faldas</li>
-                <li>Ropa Deportiva</li>
-                <li>Hoodies & Sueters</li>
-                <li>Tacones & Sandalias</li>
-                <li>Chaquetas & Abrigos</li>
-                <li>¡Más para ti!</li>
+                <li class="toCategory" data-id="bolsosCategory">Bolsos</li>
+                <li class="toCategory" data-id="jeansCategory">Jeans & Pantalones</li>
+                <li class="toCategory" data-id="blusasCategory">Blusas</li>
+                <li class="toCategory" data-id="tenisCategory">Tenis</li>
+                <li class="toCategory" data-id="vestidosCategory">Vestidos & Faldas</li>
+                <li class="toCategory" data-id="deportivaCategory">Ropa Deportiva</li>
+                <li class="toCategory" data-id="suetersCategory">Hoodies & Sueters</li>
+                <li class="toCategory" data-id="taconesCategory">Tacones & Sandalias</li>
+                <li class="toCategory" data-id="abrigosCategory">Chaquetas & Abrigos</li>
+                <li class="toCategory" data-id="moreCategory">¡Más para ti!</li>
             </ul>              
         </section>
         <section id="bolsosCategory" data-id="bolsosCategory" class="category">
@@ -169,7 +169,7 @@
             </div>
         </section>
         <section id="jeansCategory" data-id="jeansCategory" class="category">
-            <h2>Pantalones & Jeans</h2>
+            <h2><span class="selectCategory">Categorías</span>Pantalones & Jeans</h2>
             <div id="productos-bolsos">
                 <?php
                 if (!empty($productosJeans)): ?>
@@ -188,7 +188,7 @@
             </div>
         </section>
         <section id="blusasCategory" data-id="blusasCategory" class="category">
-            <h2>Blusas</h2>
+            <h2><span class="selectCategory">Categorías</span>Blusas</h2>
             <div id="productos-bolsos">
                 <?php
                 if (!empty($productosBlusas)): ?>
@@ -207,7 +207,7 @@
             </div>
         </section>
         <section id="tenisCategory"  data-id="tenisCategory" class="category">
-            <h2>Tenis</h2>
+            <h2><span class="selectCategory">Categorías</span>Tenis</h2>
             <div id="productos-bolsos">
                 <?php
                 if (!empty($productosTenis)): ?>
@@ -226,7 +226,7 @@
             </div>
         </section>
         <section id="vestidosCategory" data-id="vestidosCategory" class="category">
-            <h2>Vestidos & Faldas</h2>
+            <h2><span class="selectCategory">Categorías</span>Vestidos & Faldas</h2>
             <div id="productos-bolsos">
                 <?php
                 if (!empty($productosVestidos)): ?>
@@ -245,7 +245,7 @@
             </div>
         </section>
         <section id="deportivaCategory" data-id="deportivaCategory" class="category">
-            <h2>Ropa Deportiva</h2>
+            <h2><span class="selectCategory">Categorías</span>Ropa Deportiva</h2>
             <div id="productos-bolsos">
                 <?php
                 if (!empty($productosDeportiva)): ?>
@@ -264,7 +264,7 @@
             </div>
         </section>
         <section id="suetersCategory" data-id="suetersCategory" class="category">
-            <h2>Hoodies & Sueters</h2>
+            <h2><span class="selectCategory">Categorías</span>Hoodies & Sueters</h2>
             <div id="productos-bolsos">
                 <?php
                 if (!empty($productosHoodies)): ?>
@@ -283,7 +283,7 @@
             </div>
         </section>
         <section id="taconesCategory" data-id="taconesCategory" class="category">
-            <h2>Sandalias & Tacones</h2>
+            <h2><span class="selectCategory">Categorías</span>Sandalias & Tacones</h2>
             <div id="productos-bolsos">
                 <?php
                 if (!empty($productosSandalias)): ?>
@@ -302,7 +302,7 @@
             </div>
         </section>
         <section id="abrigosCategory" data-id="abrigosCategory" class="category">
-            <h2>Chaquetas & Abrigos</h2>
+            <h2><span class="selectCategory">Categorías</span>Chaquetas & Abrigos</h2>
             <div id="productos-bolsos">
                 <?php
                 if (!empty($productosAbrigos)): ?>
@@ -321,7 +321,7 @@
             </div>
         </section>
         <section id="otrosCategory" class="category">
-            <h2>¡Más para ti!</h2>
+            <h2><span class="selectCategory">Categorías</span>¡Más para ti!</h2>
             <div id="productos-bolsos">
                 <?php
                 if (!empty($productosOtros)): ?>
