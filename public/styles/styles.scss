@@ -318,8 +318,9 @@ main{
         flex-wrap: wrap;
 
         h2{
-            @include sizes(90%,40px);
+            @include sizes(90%,30px);
             @include displayFlex();
+            border: 1px solid black;
         }
         div{
             @include sizes(45%,$height: 300px);
