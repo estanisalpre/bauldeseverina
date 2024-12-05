@@ -349,6 +349,7 @@ main{
         position: fixed;
         backdrop-filter: blur(5px);
         @include displayFlex();
+        display: none;
 
         ul{
             @include sizes(70%,70%);

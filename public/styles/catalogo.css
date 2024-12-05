@@ -356,6 +356,7 @@ main #selectCategory {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  display: none;
 }
 main #selectCategory ul {
   width: 70%;
