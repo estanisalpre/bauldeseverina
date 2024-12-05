@@ -265,7 +265,7 @@ main{
     @include displayFlex();
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 120px;
+    margin-top: 60px;
     
     //Contenedor de imagenes principal
     #firstContent{
@@ -279,10 +279,28 @@ main{
             flex-direction: column;
             transition: transform 0.8s ease-in-out;
 
-            img{
+            div{
                 width: 100%;
                 min-height: 100vh;
-                object-fit: cover;
+                @include displayFlex();
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                button{
+                    @include sizes(150px, 50px);
+                    @include displayFlex();
+                    border: 1px solid $lightFontColor;
+                    border-radius: 60px;
+                    backdrop-filter: blur(3px);
+                    color: $darkFontColor;
+                    font-weight: $bold;
+                    font-family: $afacadFont;
+                    font-size: $md;
+                }
+                button:hover{
+                    background-image: $secondBackgroundImage;
+                }
             }
         }
     }

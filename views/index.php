@@ -72,9 +72,15 @@
         <!--PRIMER CONTENEDOR-->
         <section id="firstContent">
                 <div class="slides">
-                    <img src="/public/imgs/img1.jpg" alt="Presentación moda de ropa al inicio">
-                    <img src="/public/imgs/img2.jpg" alt="Presentación moda de ropa al inicio">
-                    <img src="/public/imgs/img3.jpg" alt="Presentación moda de ropa al inicio">
+                    <div id="startImg1">
+                        <button id="startButton">COMENZAR</button>
+                    </div>
+                    <div id="startImg2">
+                        <button id="startButton">COMENZAR</button>
+                    </div>
+                    <div id="startImg3">
+                        <button id="startButton">COMENZAR</button>
+                    </div>
                 </div>
         </section>
         <!--PRESENTACION-->
