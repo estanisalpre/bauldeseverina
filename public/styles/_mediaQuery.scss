@@ -1,0 +1,25 @@
+//Todas el responsive aqui en mixins
+//Para portatil
+@mixin notebook {
+    @media screen and (max-width: 1500px) {
+        @content;
+    }
+}
+//Para tablets
+@mixin tablet {
+    @media screen and (max-width: 1100px) {
+        @content;
+    }
+}
+//Para mobiles
+@mixin mobile {
+    @media screen and (max-width: 567px) {
+        @content;
+    }
+}
+//Para mobiles pequeños
+@mixin smallMobile {
+    @media screen and (max-width: 400px) {
+        @content;
+    }
+}

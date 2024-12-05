@@ -281,9 +281,13 @@ main #categorySection .links p {
   align-items: center;
 }
 main #categorySection .links {
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: space-around;
   flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
 main #categorySection .links div {

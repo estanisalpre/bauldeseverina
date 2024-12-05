@@ -1,3 +1,6 @@
+//Importamos
+@import "_mediaQuery";
+
 //Variables
 $backgroundImage: linear-gradient(to top, #fcddd4 0%, #e8dad0 100%);
 $secondBackgroundImage: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
@@ -290,9 +293,9 @@ main{
             }
         }
         .links{
+            @include sizes();
+            @include displayFlex($flexDirection:row, $justifyContent: space-around);
             flex-wrap: wrap;
-            justify-content: space-around;
-            flex-direction: row;
             gap: 15px;
 
             div{
