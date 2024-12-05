@@ -81,7 +81,7 @@ html{
     @include sizes($height: 2900px);
     @include displayFlex();
     scroll-behavior: smooth;
-    scroll-padding: 2rem;
+    scroll-padding: 3rem;
     justify-content: flex-start;
     overflow-x: hidden;
 }
@@ -321,9 +321,8 @@ main{
     @include displayFlex();
     padding: 15px;
     cursor: default;
-    transform: translateX(2500px);
-    animation: sideIn 0.5s ease forwards;
     gap: 15px;
+    margin-top: 50px;
     
     .textPresentation{
         @include sizes();
