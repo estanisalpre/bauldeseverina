@@ -72,13 +72,24 @@
     <!--NAV-->
     <nav id="nav">
         <div class="topNav">
-            <img src="/public/imgs/icons/envios.png" alt="Ícono carro de envíos"><p>Envío gratis a todo Colombia a partir de <span id="minAmount">$100,000</span></p>
+            <img src="/public/imgs/icons/envios.png" alt="Ícono carro de envíos">
+                <p>Envío gratis a todo Colombia a partir de 
+                    <span id="minAmount">
+                        <?php 
+                            if (!empty($precioTransport)) {
+                                echo "$" . htmlspecialchars($precioTransport['transportPrice']);
+                            } else {
+                                echo "00,00";
+                            }
+                        ?>
+                    </span>
+                </p>
         </div>
         <header>
             <div id="mobileHeader" class="mobileHeader">
                 <img id="toIndex" src="/public/imgs/logos/logo.png" alt="El Baul de Severina Logo">
                 <ul>
-                    <li id="toContact"><span class="contactSpan">Contacto</span></li>
+                    <li id="toBriefcase"><img id="catalogoImg" src="/public/imgs/icons/catalogo.png" alt="Ícono catálogo de productos"></li>
                     <li><img id="menu" src="/public/imgs/icons/menu.png" alt="Menu Icon"></li>
                 </ul>
             </div>
@@ -89,8 +100,8 @@
         <div><img id="toAdmin" src="/public/imgs/icons/admin.png" alt="Admin Access Icon"><img id="closeMenu" src="/public/imgs/icons/exit.png" alt="Icon to close Menu"></div>
         <img src="/public/imgs/logos/logo.png" alt="El Baul de Severina Logo">
         <ul>
-            <li id="toIndex">INICIO</li>
             <li id="toAboutUs">SOBRE NOSOTROS</li>
+            <li id="toBriefcase">CATÁLOGO</li>
             <li id="toContact">CONTACTO</li>
         </ul>
         <div class="socialMedia">
