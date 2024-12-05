@@ -374,13 +374,12 @@ main .category div {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
   overflow-x: scroll;
   overflow-y: hidden;
   gap: 5px;
 }
 main .category div div {
-  width: 90%;
+  width: auto;
   height: 90%;
   display: flex;
   justify-content: space-between;
