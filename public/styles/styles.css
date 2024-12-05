@@ -242,7 +242,7 @@ main {
   align-items: center;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 main #presentation {
   width: 100%;
@@ -308,7 +308,7 @@ main h4 {
   flex-direction: column;
   align-items: center;
   font-size: 23px;
-  margin-top: 25px;
+  margin-top: 75px;
 }
 main #categoriesSection {
   width: 100%;
