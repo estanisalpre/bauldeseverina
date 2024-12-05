@@ -1,10 +1,14 @@
 //Toda la funcionalidad de la pagina de catalogo
 import {navFunctionality} from './nav.js'
+import { allRedirections } from './redirections.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     //Botones del NAV
     navFunctionality();
 
+    //Todas las redirecciones
+    allRedirections();
+    
     //Botones categoría
     categoryButtons();
 
