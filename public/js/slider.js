@@ -36,6 +36,10 @@ export function imgSlider(){
         startY = e.touches[0].clientY;
     });
 
+    slides.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+    });
+
     slides.addEventListener('touchend', (e) => {
         endY = e.changedTouches[0].clientY;
         if (startY > endY + 50) {
