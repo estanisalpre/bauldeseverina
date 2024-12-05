@@ -378,7 +378,7 @@ main #selectCategory ul li {
   list-style: none;
   cursor: pointer;
   font-size: 23px;
-  color: #e3e3e3;
+  color: #353535;
 }
 main #selectCategory ul li:hover {
   border-bottom: 1px solid #353535;
