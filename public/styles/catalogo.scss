@@ -1,7 +1,8 @@
 //Variables
-$backgroundImage: linear-gradient(to top, #e2afa1 0%, #f2bf97 100%);
-$secondBackgroundImage: linear-gradient(-225deg, #d8f8ef 0%, #FFE6FA 100%);
+$backgroundImage: linear-gradient(to top, #fcddd4 0%, #e8dad0 100%);
+$secondBackgroundImage: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 $cardBackgroundImage: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+$lightBackgroundImage: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 $sm: 12px;
 $md: 18px;
 $lg: 24px;
@@ -13,8 +14,8 @@ $shadow: #414141;
 $errorColor: rgb(245, 106, 106);
 $sm: 14px;
 $md: 16px;
-$lg: 22px;
-$slg: 30px;
+$lg: 23px;
+$slg: 28px;
 $noBold: 400;
 $bold: 600;
 $montserratFont: "Montserrat", sans-serif;
@@ -460,6 +461,7 @@ main{
                 @include buttonDesign(80%);
                 box-shadow: none;
                 margin-top: 0px;
+                border-radius: 60px;
             }
             button:hover{
                 background-image: $backgroundImage;
