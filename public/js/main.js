@@ -23,8 +23,10 @@ function comenzar(){
     const comenzar = document.querySelectorAll('#comenzarButton')
 
     if(comenzar){
-        comenzar.addEventListener('click', () => {
-            location.href = '/#presentation'
+        comenzar.forEach(function(start){
+            start.addEventListener('click', () => {
+                location.href = '/#presentation'
+            })
         })
     }
 }
