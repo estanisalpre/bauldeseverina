@@ -1,6 +1,11 @@
 <?php
     include 'db.php';
 
+    //Transporte
+    $queryTransport = "SELECT transportPrice FROM transport";
+    $stmtTransport = $pdo->prepare($queryTransport);
+    $stmtTransport->execute();
+    $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
     //Bolsos
     $queryBolsos = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 1";
     $stmtBolsos = $pdo->prepare($queryBolsos);
