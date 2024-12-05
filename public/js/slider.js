@@ -25,7 +25,7 @@ export function imgSlider(){
     //Actualizar la posición del slider
     function updateSlider() {
         const width = slides.clientWidth; 
-        slides.style.transform = `translateX(-${currentIndex * width}px)`; 
+        slides.style.transform = `translateY(-${currentIndex * width}px)`; 
     }
 
     //Detectar eventos de deslizamiento
