@@ -15,7 +15,7 @@ function allButtons(){
     const aboutUs = document.querySelectorAll('#toAboutUs')
     const logout = document.querySelectorAll('#logout')
 
-    if(myLogo || contact || briefcase || aboutUs ||   logout){
+    if(myLogo || contact || briefcase || aboutUs || logout){
         myLogo.forEach(function(logo){
             logo.addEventListener('click', () => {
                 location.href = '/'

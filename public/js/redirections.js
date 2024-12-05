@@ -1,11 +1,10 @@
 //Todas las redirecciones de botones y demás, se realizan aquí
 
 export function allRedirections(){
-
     //Whatsapp - Instagram - Facebook
     whatsappRedirection();
     instagramRedirection();
-    facebookRedirection();
+    //facebookRedirection();
 }
 
 //Boton whatsapp
