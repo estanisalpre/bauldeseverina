@@ -133,10 +133,10 @@
                 <div class="toCategory" data-id="taconesCategory"><span>Tacones</span><img src="/public/imgs/icons/tacones.png" alt="Ícono de Categoria de Sandalias y Tacones"></div>
                 <div class="toCategory" data-id="abrigosCategory"><span>Abrigos</span><img src="/public/imgs/icons/abrigos.png" alt="Ícono de Categoria de Abrigos"></div>
             </div>
-            <div class="scrollSection">
+            <!-- <div class="scrollSection">
                 <h3>¡Desliza para descubrir por tu cuenta!</h3>
                 <img src="/public/imgs/icons/scroll.png" alt="Ícono de Scroll para ver todo nuestro catálogo de indumentaria">
-            </div>
+            </div> -->
         </section>
         <section id="bolsosCategory" class="category">
             <h2>Bolsos</h2>
