@@ -381,7 +381,7 @@ main .category div {
   cursor: n-resize;
 }
 main .category div div {
-  width: 200px;
+  width: 230px;
   height: 45%;
   display: flex;
   justify-content: space-between;
