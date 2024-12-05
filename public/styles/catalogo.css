@@ -378,6 +378,7 @@ main .category div {
   scroll-behavior: smooth;
   flex-wrap: wrap;
   gap: 5px;
+  cursor: all-scroll;
 }
 main .category div div {
   width: 95%;
