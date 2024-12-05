@@ -92,8 +92,7 @@ body{
     @include displayFlex();
     background-image: $secondBackgroundImage;
     font-family: $afacadFont;
-    justify-content: flex-start;
-    align-items: flex-start
+    gap: 25px;
 }
 
 //Nav

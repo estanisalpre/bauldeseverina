@@ -26,8 +26,7 @@ body {
   align-items: center;
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   font-family: "Afacad Flux", sans-serif;
-  justify-content: flex-start;
-  align-items: flex-start;
+  gap: 25px;
 }
 
 nav {
