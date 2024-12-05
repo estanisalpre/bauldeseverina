@@ -30,7 +30,7 @@ function categoryButtons(){
 
             if(categoryId){
                 closeCategories();
-                openCategory(categoryId)
+                openCategory(categories)
                 location.href = `catalogo#${categoryId}`;
             } else {
                 console.log('Categoria sin data-id')
@@ -41,16 +41,21 @@ function categoryButtons(){
 
 //Abrimos la categoria correspondiente
 function openCategory(id){
-    if(id){
-        console.log(id)
-        id.style.display = 'flex'
-    }
+    const categories = document.querySelectorAll('.toCategory')
+
+    categories.forEach(function(category){
+        if (category.dataset.id === id){
+            category.style.display = 'flex'
+        }
+    })
 }
 
 //Cerramos las categorias
 function closeCategories(){
     const categories = document.querySelectorAll('.toCategory')
-    categories.style.display = 'none'
+    categories.forEach(category => {
+        category.style.display = 'none'
+    })
 }
 
 //Funcionalidad boton whatsapp para consultar producto
