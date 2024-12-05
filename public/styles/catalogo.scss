@@ -55,7 +55,6 @@ $fontPlaywrite: "Playwrite CU", cursive;
     font-size: $lg;
     color: $darkFontColor;
     cursor: pointer;
-    background-color: $lightFontColor;
     box-shadow: 0px 0px 20px 1px black;
 }
 @mixin inputDesign($width: 300px, $height: 40px){
@@ -470,6 +469,7 @@ main{
         button{
             margin-top: -60px;
             @include buttonDesign(70%);
+            border-radius: 60px;
         }
         button:hover{
             background-image: $backgroundImage;
