@@ -283,6 +283,10 @@ main #firstContent .slides div button {
   font-size: 23px;
   margin-bottom: -100px;
 }
+main #firstContent .slides div button img {
+  width: 30px;
+  height: auto;
+}
 main #firstContent .slides #startImg1 {
   background-image: url(/public/imgs/img1.jpg);
 }

@@ -297,6 +297,10 @@ main{
                     font-family: $afacadFont;
                     font-size: $lg;
                     margin-bottom: -100px;
+
+                    img{
+                        @include sizes(30px,auto);
+                    }
                 }
             }
             #startImg1{
