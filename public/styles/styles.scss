@@ -335,17 +335,17 @@ main{
         h1{
             @include sizes($height:40px);
             font-weight: $bold;
-            font-size: $lg;
+            font-size: $slg;
         }
         p{
             @include sizes();
             @include displayFlex();
-            font-size: $md;
+            font-size: $lg;
         }
     }
     }
     h4{
-        @include sizes(100%,30px);
+        @include sizes(90%,50px);
         @include displayFlex();
         font-size: $lg;
         align-items: flex-start;
