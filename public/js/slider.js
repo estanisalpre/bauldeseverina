@@ -24,7 +24,7 @@ export function imgSlider(){
 
     //Actualizar la posición del slider
     function updateSlider() {
-        const width = slides.clientWidth; 
+        const height = slides.clientHeight; 
         slides.style.transform = `translateY(-${currentIndex * height}px)`; 
     }
 
