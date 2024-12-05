@@ -354,7 +354,6 @@ main .category {
   align-items: center;
   overflow: hidden;
   border-bottom: 1px dashed rgb(181, 181, 181);
-  border: 1px solid black;
 }
 main .category h2 {
   width: 100%;
@@ -375,6 +374,7 @@ main .category div {
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   overflow-x: scroll;
   overflow-y: hidden;
   gap: 5px;

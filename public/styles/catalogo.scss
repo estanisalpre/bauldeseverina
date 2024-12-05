@@ -350,7 +350,6 @@ main{
         @include displayFlex($justifyContent: space-between);
         overflow: hidden;
         border-bottom: 1px dashed rgb(181, 181, 181);
-        border: 1px solid black;
 
         h2{
             @include sizes($height: 40px);
@@ -363,7 +362,7 @@ main{
         div{
             @include sizes();
             @include displayFlex($flexDirection:row);
-            //flex-wrap: wrap;
+            flex-wrap: wrap;
             overflow-x: scroll;
             overflow-y: hidden;
             gap: 5px;
