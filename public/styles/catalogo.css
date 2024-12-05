@@ -346,7 +346,7 @@ main #categorySection .scrollSection img {
   transform: rotate(-90deg);
 }
 main .category {
-  width: 100%;
+  width: 450px;
   height: 700px;
   display: flex;
   justify-content: space-between;
@@ -374,9 +374,8 @@ main .category div {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  position: relative;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   gap: 5px;
 }
 main .category div div {
