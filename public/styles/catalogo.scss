@@ -172,6 +172,7 @@ nav{
     @include displayFlex($justifyContent: space-between);
     @include sizes(250px);
     position: fixed;
+    left: 0px;
     display: none;
     z-index: 11000;
     background-color: $lightFontColor;
