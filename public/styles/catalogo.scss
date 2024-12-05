@@ -261,24 +261,24 @@ nav{
 main{
     @include sizes();
     @include displayFlex();
-    margin-top: 300px;
+    margin-top: 120px;
     gap: 20px;
     
     //Contenedor de categorias
     #categorySection{
-    @include sizes($height: 70vh);
+    @include sizes($height: 100vh);
     @include displayFlex();
     padding: 5px;
     cursor: default;
     transform: translateX(2500px);
     animation: sideIn 1s ease forwards;
-    gap: 30px;
+    gap: 25px;
     align-items: flex-start;
     justify-content: flex-start;
     
     h2{
         @include sizes($height: 30px);
-        padding-left: 10px;
+        padding-left: 20px;
     }
             .links{
             @include sizes($height: 50%);
@@ -344,6 +344,7 @@ main{
     #selectCategory{
         @include sizes();
         position: fixed;
+        top: 150px;
         backdrop-filter: blur(8px);
         @include displayFlex();
         display: none;
@@ -378,7 +379,6 @@ main{
         overflow: hidden;
         border-bottom: 1px dashed rgb(181, 181, 181);
         display: none;
-        margin-top: 50px;
 
         h2{
             @include sizes($height: 40px);

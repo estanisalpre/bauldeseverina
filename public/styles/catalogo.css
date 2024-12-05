@@ -239,12 +239,12 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 300px;
+  margin-top: 120px;
   gap: 20px;
 }
 main #categorySection {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -253,14 +253,14 @@ main #categorySection {
   cursor: default;
   transform: translateX(2500px);
   animation: sideIn 1s ease forwards;
-  gap: 30px;
+  gap: 25px;
   align-items: flex-start;
   justify-content: flex-start;
 }
 main #categorySection h2 {
   width: 100%;
   height: 30px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 main #categorySection .links {
   width: 100%;
@@ -347,6 +347,7 @@ main #selectCategory {
   width: 100%;
   height: 100%;
   position: fixed;
+  top: 150px;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
   display: flex;
@@ -391,7 +392,6 @@ main .category {
   overflow: hidden;
   border-bottom: 1px dashed rgb(181, 181, 181);
   display: none;
-  margin-top: 50px;
 }
 main .category h2 {
   width: 100%;
