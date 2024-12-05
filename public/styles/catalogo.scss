@@ -370,10 +370,13 @@ main{
                 @include sizes(95%,95%);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
 
                 div{
                     @include sizes();
-                    
+
                     span{
                         @include sizes(100%,50px);
                         @include displayFlex($flexDirection:row, $justifyContent: space-around);
