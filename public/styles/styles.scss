@@ -287,9 +287,9 @@ main{
                 background-repeat: no-repeat;
 
                 button{
-                    @include sizes(150px, 50px);
-                    @include displayFlex();
-                    border: 1px solid $lightFontColor;
+                    @include sizes(180px, 50px);
+                    @include displayFlex($flexDirection: row);
+                    gap: 5px;
                     border-radius: 60px;
                     background-image: $secondBackgroundImage;
                     color: $darkFontColor;
