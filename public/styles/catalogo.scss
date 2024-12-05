@@ -299,7 +299,7 @@ main{
             gap: 15px;
 
             div{
-                @include sizes();
+                @include sizes(130px,120px);
                 @include displayFlex();
                 border-radius: 100%;
                 padding: 10px;
@@ -308,6 +308,10 @@ main{
                 cursor: pointer;
                 gap: 10px;
 
+                @include smallMobile{
+                    @include sizes(100px,90px);
+                }
+                
                 span{
                     @include sizes($height: 35px);
                     @include displayFlex();
