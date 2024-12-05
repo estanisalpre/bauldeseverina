@@ -80,9 +80,8 @@ $fontPlaywrite: "Playwrite CU", cursive;
 html{
     @include sizes();
     @include displayFlex();
-    scroll-behavior: smooth;
-    scroll-padding: 7.5rem;
     overflow-x: hidden;
+    border: 1px solid red;
 }
 
 //Body
@@ -92,6 +91,7 @@ body{
     background-image: $secondBackgroundImage;
     font-family: $afacadFont;
     gap: 25px;
+    border: 1px solid black;
 }
 
 //Nav
@@ -183,7 +183,6 @@ nav{
     gap: 20px;
     background-image: $secondBackgroundImage;
  
-
     div{
         @include sizes(90%,$height:50px);
         @include displayFlex($flexDirection:row,$justifyContent:space-between);
@@ -378,7 +377,6 @@ main{
         @include sizes();
         @include displayFlex($justifyContent: space-between);
         overflow: hidden;
-        border-bottom: 1px dashed rgb(181, 181, 181);
         display: none;
 
         h2{

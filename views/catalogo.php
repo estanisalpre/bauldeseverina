@@ -108,6 +108,7 @@
             <li id="toAboutUs">SOBRE NOSOTROS</li>
             <li id="toBriefcase">CATÁLOGO</li>
             <li id="toContact">CONTACTO</li>
+            <li class="selectCategory">CATEGORÍAS</li>
         </ul>
         <div class="socialMedia">
             <p>¡Síguenos!</p>

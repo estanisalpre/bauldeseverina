@@ -11,9 +11,8 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  scroll-behavior: smooth;
-  scroll-padding: 7.5rem;
   overflow-x: hidden;
+  border: 1px solid red;
 }
 
 body {
@@ -26,6 +25,7 @@ body {
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   font-family: "Afacad Flux", sans-serif;
   gap: 25px;
+  border: 1px solid black;
 }
 
 nav {
@@ -391,7 +391,6 @@ main .category {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  border-bottom: 1px dashed rgb(181, 181, 181);
   display: none;
 }
 main .category h2 {
