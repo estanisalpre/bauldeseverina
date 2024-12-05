@@ -331,6 +331,10 @@ main{
         img{
             @include sizes(40%,auto);
         }
+        h1{
+            @include sizes($height:40px);
+            font-size: $bold;
+        }
         p{
             @include sizes();
             @include displayFlex();

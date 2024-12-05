@@ -87,7 +87,8 @@
         <section id="presentation">
             <div class="textPresentation">
                 <img src="/public/imgs/logos/logo.png" alt="Logo de El Baul de Severina">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> <br> Ex dicta sunt quaerat. Ex dicta sunt quaerat. Ex dicta sunt quaerat. Ex dicta sunt quaerat. Ex dicta sunt quaerat.</p>
+                <h1>Una segunda oportunidad para tu clóset</h1>
+                <p>Llevamos seis años trayendo tesoros de segunda mano, aplicando los mejores procesos de curaduría, con precios justos. <br> <br> De Medellín para Colombia con amor 💕</p>
             </div>
         </section>
         <!--SECCIÓN DE CATEGORÍAS-->
