@@ -382,7 +382,7 @@ main .category div {
 }
 main .category div div {
   width: 230px;
-  height: 45%;
+  height: 50%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
