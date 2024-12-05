@@ -123,7 +123,7 @@
         <section id="categorySection">
             <h2>Busca por categoría:</h2>
             <div class="links">
-                <div class="toCategory" data-id="bolsosCategory"><span>Bolsos</span><img src="/public/imgs/icons/bolso.png" alt="Ícono de Categoria de Bolsos"></div>
+                <div class="toCategory" value="valueBolso" data-id="bolsosCategory"><span>Bolsos</span><img src="/public/imgs/icons/bolso.png" alt="Ícono de Categoria de Bolsos"></div>
                 <div class="toCategory" data-id="jeansCategory"><span>Jeans</span><img src="/public/imgs/icons/jeans.png" alt="Ícono de Categoria de Pantalones y Jeans"></div>
                 <div class="toCategory" data-id="blusasCategory"><span>Blusas</span><img src="/public/imgs/icons/blusa.png" alt="Ícono de Categoria de Blusas"></div>
                 <div class="toCategory" data-id="tenisCategory"><span>Tenis</span><img src="/public/imgs/icons/zapatos.png" alt="Ícono de Categoria de Tenis"></div>

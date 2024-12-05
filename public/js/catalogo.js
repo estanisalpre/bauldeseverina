@@ -40,7 +40,9 @@ function categoryButtons(){
 
 //Abrimos la categoria correspondiente
 function openCategory(id){
-    id.style.display = 'flex'
+    if(id){
+        console.log(id)
+    }
 }
 
 //Cerramos las categorias
