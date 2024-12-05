@@ -352,7 +352,6 @@ main .category {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
   border-bottom: 1px dashed rgb(181, 181, 181);
 }
 main .category h2 {
