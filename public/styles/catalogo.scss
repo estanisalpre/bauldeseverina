@@ -350,9 +350,6 @@ main{
         @include displayFlex($justifyContent: space-between);
         overflow: hidden;
         border-bottom: 1px dashed rgb(181, 181, 181);
-        background-image: url(/public/imgs/presentationBackground.png);
-        background-position: center;
-        background-repeat: repeat;
 
         h2{
             @include sizes($height: 40px);
@@ -423,6 +420,57 @@ main{
             font-weight: $bold;
             background-image: $secondBackgroundImage;
             border: 1px solid $darkFontColor;
+        }
+    }
+
+     //Login
+     .sectionForm{
+        @include sizes();
+        @include displayFlex();
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 12000;
+        display: none;
+
+        form{
+            @include displayFlex();
+            @include sizes(80%, 300px);
+            border-radius: 20px;
+            border: 1px solid $shadow;
+            background-image: $secondBackgroundImage;
+            gap: 5px;
+
+            #errorMessage{
+                display: none;
+            }
+            p{
+                font-size: $lg;
+            }
+            input{
+                @include sizes(90%,40px);
+                @include displayFlex();
+                padding-left: 10px;
+                font-size: $lg;
+                font-family: $afacadFont;
+            }
+            button{
+                @include buttonDesign(80%);
+                box-shadow: none;
+                margin-top: 0px;
+            }
+            button:hover{
+                background-image: $backgroundImage;
+            }
+        }
+        button{
+            margin-top: -60px;
+            @include buttonDesign(70%);
+        }
+        button:hover{
+            background-image: $backgroundImage;
         }
     }
 }
