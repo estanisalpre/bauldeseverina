@@ -380,7 +380,7 @@ main .category div {
   gap: 5px;
 }
 main .category div div {
-  width: auto;
+  width: 380px;
   height: 95%;
   display: flex;
   justify-content: space-between;
