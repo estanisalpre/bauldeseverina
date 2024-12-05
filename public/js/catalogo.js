@@ -1,4 +1,5 @@
 //Toda la funcionalidad de la pagina de catalogo
+import { loginButton } from './main.js';
 import {navFunctionality} from './nav.js'
 import { allRedirections } from './redirections.js';
 
@@ -14,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Botones consultar whatsapp
     whatsappRedirection();
+
+    //Admin
+    loginButton();
 })
 
 //Funcionalidad botones de categoría

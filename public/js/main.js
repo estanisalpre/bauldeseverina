@@ -32,7 +32,7 @@ function comenzar(){
 }
 
 //Boton para loguearse
-function loginButton(){
+export function loginButton(){
     const toAdmin = document.querySelectorAll('#toAdmin')
     const sectionForm = document.getElementById('sectionForm')
     const backButton = document.getElementById('backButton')
