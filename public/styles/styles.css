@@ -316,6 +316,7 @@ main #presentation .textPresentation {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 main #presentation .textPresentation img {
   width: 40%;
@@ -324,7 +325,8 @@ main #presentation .textPresentation img {
 main #presentation .textPresentation h1 {
   width: 100%;
   height: 40px;
-  font-size: 600;
+  font-weight: 600;
+  font-size: 23px;
 }
 main #presentation .textPresentation p {
   width: 100%;
@@ -333,6 +335,7 @@ main #presentation .textPresentation p {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-size: 16px;
 }
 main h4 {
   width: 100%;
@@ -342,6 +345,7 @@ main h4 {
   flex-direction: column;
   align-items: center;
   font-size: 23px;
+  align-items: flex-start;
   margin-top: 100px;
   margin-bottom: -30px;
 }

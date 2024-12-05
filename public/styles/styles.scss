@@ -327,17 +327,20 @@ main{
     .textPresentation{
         @include sizes();
         @include displayFlex();
+        gap: 10px;
 
         img{
             @include sizes(40%,auto);
         }
         h1{
             @include sizes($height:40px);
-            font-size: $bold;
+            font-weight: $bold;
+            font-size: $lg;
         }
         p{
             @include sizes();
             @include displayFlex();
+            font-size: $md;
         }
     }
     }
@@ -345,6 +348,7 @@ main{
         @include sizes(100%,30px);
         @include displayFlex();
         font-size: $lg;
+        align-items: flex-start;
         margin-top: 100px;
         margin-bottom: -30px;
     }
