@@ -3,6 +3,9 @@ export function imgSlider(){
     const slides = document.querySelector('.slides');
     const images = document.querySelectorAll('.slides img');
     let currentIndex = 0;
+    //Detectar eventos de deslizamiento
+    let startY = 0;
+    let endY = 0;
 
     //Función para deslizar a la siguiente imagen
     function slideNext() {
@@ -28,16 +31,15 @@ export function imgSlider(){
         slides.style.transform = `translateY(-${currentIndex * imageHeight}px)`; 
     }
 
-    //Detectar eventos de deslizamiento
-    let startY = 0;
-    let endY = 0;
-
     slides.addEventListener('touchstart', (e) => {
         startY = e.touches[0].clientY;
     });
 
     slides.addEventListener('touchmove', (e) => {
-        e.preventDefault();
+        if (currentIndex < images.length - 1 || startY > endY) {
+            // Prevenir el scroll solo si no estamos en la última imagen
+            e.preventDefault();
+        }
     });
 
     slides.addEventListener('touchend', (e) => {
