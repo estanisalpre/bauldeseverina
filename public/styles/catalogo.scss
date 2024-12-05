@@ -364,6 +364,7 @@ main{
             @include displayFlex($flexDirection:row);
             overflow-y: auto;
             scroll-behavior: smooth;
+            flex-wrap: wrap;
             gap: 5px;
         
             div{

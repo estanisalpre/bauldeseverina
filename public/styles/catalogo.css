@@ -376,6 +376,7 @@ main .category div {
   align-items: center;
   overflow-y: auto;
   scroll-behavior: smooth;
+  flex-wrap: wrap;
   gap: 5px;
 }
 main .category div div {
