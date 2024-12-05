@@ -313,7 +313,8 @@ main{
         @include sizes(100%,30px);
         @include displayFlex();
         font-size: $lg;
-        margin-bottom: -50px;
+        margin-top: 100px;
+        margin-bottom: -30px;
     }
     //Contenedor de categorias
     #categoriesSection{
