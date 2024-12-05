@@ -585,7 +585,7 @@ main .sectionForm form button {
   border-radius: 30px;
   transition: all 0.3s ease;
   font-family: "Afacad Flux", sans-serif;
-  width: 70%;
+  width: 80%;
   height: 50px;
   text-align: center;
   font-weight: 400;
@@ -606,7 +606,7 @@ main .sectionForm button {
   border-radius: 30px;
   transition: all 0.3s ease;
   font-family: "Afacad Flux", sans-serif;
-  width: 90%;
+  width: 60%;
   height: 50px;
   text-align: center;
   font-weight: 400;
