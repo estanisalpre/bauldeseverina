@@ -349,6 +349,7 @@ main{
         @include displayFlex($justifyContent: space-between);
         overflow: hidden;
         border-bottom: 1px dashed rgb(181, 181, 181);
+        display: none;
 
         h2{
             @include sizes($height: 40px);
@@ -467,7 +468,7 @@ main{
         }
         button{
             margin-top: -60px;
-            @include buttonDesign(70%);
+            @include buttonDesign(60%);
             border-radius: 60px;
         }
         button:hover{

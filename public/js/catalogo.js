@@ -29,12 +29,23 @@ function categoryButtons(){
             const categoryId = category.dataset.id;
 
             if(categoryId){
+                openCategory(categoryId)
                 location.href = `catalogo#${categoryId}`;
             } else {
                 console.log('Categoria sin data-id')
             }
         })
     })
+}
+
+//Abrimos la categoria correspondiente
+function openCategory(id){
+    id.style.display = 'flex'
+}
+
+//Cerramos las categorias
+function closeCategories(){
+
 }
 
 //Funcionalidad boton whatsapp para consultar producto

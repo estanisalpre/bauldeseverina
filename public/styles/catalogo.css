@@ -355,6 +355,7 @@ main .category {
   align-items: center;
   overflow: hidden;
   border-bottom: 1px dashed rgb(181, 181, 181);
+  display: none;
 }
 main .category h2 {
   width: 100%;
@@ -518,7 +519,7 @@ main .sectionForm button {
   background-color: transparent;
   transition: all 0.3s ease;
   font-family: "Afacad Flux", sans-serif;
-  width: 70%;
+  width: 60%;
   height: 50px;
   text-align: center;
   font-weight: 400;
