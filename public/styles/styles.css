@@ -373,14 +373,11 @@ main #categoriesSection .fourthCategory {
 }
 main #categoriesSection .toBriefcaseSection {
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   z-index: 10000;
 }
 main #categoriesSection .toBriefcaseSection .catalogoSection {

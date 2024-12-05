@@ -362,11 +362,8 @@ main{
         }
         //Contenedor de catalogo
         .toBriefcaseSection{
-            @include sizes(100%,400px);
+            @include sizes(100%,300px);
             @include displayFlex();
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
             z-index: 10000;
 
             .catalogoSection{
