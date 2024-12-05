@@ -555,6 +555,13 @@ footer{
             @include displayFlex();
             align-items: flex-start;
             padding-left: 10px;
+
+            span{
+                cursor: pointer;
+            }
+            span:hover{
+                border-bottom: 1px solid $darkFontColor;
+            }
         }
     }
 }

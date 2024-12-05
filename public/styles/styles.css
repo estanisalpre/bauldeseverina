@@ -659,6 +659,12 @@ footer div ul {
   align-items: flex-start;
   padding-left: 10px;
 }
+footer div ul span {
+  cursor: pointer;
+}
+footer div ul span:hover {
+  border-bottom: 1px solid #353535;
+}
 
 @keyframes zoomAnimation {
   100% {
