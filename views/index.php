@@ -69,6 +69,14 @@
     <!--MAIN / CONTENIDO PRINCIPAL-->
     <main>
         <img id="whatsapp" src="/public/imgs/icons/whatsapp.png" alt="Whatsapp Icon">
+        <!--PRIMER CONTENEDOR-->
+        <section id="firstContent">
+                <div class="slides">
+                    <img src="imagen1.jpg" alt="Presentación moda de ropa al inicio">
+                    <img src="imagen2.jpg" alt="Presentación moda de ropa al inicio">
+                    <img src="imagen3.jpg" alt="Presentación moda de ropa al inicio">
+                </div>
+        </section>
         <!--PRESENTACION-->
         <section id="presentation">
             <div class="textPresentation">
@@ -78,7 +86,7 @@
             <h2 id="comenzarButton"><img src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online"> Comenzar</h2>
         </section>
         <!--SECCIÓN DE CATEGORÍAS-->
-        <h4>Categorias</h4>
+        <h4>Categorias</h4> 
         <section id="categoriesSection">
             <div class="fourthCategory">
                 <div><h3>Tenis</h3></div>
