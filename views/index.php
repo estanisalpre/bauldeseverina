@@ -6,6 +6,12 @@
     $stmtTransport = $pdo->prepare($queryTransport);
     $stmtTransport->execute();
     $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
+
+    //Imagenes
+    $queryImgs = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 3";
+    $stmtImgs = $pdo->prepare($queryImgs);
+    $stmtImgs->execute();
+    $myImgs = $stmtImgs->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -72,15 +78,39 @@
         <!--PRIMER CONTENEDOR-->
         <section id="firstContent">
                 <div class="slides">
-                    <div id="startImg1">
-                        <button id="comenzarButton"><img src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
-                    </div>
-                    <div id="startImg2">
-                        <button id="comenzarButton"><img src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
-                    </div>
-                    <div id="startImg3">
-                        <button id="comenzarButton"><img src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
-                    </div>
+                    <?php
+                    if (!empty($myImgs)): ?>
+                        <?php foreach ($myImgs as $img): ?>
+                            <div style="background-image: url('<?php echo htmlspecialchars($img['productImg']); ?>');">
+                                <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p>No hay productos disponibles.</p>
+                    <?php endif; 
+                    ?>
+                    <?php
+                    if (!empty($myImgs)): ?>
+                        <?php foreach ($myImgs as $img): ?>
+                            <div style="background-image: url('<?php echo htmlspecialchars($img['productImg']); ?>');">
+                                <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p>No hay productos disponibles.</p>
+                    <?php endif; 
+                    ?>
+                    <?php
+                    if (!empty($myImgs)): ?>
+                        <?php foreach ($myImgs as $img): ?>
+                            <div style="background-image: url('<?php echo htmlspecialchars($img['productImg']); ?>');">
+                                <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p>No hay productos disponibles.</p>
+                    <?php endif; 
+                    ?>
                 </div>
         </section>
         <!--PRESENTACION-->
@@ -131,7 +161,6 @@
                             <li><img src="/public/imgs/icons/facebook.png" alt="Ícono de Facebook"></li>
                             <li><img src="/public/imgs/icons/instagram.png" alt="Ícono de Instagram"></li>
                             <li><img src="/public/imgs/icons/whatsapp.png" alt="Ícono de Whatsapp"></li>
-                            <li><img src="/public/imgs/icons/gmail.png" alt="Ícono de Correo Electrónico"></li>
                         </ul>
                     </div>
                     <div class="numeroCiudad">
