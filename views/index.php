@@ -12,7 +12,7 @@
     $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
 
     //Imagenes
-    $queryImgs = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 3";
+    $queryImgs = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 1";
     $stmtImgs = $pdo->prepare($queryImgs);
     $stmtImgs->execute();
     $myImgs = $stmtImgs->fetch(PDO::FETCH_ASSOC);
