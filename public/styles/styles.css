@@ -249,12 +249,14 @@ main #firstContent {
   height: 100%;
   overflow: hidden;
   position: relative;
+  border: 2px solid black;
 }
 main #firstContent .slides {
   height: 100vh;
   display: flex;
   flex-direction: column;
   transition: transform 0.8s ease-in-out;
+  border: 3px solid blue;
 }
 main #firstContent .slides div {
   width: 100%;
@@ -266,6 +268,7 @@ main #firstContent .slides div {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 2px solid red;
 }
 main #firstContent .slides div button {
   width: 180px;
@@ -283,6 +286,7 @@ main #firstContent .slides div button {
   font-family: "Afacad Flux", sans-serif;
   font-size: 23px;
   margin-bottom: -100px;
+  border: 1px solid orange;
 }
 main #firstContent .slides div button img {
   width: 30px;
