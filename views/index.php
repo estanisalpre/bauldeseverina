@@ -1,6 +1,10 @@
 <?php
     include 'db.php';
 
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    
     //Transporte
     $queryTransport = "SELECT transportPrice FROM transport";
     $stmtTransport = $pdo->prepare($queryTransport);

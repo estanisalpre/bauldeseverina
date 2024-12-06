@@ -288,15 +288,6 @@ main #firstContent .slides div button img {
   width: 30px;
   height: auto;
 }
-main #firstContent .slides #startImg1 {
-  background-image: url(/public/imgs/img1.jpg);
-}
-main #firstContent .slides #startImg2 {
-  background-image: url(/public/imgs/img2.jpg);
-}
-main #firstContent .slides #startImg3 {
-  background-image: url(/public/imgs/img3.jpg);
-}
 main #presentation {
   width: 100%;
   height: 900px;
