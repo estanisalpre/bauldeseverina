@@ -4,7 +4,7 @@
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
-    
+
     //Transporte
     $queryTransport = "SELECT transportPrice FROM transport";
     $stmtTransport = $pdo->prepare($queryTransport);
@@ -82,28 +82,6 @@
         <!--PRIMER CONTENEDOR-->
         <section id="firstContent">
                 <div class="slides">
-                    <?php
-                    if (!empty($myImgs)): ?>
-                        <?php foreach ($myImgs as $img): ?>
-                            <div style="background-image: url('<?php echo htmlspecialchars($img['productImg']); ?>');">
-                                <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php else: ?>
-                        <p>No hay productos disponibles.</p>
-                    <?php endif; 
-                    ?>
-                    <?php
-                    if (!empty($myImgs)): ?>
-                        <?php foreach ($myImgs as $img): ?>
-                            <div style="background-image: url('<?php echo htmlspecialchars($img['productImg']); ?>');">
-                                <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php else: ?>
-                        <p>No hay productos disponibles.</p>
-                    <?php endif; 
-                    ?>
                     <?php
                     if (!empty($myImgs)): ?>
                         <?php foreach ($myImgs as $img): ?>
