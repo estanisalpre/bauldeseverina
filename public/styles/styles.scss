@@ -278,7 +278,6 @@ main{
             display: flex;
             flex-direction: column;
             transition: transform 0.8s ease-in-out;
-            border: 3px solid blue;
 
             div{
                 width: 100%;
@@ -287,7 +286,6 @@ main{
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
-                border: 2px solid red;
 
                 button{
                     @include sizes(180px, 50px);
@@ -301,7 +299,6 @@ main{
                     font-family: $afacadFont;
                     font-size: $lg;
                     margin-bottom: -100px;
-                    border: 1px solid orange;
 
                     img{
                         @include sizes(30px,auto);

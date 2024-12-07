@@ -53,5 +53,5 @@ export function imgSlider(){
             if (e.deltaY > 0) slideNext(); 
             if (e.deltaY < 0) slidePrev(); 
         }
-    });
+    },{ passive: false });
 }
