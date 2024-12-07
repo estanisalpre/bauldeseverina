@@ -14,3 +14,7 @@ RewriteRule ^(.+)$ index.php [QSA,L]
         Header set Expires 0
     </FilesMatch>
 </IfModule>
+
+# Mostrar errores
+php_flag display_errors On
+php_value error_reporting 32767
