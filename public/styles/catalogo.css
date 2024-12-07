@@ -21,7 +21,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
   font-family: "Afacad Flux", sans-serif;
 }
 
@@ -47,7 +47,7 @@ nav .topNav {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  background-image: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
   cursor: default;
   gap: 10px;
   box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
@@ -136,7 +136,7 @@ nav header .mobileHeader ul #catalogo:hover {
   box-shadow: 0px 0px 50px 10px #414141;
   overflow: hidden;
   gap: 20px;
-  background-image: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
 }
 .burguerMenu div {
   width: 90%;
@@ -206,7 +206,7 @@ nav header .mobileHeader ul #catalogo:hover {
   gap: 10px;
 }
 .burguerMenu .socialMedia p {
-  color: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  color: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
   background-color: transparent;
   font-weight: 600;
   font-size: 23px;
@@ -219,7 +219,7 @@ nav header .mobileHeader ul #catalogo:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-color: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
   color: #353535;
   font-size: 14px;
 }
@@ -317,7 +317,7 @@ main #categorySection .links div span {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
   margin-top: -40px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 1px #414141;
@@ -377,7 +377,7 @@ main #selectCategory ul {
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  background-image: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
   border: 1px solid #353535;
 }
 main #selectCategory ul li {
@@ -406,7 +406,7 @@ main .category h2 {
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  background-image: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
   padding-left: 10px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
@@ -456,12 +456,12 @@ main .category div div div span {
   flex-direction: row;
   align-items: center;
   font-size: 23px;
-  background-image: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
 }
 main .category div div div span button {
   width: 120px;
   height: 30px;
-  background-image: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
   border: 1px solid #353535;
   border-radius: 60px;
   font-size: 14px;
@@ -492,7 +492,7 @@ main .category p {
   align-items: center;
   border-radius: 60px;
   font-weight: 600;
-  background-image: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
   border: 1px solid #353535;
 }
 main .sectionForm {
@@ -519,7 +519,7 @@ main .sectionForm form {
   height: 300px;
   border-radius: 20px;
   border: 1px solid #414141;
-  background-image: linear-gradient(-225deg, #b9f3d3 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #c5e3d2 0%, #FFE6FA 100%);
   gap: 5px;
 }
 main .sectionForm form #errorMessage {
