@@ -94,6 +94,20 @@
                     <?php else: ?>
                         <p>No hay productos disponibles.</p>
                     <?php endif; ?>
+                    <?php if (!empty($myImgs)): ?>
+                        <div style="background-image: url('<?php echo htmlspecialchars($myImgs['productImg']); ?>');">
+                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                        </div>
+                    <?php else: ?>
+                        <p>No hay productos disponibles.</p>
+                    <?php endif; ?>
+                    <?php if (!empty($myImgs)): ?>
+                        <div style="background-image: url('<?php echo htmlspecialchars($myImgs['productImg']); ?>');">
+                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                        </div>
+                    <?php else: ?>
+                        <p>No hay productos disponibles.</p>
+                    <?php endif; ?>
                 </div>
         </section>
         <!--PRESENTACION-->
