@@ -249,7 +249,6 @@ main #firstContent {
   height: 100%;
   overflow: hidden;
   position: relative;
-  border: 2px solid black;
 }
 main #firstContent .slides {
   height: 100vh;

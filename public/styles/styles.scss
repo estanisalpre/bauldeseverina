@@ -271,7 +271,6 @@ main{
         @include sizes();
         overflow: hidden;
         position: relative;
-        border: 2px solid black;
 
         .slides{
             height: 100vh;
