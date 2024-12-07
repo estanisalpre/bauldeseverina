@@ -5,17 +5,22 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
 
-    //Transporte
-    $queryTransport = "SELECT transportPrice FROM transport";
-    $stmtTransport = $pdo->prepare($queryTransport);
-    $stmtTransport->execute();
-    $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
-
-    //Imagenes
-    $queryImgs = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 1";
-    $stmtImgs = $pdo->prepare($queryImgs);
-    $stmtImgs->execute();
-    $myImgs = $stmtImgs->fetch(PDO::FETCH_ASSOC);
+    try {
+        //Transporte
+        $queryTransport = "SELECT transportPrice FROM transport";
+        $stmtTransport = $pdo->prepare($queryTransport);
+        $stmtTransport->execute();
+        $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
+    
+        //Imagenes
+        $queryImgs = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 1";
+        $stmtImgs = $pdo->prepare($queryImgs);
+        $stmtImgs->execute();
+        $myImgs = $stmtImgs->fetch(PDO::FETCH_ASSOC);
+    
+    } catch (PDOException $e) {
+        die("Error en la consulta: " . $e->getMessage());
+    }
 ?>
 
 <!DOCTYPE html>
