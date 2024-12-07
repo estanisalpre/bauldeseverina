@@ -24,7 +24,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   font-family: "Afacad Flux", sans-serif;
   justify-content: flex-start;
   align-items: flex-start;
@@ -51,7 +51,7 @@ nav .topNav {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   cursor: default;
   gap: 10px;
   box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
@@ -139,7 +139,7 @@ nav header .mobileHeader ul #catalogo:hover {
   box-shadow: 0px 0px 50px 10px #414141;
   overflow: hidden;
   gap: 20px;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 .burguerMenu div {
   width: 90%;
@@ -209,7 +209,7 @@ nav header .mobileHeader ul #catalogo:hover {
   gap: 10px;
 }
 .burguerMenu .socialMedia p {
-  color: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  color: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   background-color: transparent;
   font-weight: 600;
   font-size: 23px;
@@ -222,7 +222,7 @@ nav header .mobileHeader ul #catalogo:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-color: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   color: #353535;
   font-size: 14px;
 }
@@ -277,7 +277,7 @@ main #firstContent .slides div button {
   gap: 5px;
   border: 0px;
   border-radius: 60px;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   color: #353535;
   font-weight: 600;
   font-family: "Afacad Flux", sans-serif;
@@ -391,7 +391,7 @@ main #categoriesSection .secondCategory div h3, main #categoriesSection .fourthC
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   font-weight: 400;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 main #categoriesSection .secondCategory {
   background-image: url(/public/imgs/categories/pantalonesJeansCategory.jpeg);
@@ -432,7 +432,7 @@ main #categoriesSection .toBriefcaseSection .catalogoSection button {
   font-size: 23px;
   color: #353535;
   cursor: pointer;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   box-shadow: none;
   display: flex;
   justify-content: center;
@@ -541,7 +541,7 @@ main #categoriesSection #buttonSection button {
   font-size: 23px;
   color: #353535;
   cursor: pointer;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -587,7 +587,7 @@ main .sectionForm form {
   height: 300px;
   border-radius: 20px;
   border: 1px solid #414141;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   gap: 5px;
 }
 main .sectionForm form #errorMessage {
@@ -620,7 +620,7 @@ main .sectionForm form button {
   font-size: 23px;
   color: #353535;
   cursor: pointer;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
   box-shadow: none;
   margin-top: 0px;
 }
@@ -641,7 +641,7 @@ main .sectionForm button {
   font-size: 23px;
   color: #353535;
   cursor: pointer;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 main .sectionForm button:hover {
   background-image: linear-gradient(to top, #fcddd4 0%, #e8dad0 100%);
@@ -669,7 +669,7 @@ footer {
   align-items: center;
   z-index: 10999;
   box-shadow: 0px 0px 20px 1px #414141;
-  background-image: linear-gradient(-225deg, #2a5347 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 footer img {
   width: 30%;
