@@ -12,11 +12,23 @@
         $stmtTransport->execute();
         $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
     
-        //Imagenes
-        $queryImgs = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 1";
-        $stmtImgs = $pdo->prepare($queryImgs);
-        $stmtImgs->execute();
-        $myImgs = $stmtImgs->fetch(PDO::FETCH_ASSOC);
+        //Imagen 1
+        $queryImgs1 = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 1";
+        $stmtImgs1 = $pdo->prepare($queryImgs1);
+        $stmtImgs1->execute();
+        $myImgs1 = $stmtImgs1->fetch(PDO::FETCH_ASSOC);
+
+        //Imagen 2
+        $queryImgs2 = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 1";
+        $stmtImgs2 = $pdo->prepare($queryImgs2);
+        $stmtImgs2->execute();
+        $myImgs2 = $stmtImgs2->fetch(PDO::FETCH_ASSOC);
+
+        //Imagen 3
+        $queryImgs3 = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 1";
+        $stmtImgs3 = $pdo->prepare($queryImgs3);
+        $stmtImgs3->execute();
+        $myImgs3 = $stmtImgs3->fetch(PDO::FETCH_ASSOC);
     
     } catch (PDOException $e) {
         die("Error en la consulta: " . $e->getMessage());
@@ -87,22 +99,22 @@
         <!--PRIMER CONTENEDOR-->
         <section id="firstContent">
                 <div class="slides">
-                    <?php if (!empty($myImgs)): ?>
-                        <div style="background-image: url('<?php echo htmlspecialchars($myImgs['productImg']); ?>');">
+                    <?php if (!empty($myImgs1)): ?>
+                        <div style="background-image: url('<?php echo htmlspecialchars($myImgs1['productImg']); ?>');">
                             <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
                         </div>
                     <?php else: ?>
                         <p>No hay productos disponibles.</p>
                     <?php endif; ?>
-                    <?php if (!empty($myImgs)): ?>
-                        <div style="background-image: url('<?php echo htmlspecialchars($myImgs['productImg']); ?>');">
+                    <?php if (!empty($myImgs2)): ?>
+                        <div style="background-image: url('<?php echo htmlspecialchars($myImgs2['productImg']); ?>');">
                             <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
                         </div>
                     <?php else: ?>
                         <p>No hay productos disponibles.</p>
                     <?php endif; ?>
-                    <?php if (!empty($myImgs)): ?>
-                        <div style="background-image: url('<?php echo htmlspecialchars($myImgs['productImg']); ?>');">
+                    <?php if (!empty($myImgs3)): ?>
+                        <div style="background-image: url('<?php echo htmlspecialchars($myImgs3['productImg']); ?>');">
                             <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
                         </div>
                     <?php else: ?>
