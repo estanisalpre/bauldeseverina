@@ -104,21 +104,27 @@
                             <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
                         </div>
                     <?php else: ?>
-                        <p>No hay productos disponibles.</p>
+                        <div class="assistanceImg" style="background-image: url('/public/imgs/categories/abrigosCategory.jpeg');">
+                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                        </div>
                     <?php endif; ?>
                     <?php if (!empty($myImgs2)): ?>
                         <div style="background-image: url('<?php echo htmlspecialchars($myImgs2['productImg']); ?>');">
                             <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
                         </div>
                     <?php else: ?>
-                        <p>No hay productos disponibles.</p>
+                        <div class="assistanceImg" style="background-image: url('/public/imgs/categories/bolsosCategory.jpeg');">
+                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                        </div>
                     <?php endif; ?>
                     <?php if (!empty($myImgs3)): ?>
                         <div style="background-image: url('<?php echo htmlspecialchars($myImgs3['productImg']); ?>');">
                             <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
                         </div>
                     <?php else: ?>
-                        <p>No hay productos disponibles.</p>
+                        <div class="assistanceImg" style="background-image: url('/public/imgs/categories/tenisCategory.jpeg');">
+                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                        </div>
                     <?php endif; ?>
                 </div>
         </section>
@@ -127,7 +133,7 @@
             <div class="textPresentation">
                 <img src="/public/imgs/logos/logo.png" alt="Logo de El Baul de Severina">
                 <h1>Una segunda oportunidad para tu clóset</h1>
-                <p>Llevamos seis años trayendo tesoros de segunda mano, aplicando los mejores procesos de curaduría, con precios justos. <br> <br> De Medellín para Colombia con amor 💕</p>
+                <p>Llevamos seis años trayendo tesoros de segunda mano, aplicando los mejores procesos de curaduría, con precios justos. <br> <br> De Medellín para Colombia con amor</p>
             </div>
         </section>
         <!--SECCIÓN DE CATEGORÍAS-->
