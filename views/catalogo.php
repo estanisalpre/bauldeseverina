@@ -10,7 +10,7 @@ $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
 // Obtener todos los productos disponibles con sus imágenes
 $queryProductos = "SELECT p.id_producto, p.productName, p.productPrice, p.available, p.id_categoria, ip.image_url 
                    FROM productos p
-                   LEFT JOIN imagenes_productos ip ON p.id_producto = ip.id_producto
+                   LEFT JOIN imagenes_productos ip ON p.id_producto = ip.id_product
                    WHERE p.available = 1";
 $stmtProductos = $pdo->prepare($queryProductos);
 $stmtProductos->execute();
