@@ -65,8 +65,11 @@ try {
         <!--AGREGAR PRODUCTOS-->
         <section id="addProduct">
             <h2>Agrega un nuevo producto</h2>
-            <form class="form" action="/add-product.php" method="POST">
-                <input type="file" name="productImg" id="productImg" required>
+            <form class="form" action="/add-product.php" method="POST" enctype="multipart/form-data">
+                <label for="productImg">Imágenes del producto:</label>
+                <input type="file" name="productImg[]" id="productImg1" required>
+                <input type="file" name="productImg[]" id="productImg2" required>
+                <input type="file" name="productImg[]" id="productImg3" required>
                 <input type="text" name="productName" id="productName" required placeholder="Nombre del producto">
                 <input type="number" name="productPrice" id="productPrice" required placeholder="Precio del producto">
                 <select name="id_categoria" id="categories">

@@ -443,9 +443,6 @@ main #categoriesSection .toBriefcaseSection .catalogoSection button img {
   width: 30px;
   height: auto;
 }
-main #categoriesSection .toBriefcaseSection .catalogoSection button:hover {
-  transform: scale(1.05);
-}
 main #categoriesSection .toBriefcaseSection .contactSection {
   display: flex;
   justify-content: center;
@@ -515,7 +512,7 @@ main #categoriesSection .toBriefcaseSection .contactSection .numeroCiudad ul {
 }
 main #categoriesSection .toBriefcaseSection .contactSection .numeroCiudad ul li {
   justify-content: flex-start;
-  font-size: 23px;
+  font-size: 16px;
 }
 main #categoriesSection .seventhCategory {
   background-image: url(/public/imgs/categories/hoodiesSueterCategory.jpeg);

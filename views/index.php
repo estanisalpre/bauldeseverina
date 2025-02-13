@@ -101,29 +101,29 @@
                 <div class="slides">
                     <?php if (!empty($myImgs1)): ?>
                         <div style="background-image: url('<?php echo htmlspecialchars($myImgs1['productImg']); ?>');">
-                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                            <button id="comenzarButton">COMENZAR</button>
                         </div>
                     <?php else: ?>
                         <div class="assistanceImg" style="background-image: url('/public/imgs/categories/abrigosCategory.jpeg');">
-                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                            <button id="comenzarButton">COMENZAR</button>
                         </div>
                     <?php endif; ?>
                     <?php if (!empty($myImgs2)): ?>
                         <div style="background-image: url('<?php echo htmlspecialchars($myImgs2['productImg']); ?>');">
-                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                            <button id="comenzarButton">COMENZAR</button>
                         </div>
                     <?php else: ?>
                         <div class="assistanceImg" style="background-image: url('/public/imgs/categories/bolsosCategory.jpeg');">
-                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                            <button id="comenzarButton">COMENZAR</button>
                         </div>
                     <?php endif; ?>
                     <?php if (!empty($myImgs3)): ?>
                         <div style="background-image: url('<?php echo htmlspecialchars($myImgs3['productImg']); ?>');">
-                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                            <button id="comenzarButton">COMENZAR</button>
                         </div>
                     <?php else: ?>
                         <div class="assistanceImg" style="background-image: url('/public/imgs/categories/tenisCategory.jpeg');">
-                            <button id="comenzarButton"><img id="introImg1" src="/public/imgs/icons/start.png" alt="Ícono de Comenzar - Navegar por la tienda online">COMENZAR</button>
+                            <button id="comenzarButton">COMENZAR</button>
                         </div>
                     <?php endif; ?>
                 </div>
@@ -180,7 +180,7 @@
                     </div>
                     <div class="numeroCiudad">
                         <ul>
-                            <li>📱 +57 301 2397022 </li>
+                            <li>📱 +57 301 2397022</li>
                             <li>📍 Medellín, CO</li>  
                         </ul>
                     </div>
