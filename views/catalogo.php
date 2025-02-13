@@ -7,13 +7,32 @@ $stmtTransport = $pdo->prepare($queryTransport);
 $stmtTransport->execute();
 $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
 
-// Obtener todos los productos disponibles
-$queryProductos = "SELECT productImg, productImg2, productImg3, productName, productPrice, available, id_categoria 
-                   FROM productos 
-                   WHERE available = 1";
+// Obtener todos los productos disponibles con sus imágenes
+$queryProductos = "SELECT p.id_producto, p.productName, p.productPrice, p.available, p.id_categoria, ip.image_url 
+                   FROM productos p
+                   LEFT JOIN imagenes_productos ip ON p.id_producto = ip.id_producto
+                   WHERE p.available = 1";
 $stmtProductos = $pdo->prepare($queryProductos);
 $stmtProductos->execute();
 $productos = $stmtProductos->fetchAll(PDO::FETCH_ASSOC);
+
+// Agrupar las imágenes por producto
+$productosConImagenes = [];
+foreach ($productos as $producto) {
+    $idProducto = $producto['id_producto'];
+    if (!isset($productosConImagenes[$idProducto])) {
+        $productosConImagenes[$idProducto] = [
+            'productName' => $producto['productName'],
+            'productPrice' => $producto['productPrice'],
+            'available' => $producto['available'],
+            'id_categoria' => $producto['id_categoria'],
+            'imagenes' => []
+        ];
+    }
+    if ($producto['image_url']) {
+        $productosConImagenes[$idProducto]['imagenes'][] = $producto['image_url'];
+    }
+}
 
 // Agrupar productos por categoría
 $categorias = [
@@ -29,15 +48,15 @@ $categorias = [
     19 => "Otros"
 ];
 
+// Agrupar productos por categoría
 $productosPorCategoria = [];
-foreach ($productos as $producto) {
+foreach ($productosConImagenes as $idProducto => $producto) {
     $idCategoria = $producto['id_categoria'];
     if (isset($categorias[$idCategoria])) {
         $productosPorCategoria[$idCategoria][] = $producto;
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -137,14 +156,20 @@ foreach ($productos as $producto) {
                 <div class="productos-grid">
                     <?php foreach ($productos as $producto): ?>
                         <div class="producto">
-                            <img src="<?php echo htmlspecialchars($producto['productImg']); ?>" alt="<?php echo htmlspecialchars($producto['productName']); ?>">
+                            <?php if (!empty($producto['imagenes'])): ?>
+                                <div class="producto-imagenes">
+                                    <?php foreach ($producto['imagenes'] as $imagen): ?>
+                                        <img src="<?php echo htmlspecialchars($imagen); ?>" alt="<?php echo htmlspecialchars($producto['productName']); ?>">
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
                             <h3><?php echo htmlspecialchars($producto['productName']); ?></h3>
                             <p>Precio: $<?php echo number_format($producto['productPrice'], 2); ?></p>
                         </div>
                     <?php endforeach; ?>
                 </div>
             <?php endforeach; ?>
-        </section>                    
+        </section>                
         <!--LOGIN-->
         <section id="sectionForm" class="sectionForm">
             <form action="login.php" method="POST" class="loginForm">
