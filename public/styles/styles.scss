@@ -409,9 +409,6 @@ main{
                         @include sizes(30px,auto);
                     }
                 }
-                button:hover{
-                    transform: scale(1.05);
-                }
             }
             .contactSection{
                 @include displayFlex();
@@ -460,7 +457,7 @@ main{
 
                         li{
                             justify-content: flex-start;
-                            font-size: $lg;
+                            font-size: $md;
                         }
                     }
                 }
