@@ -42,7 +42,7 @@ try {
 </head>
 <body>
    <!--NAV-->
-   <nav id="nav">
+    <nav id="nav">
         <header>
             <img id="toBriefcase" src="/public/imgs/icons/catalogo.png" alt="Ícono catálogo de productos">
             <img id="transportButton" src="/public/imgs/icons/envios.png" alt="Ícono para envíos a nivel nacional">
@@ -65,10 +65,40 @@ try {
         <!--AGREGAR PRODUCTOS-->
         <section id="addProduct">
             <h2>Agrega un nuevo producto</h2>
-            <form class="form" action="/add-product.php" method="POST" enctype="multipart/form-data">
+            <form class="form" action="/add-product.php" method="POST">
                 <input type="file" name="productImg" id="productImg" required>
                 <input type="text" name="productName" id="productName" required placeholder="Nombre del producto">
+                <input type="text" name="productBrand" id="productBrand" placeholder="Marca del producto">
+                <input type="text" name="productDescription" id="productDescription" required placeholder="Descripción del producto">
                 <input type="number" name="productPrice" id="productPrice" required placeholder="Precio del producto">
+                <div class="medidasInputs">
+                    <input type="number" name="cintura" id="cintura" required placeholder="Cintura">
+                    <input type="number" name="largo" id="largo" required placeholder="Largo">
+                    <input type="number" name="tiro" id="tiro" required placeholder="Tiro">
+                    <input type="number" name="cadera" id="cadera" required placeholder="Cadera">
+                    <input type="number" name="pierna" id="pierna" required placeholder="Pierna">
+                    <input type="number" name="busto" id="busto" required placeholder="Busto">
+                    <input type="number" name="manga" id="manga" required placeholder="Manga">
+                </div>
+                <select name="id_talla" id="tallas">
+                    <option value="1">S</option>
+                    <option value="2">XS</option>
+                    <option value="3">M</option>
+                    <option value="4">L</option>
+                    <option value="5">XL</option>
+                    <hr>
+                    <option value="6">4</option>
+                    <option value="7">5</option>
+                    <option value="8">6</option>
+                    <option value="9">7</option>
+                    <option value="10">8</option>
+                    <option value="11">9</option>
+                    <option value="12">10</option>
+                    <option value="13">11</option>
+                    <option value="14">12</option>
+                    <option value="15">13</option>
+                    <option value="16">14</option>
+                </select>
                 <select name="id_categoria" id="categories">
                     <option value="1">Bolsos</option>
                     <option value="2">Tenis</option>
@@ -116,6 +146,12 @@ try {
             <form id="editProductForm">
                 <label for="editProductName">Nombre del Producto:</label>
                 <input type="text" id="editProductName"/>
+
+                <label for="editProductName">Marca del producto:</label>
+                <input type="text" id="editProductBrand"/>
+
+                <label for="editProductDescription">Descripción del producto:</label>
+                <input type="text" id="editProductDescription"/>
 
                 <label for="editProductValue">Precio del Producto:</label>
                 <input type="number" id="editProductValue" step="0.01" />

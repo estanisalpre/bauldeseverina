@@ -7,52 +7,52 @@
     $stmtTransport->execute();
     $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
     //Bolsos
-    $queryBolsos = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 1";
+    $queryBolsos = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 1";
     $stmtBolsos = $pdo->prepare($queryBolsos);
     $stmtBolsos->execute();
     $productosBolsos = $stmtBolsos->fetchAll(PDO::FETCH_ASSOC);
     //Pantalones & Jeans
-    $queryJeans = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 5";
+    $queryJeans = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 5";
     $stmtJeans = $pdo->prepare($queryJeans);
     $stmtJeans->execute();
     $productosJeans = $stmtJeans->fetchAll(PDO::FETCH_ASSOC);
     //Blusas
-    $queryBlusas = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 6";
+    $queryBlusas = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 6";
     $stmtBlusas = $pdo->prepare($queryBlusas);
     $stmtBlusas->execute();
     $productosBlusas = $stmtBlusas->fetchAll(PDO::FETCH_ASSOC);
     //Vestidos
-    $queryVestidos = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 7";
+    $queryVestidos = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 7";
     $stmtVestidos = $pdo->prepare($queryVestidos);
     $stmtVestidos->execute();
     $productosVestidos = $stmtVestidos->fetchAll(PDO::FETCH_ASSOC);
     //Deportiva
-    $queryDeportiva = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 8";
+    $queryDeportiva = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 8";
     $stmtDeportiva  = $pdo->prepare($queryDeportiva );
     $stmtDeportiva ->execute();
     $productosDeportiva  = $stmtDeportiva ->fetchAll(PDO::FETCH_ASSOC);
     //Hoodies
-    $queryHoodies = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 9";
+    $queryHoodies = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 9";
     $stmtHoodies = $pdo->prepare($queryHoodies);
     $stmtHoodies->execute();
     $productosHoodies = $stmtHoodies->fetchAll(PDO::FETCH_ASSOC);
     //Sandalias
-    $querySandalias = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 10";
+    $querySandalias = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 10";
     $stmtSandalias  = $pdo->prepare($querySandalias );
     $stmtSandalias ->execute();
     $productosSandalias  = $stmtSandalias ->fetchAll(PDO::FETCH_ASSOC);
     //Abrigos
-    $queryAbrigos = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 11";
+    $queryAbrigos = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 11";
     $stmtAbrigos = $pdo->prepare($queryAbrigos);
     $stmtAbrigos->execute();
     $productosAbrigos = $stmtAbrigos->fetchAll(PDO::FETCH_ASSOC);
     //Tenis
-    $queryTenis = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 2";
+    $queryTenis = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 2";
     $stmtTenis = $pdo->prepare($queryTenis);
     $stmtTenis->execute();
     $productosTenis = $stmtTenis->fetchAll(PDO::FETCH_ASSOC);
     //Otros
-    $queryOtros = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 19";
+    $queryOtros = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 19";
     $stmtOtros = $pdo->prepare($queryOtros);
     $stmtOtros->execute();
     $productosOtros = $stmtOtros->fetchAll(PDO::FETCH_ASSOC);
@@ -153,13 +153,37 @@
         </section>
         <section id="bolsosCategory" data-id="bolsosCategory" class="category">
             <h2><span class="selectCategory">Categorías</span>Bolsos</h2>
-            <div id="productos-bolsos">
+            <div id="productos-bolsos" class="product-card">
                 <?php
                 if (!empty($productosBolsos)): ?>
                     <?php foreach ($productosBolsos as $bolso): ?>
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($bolso['productImg']); ?>');">
                             <div class="card-content">
+                                <div class="medidas-content">
+                                    <table>
+                                        <tr>
+                                            <th>Cintura</th>
+                                            <th>Tiro</th>
+                                            <th>Largo</th>
+                                            <th>Cadera</th>
+                                            <th>Pierna</th>
+                                            <th>Busto</th>
+                                            <th>Manga</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($bolso['productName']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?> | Marca: <?php echo htmlspecialchars($bolso['productBrand']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($bolso['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -178,7 +202,32 @@
                     <?php foreach ($productosJeans as $jeans): ?>
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($jeans['productImg']); ?>');">
                             <div class="card-content">
+                            <div class="medidas-content">
+                                    <span class="medidasTitle">Medidas</span>
+                                    <table>
+                                        <tr>
+                                            <th>Cintura</th>
+                                            <th>Tiro</th>
+                                            <th>Largo</th>
+                                            <th>Cadera</th>
+                                            <th>Pierna</th>
+                                            <th>Busto</th>
+                                            <th>Manga</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($jeans['productName']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($jeans['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -197,7 +246,32 @@
                     <?php foreach ($productosBlusas as $blusa): ?>
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($blusa['productImg']); ?>');">
                             <div class="card-content">
+                            <div class="medidas-content">
+                                    <span class="medidasTitle">Medidas</span>
+                                    <table>
+                                        <tr>
+                                            <th>Cintura</th>
+                                            <th>Tiro</th>
+                                            <th>Largo</th>
+                                            <th>Cadera</th>
+                                            <th>Pierna</th>
+                                            <th>Busto</th>
+                                            <th>Manga</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($blusa['productName']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($blusa['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -216,7 +290,32 @@
                     <?php foreach ($productosTenis as $tenis): ?>
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($tenis['productImg']); ?>');">
                             <div class="card-content">
+                            <div class="medidas-content">
+                                    <span class="medidasTitle">Medidas</span>
+                                    <table>
+                                        <tr>
+                                            <th>Cintura</th>
+                                            <th>Tiro</th>
+                                            <th>Largo</th>
+                                            <th>Cadera</th>
+                                            <th>Pierna</th>
+                                            <th>Busto</th>
+                                            <th>Manga</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($tenis['productName']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($tenis['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -235,7 +334,32 @@
                     <?php foreach ($productosVestidos as $vestido): ?>
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($vestido['productImg']); ?>');">
                             <div class="card-content">
+                            <div class="medidas-content">
+                                    <span class="medidasTitle">Medidas</span>
+                                    <table>
+                                        <tr>
+                                            <th>Cintura</th>
+                                            <th>Tiro</th>
+                                            <th>Largo</th>
+                                            <th>Cadera</th>
+                                            <th>Pierna</th>
+                                            <th>Busto</th>
+                                            <th>Manga</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($vestido['productName']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($vestido['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -254,7 +378,32 @@
                     <?php foreach ($productosDeportiva as $deportiva): ?>
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($deportiva['productImg']); ?>');">
                             <div class="card-content">
+                            <div class="medidas-content">
+                                    <span class="medidasTitle">Medidas</span>
+                                    <table>
+                                        <tr>
+                                            <th>Cintura</th>
+                                            <th>Tiro</th>
+                                            <th>Largo</th>
+                                            <th>Cadera</th>
+                                            <th>Pierna</th>
+                                            <th>Busto</th>
+                                            <th>Manga</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($deportiva['productName']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($deportiva['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button></span>
                             </div>
                         </div>
@@ -273,7 +422,32 @@
                     <?php foreach ($productosHoodies as $hoodies): ?>
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($hoodies['productImg']); ?>');">
                             <div class="card-content">
+                            <div class="medidas-content">
+                                    <span class="medidasTitle">Medidas</span>
+                                    <table>
+                                        <tr>
+                                            <th>Cintura</th>
+                                            <th>Tiro</th>
+                                            <th>Largo</th>
+                                            <th>Cadera</th>
+                                            <th>Pierna</th>
+                                            <th>Busto</th>
+                                            <th>Manga</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($hoodies['productName']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($hoodies['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -292,7 +466,32 @@
                     <?php foreach ($productosSandalias as $sandalia): ?>
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($sandalia['productImg']); ?>');">
                             <div class="card-content">
+                            <div class="medidas-content">
+                                    <span class="medidasTitle">Medidas</span>
+                                    <table>
+                                        <tr>
+                                            <th>Cintura</th>
+                                            <th>Tiro</th>
+                                            <th>Largo</th>
+                                            <th>Cadera</th>
+                                            <th>Pierna</th>
+                                            <th>Busto</th>
+                                            <th>Manga</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($sandalia['productName']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($sandalia['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -311,7 +510,32 @@
                     <?php foreach ($productosAbrigos as $abrigo): ?>
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($abrigo['productImg']); ?>');">
                             <div class="card-content">
+                            <div class="medidas-content">
+                                    <span class="medidasTitle">Medidas</span>
+                                    <table>
+                                        <tr>
+                                            <th>Cintura</th>
+                                            <th>Tiro</th>
+                                            <th>Largo</th>
+                                            <th>Cadera</th>
+                                            <th>Pierna</th>
+                                            <th>Busto</th>
+                                            <th>Manga</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($abrigo['productName']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($abrigo['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -330,7 +554,32 @@
                     <?php foreach ($productosOtros as $otros): ?>
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($otros['productImg']); ?>');">
                             <div class="card-content">
+                            <div class="medidas-content">
+                                    <span class="medidasTitle">Medidas</span>
+                                    <table>
+                                        <tr>
+                                            <th>Cintura</th>
+                                            <th>Tiro</th>
+                                            <th>Largo</th>
+                                            <th>Cadera</th>
+                                            <th>Pierna</th>
+                                            <th>Busto</th>
+                                            <th>Manga</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($otros['productName']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($otros['productPrice']); ?><button class="buyButton">¡Quiero esto!</button</span>
                             </div>
                         </div>

@@ -10,8 +10,18 @@ include 'db.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Recoger los datos del formulario
     $productName = $_POST['productName'];
+    $productBrand = $_POST['productBrand'];
+    $productDescription = $_POST['productDescription'];
     $productPrice = $_POST['productPrice'];
+    $id_talla = $_POST['id_talla'];
     $id_categoria = $_POST['id_categoria'];
+    $cintura = $_POST['cintura'];
+    $largo = $_POST['largo'];
+    $tiro = $_POST['tiro'];
+    $cadera = $_POST['cadera'];
+    $pierna = $_POST['pierna'];
+    $busto = $_POST['busto'];
+    $manga = $_POST['manga'];
     $available = isset($_POST['available']) ? 1 : 0; 
     $productImg = ''; 
 
@@ -23,16 +33,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Intentar mover la imagen al directorio de carga
         if (move_uploaded_file($_FILES['productImg']['tmp_name'], $uploadFile)) {
-            $productImg = $uploadFile;  // Guardar la ruta de la imagen en la base de datos
+            $productImg = $uploadFile; 
         }
     }
         // Insertar los datos en la base de datos
         try {
             // Preparar la consulta SQL para insertar el producto
-            $stmt = $pdo->prepare("INSERT INTO productos (productName, productPrice, productImg, available, id_categoria) VALUES (:productName, :productPrice, :productImg, :available, :id_categoria)");
+            $stmt = $pdo->prepare("INSERT INTO productos (productName, productBrand, productDescription, productPrice, productImg, cintura, largo, tiro, cadera, pierna, busto, manga, id_talla, available, id_categoria) VALUES (:productName, :productBrand, :productDescription, :productPrice, :productImg, :cintura, :largo, :tiro, :cadera, :pierna, :busto, :manga, :id_talla, :available, :id_categoria)");
             $stmt->bindParam(':productName', $productName);
+            $stmt->bindParam(':productBrand', $productBrand);
+            $stmt->bindParam(':productDescription', $productDescription);
             $stmt->bindParam(':productPrice', $productPrice);
             $stmt->bindParam(':productImg', $productImg);
+            $stmt->bindParam(':cintura', $cintura);
+            $stmt->bindParam(':largo', $largo);
+            $stmt->bindParam(':tiro', $tiro);
+            $stmt->bindParam(':cadera', $cadera);
+            $stmt->bindParam(':pierna', $pierna);
+            $stmt->bindParam(':busto', $busto);
+            $stmt->bindParam(':manga', $manga);
+            $stmt->bindParam(':id_talla', $id_talla);
             $stmt->bindParam(':available', $available);
             $stmt->bindParam(':id_categoria', $id_categoria);
             

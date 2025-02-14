@@ -375,6 +375,7 @@ main{
             }
         }
     }
+
     //Categorias
     .category{
         @include sizes();
@@ -406,18 +407,53 @@ main{
             scroll-behavior: smooth;
             flex-wrap: wrap;
             gap: 5px;
+            padding-top: 20px;
         
             div{
-                @include sizes(350px,500px);
+                @include sizes(400px,700px);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+                position: relative;
+                padding-top: 0px;
 
                 div{
                     @include sizes();
-                    overflow: hidden;
+                    overflow: visible;
+                    padding-top: 0px;
+
+                    .medidas-content{
+                        @include sizes(95%, 40px);
+                        @include displayFlex($flexDirection: row);
+                        position: absolute;
+                        bottom: 50px;
+                        padding: 5px;
+                        border-radius: 60px;
+                        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.318);
+
+                        table{
+                            @include displayFlex($flexDirection: row);
+                            @include sizes();
+
+                            tr{
+                                @include displayFlex($flexDirection:row, $justifyContent: space-between);
+                                gap: 10px;
+
+                                th{
+                                    @include displayFlex($flexDirection:row);
+                                    @include sizes();
+                                    font-weight: 400;
+                                }
+                                td{
+                                    @include displayFlex($flexDirection:row);
+                                    @include sizes();
+                                    font-size: 600;
+                                }
+                            }
+                        }
+                    }
                     span{
                         @include sizes(100%,50px);
                         @include displayFlex($flexDirection:row, $justifyContent: space-around);
@@ -438,12 +474,29 @@ main{
                             transform: scale(1.05);
                         }
                     }
+                    .product-talla{
+                        @include sizes(100px,60px);
+                        position: absolute !important;
+                        top: 0px;
+                        right: 10px;
+                        background-image: $cardBackgroundImage;
+                        border-radius: 5px;
+                        box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.371);
+                    }
+                    .product-description{
+                        font-size: $md !important;
+                        height: 50px !important;
+                        backdrop-filter: blur(1px) !important;
+                        border-radius: 0px !important;
+                        position: absolute;
+                        bottom: 100px;
+                    }
                 }
                 div span:first-child{
                     border-bottom-left-radius: 20px;
                     border-bottom-right-radius: 20px;
                 }
-                div span:nth-child(2){
+                div span:nth-child(3){
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
                     height: 40px;

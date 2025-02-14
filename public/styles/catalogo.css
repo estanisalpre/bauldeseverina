@@ -430,10 +430,11 @@ main .category div {
   scroll-behavior: smooth;
   flex-wrap: wrap;
   gap: 5px;
+  padding-top: 20px;
 }
 main .category div div {
-  width: 350px;
-  height: 500px;
+  width: 400px;
+  height: 700px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -442,11 +443,60 @@ main .category div div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  padding-top: 0px;
 }
 main .category div div div {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
+  padding-top: 0px;
+}
+main .category div div div .medidas-content {
+  width: 95%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  padding: 5px;
+  border-radius: 60px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.318);
+}
+main .category div div div .medidas-content table {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+main .category div div div .medidas-content table tr {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+main .category div div div .medidas-content table tr th {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+}
+main .category div div div .medidas-content table tr td {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 600;
 }
 main .category div div div span {
   width: 100%;
@@ -472,11 +522,30 @@ main .category div div div span button {
 main .category div div div span button:hover {
   transform: scale(1.05);
 }
+main .category div div div .product-talla {
+  width: 100px;
+  height: 60px;
+  position: absolute !important;
+  top: 0px;
+  right: 10px;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.371);
+}
+main .category div div div .product-description {
+  font-size: 16px !important;
+  height: 50px !important;
+  -webkit-backdrop-filter: blur(1px) !important;
+          backdrop-filter: blur(1px) !important;
+  border-radius: 0px !important;
+  position: absolute;
+  bottom: 100px;
+}
 main .category div div div span:first-child {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-main .category div div div span:nth-child(2) {
+main .category div div div span:nth-child(3) {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height: 40px;

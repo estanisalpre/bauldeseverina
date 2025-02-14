@@ -59,6 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const editButtons = document.querySelectorAll(".edit-btn");
     const editForm = document.getElementById("editForm");
     const editProductName = document.getElementById("editProductName");
+    const editProductBrand = document.getElementById("editProductBrand");
+    const editProductDescription = document.getElementById("editProductDescription");
     const editProductValue = document.getElementById("editProductValue");
     const editProductAvailable = document.getElementById("editProductAvailable");
     const submitEditButton = document.getElementById("submitEditButton");
@@ -84,6 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Enviar los datos al servidor para actualizar el producto
         submitEditButton.addEventListener("click", () => {
             const newName = editProductName.value;
+            const newBrand = editProductBrand.value;
+            const newDescription = editProductDescription.value;
             const newValue = editProductValue.value;
             const newAvailable = editProductAvailable.checked ? 1 : 0;
 
@@ -95,6 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify({ 
                         id: currentProductId, 
                         productName: newName, 
+                        productBrand: newBrand,
+                        productDescription: newDescription,
                         productPrice: newValue,
                         available: newAvailable 
                     })
