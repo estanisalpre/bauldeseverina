@@ -1,62 +1,63 @@
 <?php
-include 'db.php';
+    include 'db.php';
 
-// Obtener precio del transporte
-$queryTransport = "SELECT transportPrice FROM transport";
-$stmtTransport = $pdo->prepare($queryTransport);
-$stmtTransport->execute();
-$precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
-
-// Obtener todos los productos disponibles con sus imágenes
-$queryProductos = "SELECT p.id_producto, p.productName, p.productPrice, p.available, p.id_categoria, ip.image_url 
-                   FROM productos p
-                   LEFT JOIN imagenes_productos ip ON p.id_producto = ip.id_product
-                   WHERE p.available = 1";
-$stmtProductos = $pdo->prepare($queryProductos);
-$stmtProductos->execute();
-$productos = $stmtProductos->fetchAll(PDO::FETCH_ASSOC);
-
-// Agrupar las imágenes por producto
-$productosConImagenes = [];
-foreach ($productos as $producto) {
-    $idProducto = $producto['id_producto'];
-    if (!isset($productosConImagenes[$idProducto])) {
-        $productosConImagenes[$idProducto] = [
-            'productName' => $producto['productName'],
-            'productPrice' => $producto['productPrice'],
-            'available' => $producto['available'],
-            'id_categoria' => $producto['id_categoria'],
-            'imagenes' => []
-        ];
-    }
-    if ($producto['image_url']) {
-        $productosConImagenes[$idProducto]['imagenes'][] = $producto['image_url'];
-    }
-}
-
-// Agrupar productos por categoría
-$categorias = [
-    1 => "Bolsos",
-    5 => "Pantalones & Jeans",
-    6 => "Blusas",
-    7 => "Vestidos",
-    8 => "Deportiva",
-    9 => "Hoodies",
-    10 => "Sandalias",
-    11 => "Abrigos",
-    2 => "Tenis",
-    19 => "Otros"
-];
-
-// Agrupar productos por categoría
-$productosPorCategoria = [];
-foreach ($productosConImagenes as $idProducto => $producto) {
-    $idCategoria = $producto['id_categoria'];
-    if (isset($categorias[$idCategoria])) {
-        $productosPorCategoria[$idCategoria][] = $producto;
-    }
-}
+    //Transporte
+    $queryTransport = "SELECT transportPrice FROM transport";
+    $stmtTransport = $pdo->prepare($queryTransport);
+    $stmtTransport->execute();
+    $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
+    //Bolsos
+    $queryBolsos = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 1";
+    $stmtBolsos = $pdo->prepare($queryBolsos);
+    $stmtBolsos->execute();
+    $productosBolsos = $stmtBolsos->fetchAll(PDO::FETCH_ASSOC);
+    //Pantalones & Jeans
+    $queryJeans = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 5";
+    $stmtJeans = $pdo->prepare($queryJeans);
+    $stmtJeans->execute();
+    $productosJeans = $stmtJeans->fetchAll(PDO::FETCH_ASSOC);
+    //Blusas
+    $queryBlusas = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 6";
+    $stmtBlusas = $pdo->prepare($queryBlusas);
+    $stmtBlusas->execute();
+    $productosBlusas = $stmtBlusas->fetchAll(PDO::FETCH_ASSOC);
+    //Vestidos
+    $queryVestidos = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 7";
+    $stmtVestidos = $pdo->prepare($queryVestidos);
+    $stmtVestidos->execute();
+    $productosVestidos = $stmtVestidos->fetchAll(PDO::FETCH_ASSOC);
+    //Deportiva
+    $queryDeportiva = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 8";
+    $stmtDeportiva  = $pdo->prepare($queryDeportiva );
+    $stmtDeportiva ->execute();
+    $productosDeportiva  = $stmtDeportiva ->fetchAll(PDO::FETCH_ASSOC);
+    //Hoodies
+    $queryHoodies = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 9";
+    $stmtHoodies = $pdo->prepare($queryHoodies);
+    $stmtHoodies->execute();
+    $productosHoodies = $stmtHoodies->fetchAll(PDO::FETCH_ASSOC);
+    //Sandalias
+    $querySandalias = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 10";
+    $stmtSandalias  = $pdo->prepare($querySandalias );
+    $stmtSandalias ->execute();
+    $productosSandalias  = $stmtSandalias ->fetchAll(PDO::FETCH_ASSOC);
+    //Abrigos
+    $queryAbrigos = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 11";
+    $stmtAbrigos = $pdo->prepare($queryAbrigos);
+    $stmtAbrigos->execute();
+    $productosAbrigos = $stmtAbrigos->fetchAll(PDO::FETCH_ASSOC);
+    //Tenis
+    $queryTenis = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 2";
+    $stmtTenis = $pdo->prepare($queryTenis);
+    $stmtTenis->execute();
+    $productosTenis = $stmtTenis->fetchAll(PDO::FETCH_ASSOC);
+    //Otros
+    $queryOtros = "SELECT productImg, productName, productPrice, available, id_categoria FROM productos WHERE available = 1 AND id_categoria = 19";
+    $stmtOtros = $pdo->prepare($queryOtros);
+    $stmtOtros->execute();
+    $productosOtros = $stmtOtros->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -150,26 +151,196 @@ foreach ($productosConImagenes as $idProducto => $producto) {
                 <li class="toCategory" data-id="moreCategory">¡Más para ti!</li>
             </ul>              
         </section>
-        <section id="productos">
-            <?php foreach ($productosPorCategoria as $idCategoria => $productos): ?>
-                <h2><?php echo $categorias[$idCategoria]; ?></h2>
-                <div class="productos-grid">
-                    <?php foreach ($productos as $producto): ?>
-                        <div class="producto">
-                            <?php if (!empty($producto['imagenes'])): ?>
-                                <div class="producto-imagenes">
-                                    <?php foreach ($producto['imagenes'] as $imagen): ?>
-                                        <img src="<?php echo htmlspecialchars($imagen); ?>" alt="<?php echo htmlspecialchars($producto['productName']); ?>">
-                                    <?php endforeach; ?>
-                                </div>
-                            <?php endif; ?>
-                            <h3><?php echo htmlspecialchars($producto['productName']); ?></h3>
-                            <p>Precio: $<?php echo number_format($producto['productPrice'], 2); ?></p>
+        <section id="bolsosCategory" data-id="bolsosCategory" class="category">
+            <h2><span class="selectCategory">Categorías</span>Bolsos</h2>
+            <div id="productos-bolsos">
+                <?php
+                if (!empty($productosBolsos)): ?>
+                    <?php foreach ($productosBolsos as $bolso): ?>
+                        <div class="card" style="background-image: url('<?php echo htmlspecialchars($bolso['productImg']); ?>');">
+                            <div class="card-content">
+                                <span class="product-name"><?php echo htmlspecialchars($bolso['productName']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($bolso['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
+                            </div>
                         </div>
                     <?php endforeach; ?>
-                </div>
-            <?php endforeach; ?>
-        </section>                
+                <?php else: ?>
+                    <p>No hay productos disponibles.</p>
+                <?php endif; 
+                ?>
+            </div>
+        </section>
+        <section id="jeansCategory" data-id="jeansCategory" class="category">
+            <h2><span class="selectCategory">Categorías</span>Pantalones & Jeans</h2>
+            <div id="productos-bolsos">
+                <?php
+                if (!empty($productosJeans)): ?>
+                    <?php foreach ($productosJeans as $jeans): ?>
+                        <div class="card" style="background-image: url('<?php echo htmlspecialchars($jeans['productImg']); ?>');">
+                            <div class="card-content">
+                                <span class="product-name"><?php echo htmlspecialchars($jeans['productName']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($jeans['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No hay productos disponibles.</p>
+                <?php endif; 
+                ?>
+            </div>
+        </section>
+        <section id="blusasCategory" data-id="blusasCategory" class="category">
+            <h2><span class="selectCategory">Categorías</span>Blusas</h2>
+            <div id="productos-bolsos">
+                <?php
+                if (!empty($productosBlusas)): ?>
+                    <?php foreach ($productosBlusas as $blusa): ?>
+                        <div class="card" style="background-image: url('<?php echo htmlspecialchars($blusa['productImg']); ?>');">
+                            <div class="card-content">
+                                <span class="product-name"><?php echo htmlspecialchars($blusa['productName']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($blusa['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No hay productos disponibles.</p>
+                <?php endif; 
+                ?>
+            </div>
+        </section>
+        <section id="tenisCategory"  data-id="tenisCategory" class="category">
+            <h2><span class="selectCategory">Categorías</span>Tenis</h2>
+            <div id="productos-bolsos">
+                <?php
+                if (!empty($productosTenis)): ?>
+                    <?php foreach ($productosTenis as $tenis): ?>
+                        <div class="card" style="background-image: url('<?php echo htmlspecialchars($tenis['productImg']); ?>');">
+                            <div class="card-content">
+                                <span class="product-name"><?php echo htmlspecialchars($tenis['productName']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($tenis['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No hay productos disponibles.</p>
+                <?php endif; 
+                ?>
+            </div>
+        </section>
+        <section id="vestidosCategory" data-id="vestidosCategory" class="category">
+            <h2><span class="selectCategory">Categorías</span>Vestidos & Faldas</h2>
+            <div id="productos-bolsos">
+                <?php
+                if (!empty($productosVestidos)): ?>
+                    <?php foreach ($productosVestidos as $vestido): ?>
+                        <div class="card" style="background-image: url('<?php echo htmlspecialchars($vestido['productImg']); ?>');">
+                            <div class="card-content">
+                                <span class="product-name"><?php echo htmlspecialchars($vestido['productName']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($vestido['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No hay productos disponibles.</p>
+                <?php endif; 
+                ?>
+            </div>
+        </section>
+        <section id="deportivaCategory" data-id="deportivaCategory" class="category">
+            <h2><span class="selectCategory">Categorías</span>Ropa Deportiva</h2>
+            <div id="productos-bolsos">
+                <?php
+                if (!empty($productosDeportiva)): ?>
+                    <?php foreach ($productosDeportiva as $deportiva): ?>
+                        <div class="card" style="background-image: url('<?php echo htmlspecialchars($deportiva['productImg']); ?>');">
+                            <div class="card-content">
+                                <span class="product-name"><?php echo htmlspecialchars($deportiva['productName']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($deportiva['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button></span>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No hay productos disponibles.</p>
+                <?php endif; 
+                ?>
+            </div>
+        </section>
+        <section id="suetersCategory" data-id="suetersCategory" class="category">
+            <h2><span class="selectCategory">Categorías</span>Hoodies & Sueters</h2>
+            <div id="productos-bolsos">
+                <?php
+                if (!empty($productosHoodies)): ?>
+                    <?php foreach ($productosHoodies as $hoodies): ?>
+                        <div class="card" style="background-image: url('<?php echo htmlspecialchars($hoodies['productImg']); ?>');">
+                            <div class="card-content">
+                                <span class="product-name"><?php echo htmlspecialchars($hoodies['productName']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($hoodies['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No hay productos disponibles.</p>
+                <?php endif; 
+                ?>
+            </div>
+        </section>
+        <section id="taconesCategory" data-id="taconesCategory" class="category">
+            <h2><span class="selectCategory">Categorías</span>Sandalias & Tacones</h2>
+            <div id="productos-bolsos">
+                <?php
+                if (!empty($productosSandalias)): ?>
+                    <?php foreach ($productosSandalias as $sandalia): ?>
+                        <div class="card" style="background-image: url('<?php echo htmlspecialchars($sandalia['productImg']); ?>');">
+                            <div class="card-content">
+                                <span class="product-name"><?php echo htmlspecialchars($sandalia['productName']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($sandalia['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No hay productos disponibles.</p>
+                <?php endif; 
+                ?>
+            </div>
+        </section>
+        <section id="abrigosCategory" data-id="abrigosCategory" class="category">
+            <h2><span class="selectCategory">Categorías</span>Chaquetas & Abrigos</h2>
+            <div id="productos-bolsos">
+                <?php
+                if (!empty($productosAbrigos)): ?>
+                    <?php foreach ($productosAbrigos as $abrigo): ?>
+                        <div class="card" style="background-image: url('<?php echo htmlspecialchars($abrigo['productImg']); ?>');">
+                            <div class="card-content">
+                                <span class="product-name"><?php echo htmlspecialchars($abrigo['productName']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($abrigo['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No hay productos disponibles.</p>
+                <?php endif; 
+                ?>
+            </div>
+        </section>
+        <section id="otrosCategory" data-id="moreCategory" class="category">
+            <h2><span class="selectCategory">Categorías</span>¡Más para ti!</h2>
+            <div id="productos-bolsos">
+                <?php
+                if (!empty($productosOtros)): ?>
+                    <?php foreach ($productosOtros as $otros): ?>
+                        <div class="card" style="background-image: url('<?php echo htmlspecialchars($otros['productImg']); ?>');">
+                            <div class="card-content">
+                                <span class="product-name"><?php echo htmlspecialchars($otros['productName']); ?></span>
+                                <span class="product-price">$<?php echo htmlspecialchars($otros['productPrice']); ?><button class="buyButton">¡Quiero esto!</button</span>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <p>No hay productos disponibles.</p>
+                <?php endif; 
+                ?>
+            </div>
+        </section>
         <!--LOGIN-->
         <section id="sectionForm" class="sectionForm">
             <form action="login.php" method="POST" class="loginForm">
