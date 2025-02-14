@@ -215,19 +215,19 @@
                                             <th>Manga</th>
                                         </tr>
                                         <tr>
-                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($jeans['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($jeans['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($jeans['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($jeans['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($jeans['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($jeans['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($jeans['manga'] ?? '-'); ?></td>
                                         </tr>
                                     </table>
                                 </div>
-                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($jeans['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($jeans['productName']); ?></span>
-                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($jeans['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($jeans['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -259,19 +259,19 @@
                                             <th>Manga</th>
                                         </tr>
                                         <tr>
-                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($blusa['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($blusa['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($blusa['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($blusa['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($blusa['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($blusa['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($blusa['manga'] ?? '-'); ?></td>
                                         </tr>
                                     </table>
                                 </div>
-                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($blusa['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($blusa['productName']); ?></span>
-                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($blusa['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($blusa['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -303,19 +303,19 @@
                                             <th>Manga</th>
                                         </tr>
                                         <tr>
-                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($tenis['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($tenis['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($tenis['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($tenis['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($tenis['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($tenis['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($tenis['manga'] ?? '-'); ?></td>
                                         </tr>
                                     </table>
                                 </div>
-                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($tenis['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($tenis['productName']); ?></span>
-                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($tenis['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($tenis['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -347,19 +347,19 @@
                                             <th>Manga</th>
                                         </tr>
                                         <tr>
-                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($vestido['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($vestido['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($vestido['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($vestido['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($vestido['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($vestido['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($vestido['manga'] ?? '-'); ?></td>
                                         </tr>
                                     </table>
                                 </div>
-                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($vestido['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($vestido['productName']); ?></span>
-                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($vestido['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($vestido['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -391,19 +391,19 @@
                                             <th>Manga</th>
                                         </tr>
                                         <tr>
-                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($deportiva['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($deportiva['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($deportiva['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($deportiva['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($deportiva['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($deportiva['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($deportiva['manga'] ?? '-'); ?></td>
                                         </tr>
                                     </table>
                                 </div>
-                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($deportiva['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($deportiva['productName']); ?></span>
-                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($deportiva['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($deportiva['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button></span>
                             </div>
                         </div>
@@ -435,19 +435,19 @@
                                             <th>Manga</th>
                                         </tr>
                                         <tr>
-                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($hoodies['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($hoodies['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($hoodies['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($hoodies['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($hoodies['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($hoodies['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($hoodies['manga'] ?? '-'); ?></td>
                                         </tr>
                                     </table>
                                 </div>
-                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($hoodies['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($hoodies['productName']); ?></span>
-                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($hoodies['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($hoodies['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -479,19 +479,19 @@
                                             <th>Manga</th>
                                         </tr>
                                         <tr>
-                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($sandalia['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($sandalia['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($sandalia['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($sandalia['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($sandalia['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($sandalia['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($sandalia['manga'] ?? '-'); ?></td>
                                         </tr>
                                     </table>
                                 </div>
-                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($sandalia['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($sandalia['productName']); ?></span>
-                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($sandalia['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($sandalia['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -523,19 +523,19 @@
                                             <th>Manga</th>
                                         </tr>
                                         <tr>
-                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($abrigo['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($abrigo['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($abrigo['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($abrigo['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($abrigo['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($abrigo['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($abrigo['manga'] ?? '-'); ?></td>
                                         </tr>
                                     </table>
                                 </div>
-                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($abrigo['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($abrigo['productName']); ?></span>
-                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($abrigo['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($abrigo['productPrice']); ?><button class="buyButton" value="hola">¡Quiero esto!</button</span>
                             </div>
                         </div>
@@ -567,19 +567,19 @@
                                             <th>Manga</th>
                                         </tr>
                                         <tr>
-                                            <td><?php echo htmlspecialchars($bolso['cintura'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['tiro'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['largo'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['cadera'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['pierna'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['busto'] ?? '-'); ?></td>
-                                            <td><?php echo htmlspecialchars($bolso['manga'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($otros['cintura'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($otros['tiro'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($otros['largo'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($otros['cadera'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($otros['pierna'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($otros['busto'] ?? '-'); ?></td>
+                                            <td><?php echo htmlspecialchars($otros['manga'] ?? '-'); ?></td>
                                         </tr>
                                     </table>
                                 </div>
-                                <span class="product-talla">Talla: <?php echo htmlspecialchars($bolso['nombre_talla'] ?? 'N/A'); ?></span>
+                                <span class="product-talla">Talla: <?php echo htmlspecialchars($otros['nombre_talla'] ?? 'N/A'); ?></span>
                                 <span class="product-name"><?php echo htmlspecialchars($otros['productName']); ?></span>
-                                <span class="product-description"><?php echo htmlspecialchars($bolso['productDescription']); ?></span>
+                                <span class="product-description"><?php echo htmlspecialchars($otros['productDescription']); ?></span>
                                 <span class="product-price">$<?php echo htmlspecialchars($otros['productPrice']); ?><button class="buyButton">¡Quiero esto!</button</span>
                             </div>
                         </div>
