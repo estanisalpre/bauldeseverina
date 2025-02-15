@@ -2,26 +2,47 @@
 export function allRedirections(){
     whatsappRedirection();
     instagramRedirection();
+    facebookRedirection();
 }
 
 //Boton whatsapp
 function whatsappRedirection(){
-    const whatsapp = document.getElementById('whatsapp')
+    const whatsapp = document.querySelectorAll('.whatsappIcon')
 
     if(whatsapp){
-        whatsapp.addEventListener('click', () => {
-            window.open(`https://wa.me/573012397022?text=¡Hola!%20Vengo%20de%20www.elbauldeseverina.com%20y%20quiero%20contactarme%20con%20ustedes%20`);
+        whatsapp.forEach(function(wsp){
+            wsp.addEventListener('click', () => {
+                window.open(`https://wa.me/573012397022?text=¡Hola!%20Vengo%20de%20www.elbauldeseverina.com%20y%20quiero%20contactarme%20con%20ustedes%20`);
+            })
         })
     }
 }
 
 //Boton instagram
 function instagramRedirection(){
-    const instagram = document.getElementById('instagramIcon')
+    const instagram = document.querySelectorAll('#instagramIcon')
 
     if(instagram){
-        instagram.addEventListener('click', () => {
-            location.href = 'https://www.instagram.com/elbauldeseverina/'
+        instagram.forEach(function(ig){
+            ig.addEventListener('click', () => {
+                location.href = 'https://www.instagram.com/elbauldeseverina/'
+            })
         })
     }
 }
+
+//Boton facebook
+function facebookRedirection(){
+    const facebook = document.querySelectorAll('#facebookIcon')
+
+    if(facebook){
+        facebook.forEach(function(fb){
+            fb.addEventListener('click', () => {
+                location.href = 'https://www.facebook.com/elbauldeseverinamed'
+            })
+        })
+    }
+}
+
+
+

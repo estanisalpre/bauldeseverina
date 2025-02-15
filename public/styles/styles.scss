@@ -425,7 +425,7 @@ main{
 
                         li{
                             justify-content: flex-start;
-                            font-size: $lg;
+                            font-size: 19px;
                         }
                     }
                 }
@@ -530,11 +530,15 @@ main{
 //Footer
 footer{
     @include sizes($height: 300px);
-    @include displayFlex($flexDirection:row);
+    @include displayFlex();
     z-index: 10999;
     box-shadow: 0px 0px 20px 1px $shadow;
     background-image: $secondBackgroundImage;
+    color: $darkFontColor;
 
+    .footerTop{
+        @include displayFlex($flexDirection:row);
+    }
     img{
         @include sizes(30%,auto);
     }
@@ -555,6 +559,23 @@ footer{
             }
             span:hover{
                 border-bottom: 1px solid $darkFontColor;
+            }
+        }
+    }
+    .footerBottom{
+        @include sizes($height: 20px);
+        @include displayFlex();
+
+        span{
+            @include sizes();
+            @include displayFlex($flexDirection:row);
+            gap: 5px;
+
+            a{
+                text-decoration: none;
+                font-weight: $bold;
+                color: #85285e;
+                cursor: pointer;
             }
         }
     }

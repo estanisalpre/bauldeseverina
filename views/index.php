@@ -6,12 +6,6 @@
     error_reporting(E_ALL);
 
     try {
-        //Imagen 1
-        $queryImgs1 = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 1";
-        $stmtImgs1 = $pdo->prepare($queryImgs1);
-        $stmtImgs1->execute();
-        $myImgs1 = $stmtImgs1->fetch(PDO::FETCH_ASSOC);
-
         //Imagen 2
         $queryImgs2 = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 1";
         $stmtImgs2 = $pdo->prepare($queryImgs2);
@@ -34,7 +28,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Baúl de Severina - Tienda Oficial</title>
+    <title>El Baúl de Severina | Tienda de Ropa</title>
+    <meta name="description" content="Tienda de ropa oficial de segunda mano, trayendo tesoros que te encantarán conocer. Realizamos envíos a todo Colombia. ¡Visita nuestro catálogo!">
     <!--CSS-->
     <link rel="stylesheet" href="/public/styles/styles.css">
     <!--FAVICON-->
@@ -71,23 +66,17 @@
             <img id="instagramIcon" src="/public/imgs/icons/instagram.png" alt="Instagram Icon para que nos contacten">
             <img id="facebookIcon" src="/public/imgs/icons/facebook.png" alt="Facebook Icon para que nos contacten">
         </div>
-        <p>Web Developed by <a href="">Estanislao S. Previte</a></p>
+        <p>Web Developed by <a href="https://www.linkedin.com/in/estanislaosprevite/">Estanislao S. Previte</a></p>
     </div>
     <!--MAIN / CONTENIDO PRINCIPAL-->
     <main>
-        <img id="whatsapp" src="/public/imgs/icons/whatsapp.png" alt="Whatsapp Icon">
+        <img class="whatsappIcon" id="whatsapp" src="/public/imgs/icons/whatsapp.png" alt="Whatsapp Icon">
         <!--PRIMER CONTENEDOR-->
         <section id="firstContent">
                 <div class="slides">
-                    <?php if (!empty($myImgs1)): ?>
-                        <div style="background-image: url('<?php echo htmlspecialchars($myImgs1['productImg']); ?>');">
-                            <button id="comenzarButton">COMENZAR</button>
-                        </div>
-                    <?php else: ?>
-                        <div class="assistanceImg" style="background-image: url('/public/imgs/categories/abrigosCategory.jpeg');">
-                            <button id="comenzarButton">COMENZAR</button>
-                        </div>
-                    <?php endif; ?>
+                    <div style="background-image: url('/public/imgs/carrousel/carrousel_1.jpeg')">
+                        <button id="comenzarButton">COMENZAR</button>
+                    </div>
                     <?php if (!empty($myImgs2)): ?>
                         <div style="background-image: url('<?php echo htmlspecialchars($myImgs2['productImg']); ?>');">
                             <button id="comenzarButton">COMENZAR</button>
@@ -138,9 +127,9 @@
                     <h2>¡Contáctanos!</h2>
                     <div>
                         <ul>
-                            <li><img src="/public/imgs/icons/facebook.png" alt="Ícono de Facebook"></li>
-                            <li><img src="/public/imgs/icons/instagram.png" alt="Ícono de Instagram"></li>
-                            <li><img src="/public/imgs/icons/whatsapp.png" alt="Ícono de Whatsapp"></li>
+                            <li><img id="facebookIcon" src="/public/imgs/icons/facebook.png" alt="Ícono de Facebook"></li>
+                            <li><img id="instagramIcon" src="/public/imgs/icons/instagram.png" alt="Ícono de Instagram"></li>
+                            <li><img class="whatsappIcon" src="/public/imgs/icons/whatsapp.png" alt="Ícono de Whatsapp"></li>
                         </ul>
                     </div>
                     <div class="numeroCiudad">
@@ -163,7 +152,6 @@
             </form>
             <button id="backButton">Regresar</button>
             <?php
-                // Mostrar error si las credenciales son incorrectas
                 if (isset($error)) {
                     echo "<p>$error</p>";
                 }
@@ -172,14 +160,19 @@
     </main>
     <!--FOOTER-->
     <footer>
-        <img src="/public/imgs/logos/logo.png" alt="El Baul de Severina Logo">
-        <div>
-            <ul>
-                <span id="toIndex">Inicio</span>
-                <span id="toBriefcase">Catálogo</span>
-                <span id="toContact">Contacto</span>
-                <span id="toContact">Sobre Nosotros</span>
-            </ul>
+        <div class="footerTop">
+            <img src="/public/imgs/logos/logo.png" alt="El Baul de Severina Logo">
+            <div>
+                <ul>
+                    <span id="toIndex">Inicio</span>
+                    <span id="toBriefcase">Catálogo</span>
+                    <span id="toContact">Contacto</span>
+                    <span id="toContact">Sobre Nosotros</span>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <span>Web Desarrollada por <a href="https://www.linkedin.com/in/estanislaosprevite/">Estanislao S. Previte</a></span>
         </div>
     </footer>
     <!--SCRIPTS-->
