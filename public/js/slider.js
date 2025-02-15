@@ -1,5 +1,9 @@
 //Toda funcionalidad de las imagenes que deslizan
-export function imgSlider(){
+document.addEventListener('DOMContentLoaded', () => {
+    imgSlider();
+})
+
+function imgSlider(){
     const slides = document.querySelector('.slides');
     const images = document.querySelectorAll('.slides div');
     let currentIndex = 0;

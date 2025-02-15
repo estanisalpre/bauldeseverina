@@ -184,5 +184,6 @@
     </footer>
     <!--SCRIPTS-->
     <script type="module" src="/public/js/main.js"></script>
+    <script src="/public/js/slider.js"></script>
 </body>
 </html>

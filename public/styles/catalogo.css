@@ -12,7 +12,6 @@ html {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 body {
@@ -39,7 +38,6 @@ nav {
           backdrop-filter: blur(3px);
   z-index: 10500;
   gap: 20px;
-  box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
 }
 nav header {
   display: flex;
@@ -222,14 +220,13 @@ main {
 }
 main #categorySection {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 5px;
   cursor: default;
-  transform: translateX(2500px);
   animation: sideIn 1s ease forwards;
   gap: 25px;
   align-items: flex-start;
@@ -376,7 +373,6 @@ main .category {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
   display: none;
 }
 main .category h2 {
@@ -406,11 +402,10 @@ main .category div {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  overflow-y: auto;
-  scroll-behavior: smooth;
+  overflow-y: scroll;
   flex-wrap: wrap;
   gap: 5px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 main .category div div {
   width: 350px;
@@ -567,7 +562,7 @@ main .sectionForm {
   left: 0px;
   right: 0px;
   z-index: 12000;
-  display: none;
+  display: none !important;
 }
 main .sectionForm form {
   display: flex;
@@ -648,35 +643,5 @@ main .sectionForm button:hover {
 @keyframes fadeIn {
   100% {
     opacity: 1;
-  }
-}
-@keyframes sideIn {
-  100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes sideOut {
-  100% {
-    transform: translateX(-2500px);
-  }
-}
-@keyframes carrouselControllers {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  49% {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(-15deg) scale(1.02);
-  }
-  60% {
-    transform: rotate(15deg) scale(1.02);
-  }
-  70% {
-    transform: rotate(-15deg) scale(1.02);
-  }
-  100% {
-    transform: rotate(0deg) scale(1);
   }
 }/*# sourceMappingURL=catalogo.css.map */

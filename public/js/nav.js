@@ -33,7 +33,7 @@ function allButtons(){
         })
         aboutUs.forEach(function(aboutUs){
             aboutUs.addEventListener('click', () => {
-                location.href = '/'
+                location.href = '/#presentation'
             })
         })
         logout.forEach(function(logout){

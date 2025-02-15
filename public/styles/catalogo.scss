@@ -84,7 +84,6 @@ html{
     @include sizes();
     @include displayFlex();
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 //Body
@@ -100,11 +99,10 @@ nav{
     @include sizes($height: 60px);
     @include displayFlex();
     position: fixed;
-    top:0px;
+    top: 0px;
     backdrop-filter: blur(3px);
     z-index: 10500;
     gap: 20px;
-    box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
 
     header{
         @include displayFlex();
@@ -250,11 +248,10 @@ main{
     
     //Contenedor de categorias
     #categorySection{
-    @include sizes($height: 100vh);
+    @include sizes(100%, 100%);
     @include displayFlex();
     padding: 5px;
     cursor: default;
-    transform: translateX(2500px);
     animation: sideIn 1s ease forwards;
     gap: 25px;
     align-items: flex-start;
@@ -364,7 +361,6 @@ main{
     .category{
         @include sizes();
         @include displayFlex($justifyContent: space-between);
-        overflow: hidden;
         display: none;
 
         h2{
@@ -387,11 +383,10 @@ main{
         div{
             @include sizes();
             @include displayFlex($flexDirection:row);
-            overflow-y: auto;
-            scroll-behavior: smooth;
+            overflow-y: scroll;
             flex-wrap: wrap;
             gap: 5px;
-            padding-top: 20px;
+            padding-top: 10px;
         
             div{
                 @include sizes(350px,500px);
@@ -518,7 +513,7 @@ main{
         left: 0px;
         right: 0px;
         z-index: 12000;
-        display: none;
+        display: none !important;
 
         form{
             @include displayFlex();
@@ -568,18 +563,4 @@ main{
 }
 @keyframes fadeIn {
     100%{opacity: 1};
-}
-@keyframes sideIn {
-    100%{transform: translateX(0px);}
-}
-@keyframes sideOut {
-    100%{transform: translateX(-2500px);}
-}
-@keyframes carrouselControllers {
-    0%{transform: rotate(0deg) scale(1)}
-    49%{transform: rotate(0deg) scale(1)}
-    50%{transform: rotate(-15deg) scale(1.02)}
-    60%{transform: rotate(15deg) scale(1.02)}
-    70%{transform: rotate(-15deg) scale(1.02)}
-    100%{transform: rotate(0deg) scale(1)}
 }

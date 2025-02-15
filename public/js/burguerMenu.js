@@ -6,13 +6,11 @@ export function burguerMenu(){
     const nav = document.getElementById('nav')
     const burguerMenu = document.getElementById('burguerMenu')
     const closeMenuButton = document.getElementById('closeMenu')
-    const whatsappButton = document.getElementById('whatsapp')
 
     //Abrimos menu
     if(menuButton){
         menuButton.addEventListener('click', () => {
             nav.style.display = 'none'
-            whatsappButton.style.display = 'none'
             burguerMenu.style.display = 'flex'
         })
     }
@@ -21,7 +19,6 @@ export function burguerMenu(){
     if(closeMenuButton){
         closeMenuButton.addEventListener('click', () => {
             burguerMenu.style.display = 'none'
-            whatsappButton.style.display = 'block'
             nav.style.display = 'flex'
         })
     }

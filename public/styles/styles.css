@@ -654,16 +654,6 @@ footer div ul span:hover {
     opacity: 1;
   }
 }
-@keyframes sideIn {
-  100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes sideOut {
-  100% {
-    transform: translateX(-2500px);
-  }
-}
 @keyframes carrouselControllers {
   0% {
     transform: rotate(0deg) scale(1);

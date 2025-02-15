@@ -2,14 +2,11 @@
 //IMPORTACIONES
 import { navFunctionality } from "./nav.js";
 import { allRedirections } from "./redirections.js";
-import { imgSlider } from "./slider.js";
 
 //Los captura el DOM
 document.addEventListener('DOMContentLoaded', () => {
     //Funcionalidad del NAV
     navFunctionality();
-    //Slider de imagenes
-    imgSlider();
     //Redirecciones
     allRedirections();
     //Boton comenzar
