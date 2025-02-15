@@ -203,7 +203,6 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($jeans['productImg']); ?>');">
                             <div class="card-content">
                             <div class="medidas-content">
-                                    <span class="medidasTitle">Medidas</span>
                                     <table>
                                         <tr>
                                             <th>Cintura</th>
@@ -247,7 +246,6 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($blusa['productImg']); ?>');">
                             <div class="card-content">
                             <div class="medidas-content">
-                                    <span class="medidasTitle">Medidas</span>
                                     <table>
                                         <tr>
                                             <th>Cintura</th>
@@ -291,7 +289,6 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($tenis['productImg']); ?>');">
                             <div class="card-content">
                             <div class="medidas-content">
-                                    <span class="medidasTitle">Medidas</span>
                                     <table>
                                         <tr>
                                             <th>Cintura</th>
@@ -335,7 +332,6 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($vestido['productImg']); ?>');">
                             <div class="card-content">
                             <div class="medidas-content">
-                                    <span class="medidasTitle">Medidas</span>
                                     <table>
                                         <tr>
                                             <th>Cintura</th>
@@ -379,7 +375,6 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($deportiva['productImg']); ?>');">
                             <div class="card-content">
                             <div class="medidas-content">
-                                    <span class="medidasTitle">Medidas</span>
                                     <table>
                                         <tr>
                                             <th>Cintura</th>
@@ -423,7 +418,6 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($hoodies['productImg']); ?>');">
                             <div class="card-content">
                             <div class="medidas-content">
-                                    <span class="medidasTitle">Medidas</span>
                                     <table>
                                         <tr>
                                             <th>Cintura</th>
@@ -467,7 +461,6 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($sandalia['productImg']); ?>');">
                             <div class="card-content">
                             <div class="medidas-content">
-                                    <span class="medidasTitle">Medidas</span>
                                     <table>
                                         <tr>
                                             <th>Cintura</th>
@@ -511,7 +504,6 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($abrigo['productImg']); ?>');">
                             <div class="card-content">
                             <div class="medidas-content">
-                                    <span class="medidasTitle">Medidas</span>
                                     <table>
                                         <tr>
                                             <th>Cintura</th>
@@ -555,7 +547,6 @@
                         <div class="card" style="background-image: url('<?php echo htmlspecialchars($otros['productImg']); ?>');">
                             <div class="card-content">
                             <div class="medidas-content">
-                                    <span class="medidasTitle">Medidas</span>
                                     <table>
                                         <tr>
                                             <th>Cintura</th>

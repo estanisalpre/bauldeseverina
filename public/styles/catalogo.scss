@@ -410,7 +410,7 @@ main{
             padding-top: 20px;
         
             div{
-                @include sizes(400px,700px);
+                @include sizes(350px,600px);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
                 background-repeat: no-repeat;
@@ -425,13 +425,11 @@ main{
                     padding-top: 0px;
 
                     .medidas-content{
-                        @include sizes(95%, 40px);
-                        @include displayFlex($flexDirection: row);
+                        @include sizes(100%, 50px);
+                        @include displayFlex();
                         position: absolute;
                         bottom: 50px;
                         padding: 5px;
-                        border-radius: 60px;
-                        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.318);
 
                         table{
                             @include displayFlex($flexDirection: row);
@@ -458,14 +456,13 @@ main{
                         @include sizes(100%,50px);
                         @include displayFlex($flexDirection:row, $justifyContent: space-around);
                         font-size: $lg;
-                        background-image: $secondBackgroundImage;
 
                         button{
-                            @include sizes(120px, 30px);
+                            @include sizes(150px, 40px);
                             background-image: $secondBackgroundImage;
                             border: 1px solid $darkFontColor;
                             border-radius: 60px;
-                            font-size: $sm;
+                            font-size: $lg;
                             cursor: pointer;
                             transition: all 0.3s ease;
                             font-family: $afacadFont;
@@ -474,34 +471,40 @@ main{
                             transform: scale(1.05);
                         }
                     }
+                    .product-name{
+                        font-size: $lg !important;
+                        padding-left: 5px;
+                        justify-content: flex-start;
+                        border-radius: 0px;
+                    }
                     .product-talla{
-                        @include sizes(100px,60px);
+                        @include sizes(90px,60px);
                         position: absolute !important;
+                        font-size: $lg;
+                        font-weight: $bold;
                         top: 0px;
                         right: 10px;
-                        background-image: $cardBackgroundImage;
-                        border-radius: 5px;
-                        box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.371);
+                        background-color: $lightFontColor;
+                        border-bottom-left-radius: 15px;
+                        border-bottom-right-radius: 15px;
                     }
                     .product-description{
-                        font-size: $md !important;
+                        font-size: 18px !important;
+                        text-align: left;
                         height: 50px !important;
                         backdrop-filter: blur(1px) !important;
                         border-radius: 0px !important;
                         position: absolute;
                         bottom: 100px;
                     }
-                }
-                div span:first-child{
-                    border-bottom-left-radius: 20px;
-                    border-bottom-right-radius: 20px;
-                }
-                div span:nth-child(3){
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                    height: 40px;
-                    font-size: $slg;
-                    font-weight: $bold;
+                    .product-price{
+                        background-color: $darkFontColor;
+                        color: $lightFontColor;
+                        border-radius: 0px !important;
+                        border-top-right-radius: 60px;
+                        font-size: $slg;
+                        font-weight: $bold;
+                    }
                 }
             } 
         }
