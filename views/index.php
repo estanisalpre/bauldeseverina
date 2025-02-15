@@ -109,16 +109,16 @@
         <h4>Categorias</h4> 
         <section id="categoriesSection">
             <div class="fourthCategory">
-                <h3>Tenis</h3>
+                <h3 id="toBriefcase">Tenis</h3>
             </div>
             <div class="fifthCategory">
-                <h3>Vestidos & Faldas</h3>
+                <h3 id="toBriefcase">Vestidos & Faldas</h3>
             </div>
             <div class="seventhCategory">
-                <h3>Hoodies & Sueters</h3>
+                <h3 id="toBriefcase">Hoodies & Sueters</h3>
             </div>
             <div class="secondCategory">
-                <h3>Pantalones & Jeans</h3>
+                <h3 id="toBriefcase">Pantalones & Jeans</h3>
             </div>
             <button id="toBriefcase">VER CATÁLOGO COMPLETO</button>
             <!--CATALOGO-->

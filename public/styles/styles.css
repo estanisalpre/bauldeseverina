@@ -360,6 +360,7 @@ main #categoriesSection .secondCategory h3, main #categoriesSection .fourthCateg
   font-size: 23px;
   color: #e3e3e3;
   font-weight: 400;
+  cursor: pointer;
 }
 main #categoriesSection .secondCategory {
   background-image: url(/public/imgs/categories/pantalonesJeansCategory.jpeg);
