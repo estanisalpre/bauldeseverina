@@ -462,6 +462,9 @@ main .category div div div .medidas-content {
   position: absolute;
   bottom: 50px;
   padding: 5px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  box-shadow: none;
 }
 main .category div div div .medidas-content table {
   display: flex;
@@ -524,6 +527,7 @@ main .category div div div .product-name {
   padding-left: 5px;
   justify-content: flex-start;
   border-radius: 0px;
+  font-weight: 600;
 }
 main .category div div div .product-talla {
   width: 90px;
@@ -541,11 +545,12 @@ main .category div div div .product-description {
   font-size: 18px !important;
   text-align: left;
   height: 50px !important;
-  -webkit-backdrop-filter: blur(1px) !important;
-          backdrop-filter: blur(1px) !important;
+  -webkit-backdrop-filter: blur(2px) !important;
+          backdrop-filter: blur(2px) !important;
   border-radius: 0px !important;
   position: absolute;
   bottom: 100px;
+  font-weight: 600;
 }
 main .category div div div .product-price {
   background-color: #353535;
