@@ -410,7 +410,7 @@ main{
             padding-top: 20px;
         
             div{
-                @include sizes(350px,600px);
+                @include sizes(350px,500px);
                 @include displayFlex($justifyContent: space-between); 
                 box-shadow: 0px 0px 5px 1px rgb(166, 166, 166);
                 background-repeat: no-repeat;
