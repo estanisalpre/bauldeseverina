@@ -436,6 +436,7 @@ main{
                         table{
                             @include displayFlex($flexDirection: row);
                             @include sizes();
+                            color: $lightFontColor;
 
                             tr{
                                 @include displayFlex($flexDirection:row, $justifyContent: space-between);
@@ -500,6 +501,7 @@ main{
                         position: absolute;
                         bottom: 100px;
                         font-weight: $bold;
+                        color: $lightFontColor;
                     }
                     .product-price{
                         background-color: $darkFontColor;
