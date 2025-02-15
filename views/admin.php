@@ -45,7 +45,6 @@ try {
     <nav id="nav">
         <header>
             <img id="toBriefcase" src="/public/imgs/icons/catalogo.png" alt="Ícono catálogo de productos">
-            <img id="transportButton" src="/public/imgs/icons/envios.png" alt="Ícono para envíos a nivel nacional">
             <img id="logout" src="/public/imgs/icons/logout.png" alt="Ícono para cerrar sesión">
         </header>
     </nav>
@@ -142,6 +141,7 @@ try {
         </section>
         <!--EDIT MODAL-->
         <div id="editForm" style="display: none;">
+            <img id="closeBtn" src="/public/imgs/icons/exit.png" alt="Ícono Cerrar Panel de Edición">
             <h2>Editar Producto</h2>
             <form id="editProductForm">
                 <label for="editProductName">Nombre del Producto:</label>
@@ -160,15 +160,6 @@ try {
                 <input type="checkbox" id="editProductAvailable" />
 
                 <button type="button" id="submitEditButton">Actualizar Producto</button>
-            </form>
-        </div>
-        <!--TRANSPORT MODAL-->
-        <div id="editTransport" style="display: none;">
-            <h2>Edita el costo de envío</h2>
-            <form id="editProductForm">
-                <label for="editTransportValue">Precio del transporte</label>
-                <input type="number" id="editTransportValue" step="0.01" />
-                <button type="button" id="submitTransportButton">Actualizar Producto</button>
             </form>
         </div>
     </main>

@@ -24,7 +24,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
   font-family: "Afacad Flux", sans-serif;
   justify-content: flex-start;
   align-items: flex-start;
@@ -32,7 +32,7 @@ body {
 
 nav {
   width: 100%;
-  height: 120px;
+  height: 60px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -43,27 +43,7 @@ nav {
   gap: 20px;
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-}
-nav .topNav {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-  cursor: default;
-  gap: 10px;
-  box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
-}
-nav .topNav img {
-  width: 25px;
-  height: auto;
-}
-nav .topNav p {
-  font-weight: 600;
-  font-size: 16px;
-  color: #353535;
+  background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
 }
 nav header {
   display: flex;
@@ -84,12 +64,12 @@ nav header .mobileHeader {
   padding-right: 50px;
 }
 nav header .mobileHeader #myLogo {
-  width: 50px;
+  width: 60px;
   height: auto;
   cursor: pointer;
 }
 nav header .mobileHeader img {
-  width: 40px;
+  width: 25px;
   height: auto;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -104,11 +84,11 @@ nav header .mobileHeader ul {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
 }
 nav header .mobileHeader ul li {
   width: 100px;
-  height: 80px;
+  height: 50px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -139,7 +119,7 @@ nav header .mobileHeader ul #catalogo:hover {
   box-shadow: 0px 0px 50px 10px #414141;
   overflow: hidden;
   gap: 20px;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
 }
 .burguerMenu div {
   width: 90%;
@@ -209,7 +189,7 @@ nav header .mobileHeader ul #catalogo:hover {
   gap: 10px;
 }
 .burguerMenu .socialMedia p {
-  color: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  color: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
   background-color: transparent;
   font-weight: 600;
   font-size: 23px;
@@ -222,7 +202,7 @@ nav header .mobileHeader ul #catalogo:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-color: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
   color: #353535;
   font-size: 14px;
 }
@@ -276,9 +256,9 @@ main #firstContent .slides div button {
   align-items: center;
   gap: 5px;
   border: 0px;
-  border-radius: 60px;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-  color: #353535;
+  border-radius: 5px;
+  background-color: #353535;
+  color: #e3e3e3;
   font-weight: 600;
   font-family: "Afacad Flux", sans-serif;
   font-size: 23px;
@@ -298,6 +278,7 @@ main #presentation {
   padding: 5px;
   cursor: default;
   margin-top: 50px;
+  color: #353535;
 }
 main #presentation .textPresentation {
   width: 100%;
@@ -335,8 +316,7 @@ main h4 {
   flex-direction: column;
   align-items: center;
   font-size: 23px;
-  align-items: flex-start;
-  padding-left: 20px;
+  align-items: center;
   margin-top: 50px;
 }
 main #categoriesSection {
@@ -364,40 +344,39 @@ main #categoriesSection .secondCategory, main #categoriesSection .fourthCategory
   background-position: center;
   cursor: default;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 5px;
-  box-shadow: 0px 0px 20px 1px #b1b1b1;
-}
-main #categoriesSection .secondCategory div, main #categoriesSection .fourthCategory div, main #categoriesSection .fifthCategory div, main #categoriesSection .seventhCategory div {
-  width: 100%;
-  height: 40px;
-  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
-main #categoriesSection .secondCategory div h3, main #categoriesSection .fourthCategory div h3, main #categoriesSection .fifthCategory div h3, main #categoriesSection .seventhCategory div h3 {
+main #categoriesSection .secondCategory h3, main #categoriesSection .fourthCategory h3, main #categoriesSection .fifthCategory h3, main #categoriesSection .seventhCategory h3 {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-size: 16px;
-  margin-top: -13px;
-  height: 30px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  position: absolute;
+  font-size: 23px;
+  color: #e3e3e3;
   font-weight: 400;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
 main #categoriesSection .secondCategory {
   background-image: url(/public/imgs/categories/pantalonesJeansCategory.jpeg);
 }
 main #categoriesSection .fourthCategory {
   background-image: url(/public/imgs/categories/tenisCategory.jpeg);
+}
+main #categoriesSection button {
+  width: 70%;
+  height: 50px;
+  font-family: "Afacad Flux", sans-serif;
+  outline: 0px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 23px;
+  background-color: #353535 !important;
+  color: #e3e3e3;
 }
 main #categoriesSection .toBriefcaseSection {
   width: 100%;
@@ -408,48 +387,13 @@ main #categoriesSection .toBriefcaseSection {
   align-items: center;
   z-index: 10000;
 }
-main #categoriesSection .toBriefcaseSection .catalogoSection {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-main #categoriesSection .toBriefcaseSection .catalogoSection h3 {
-  font-size: 23px;
-}
-main #categoriesSection .toBriefcaseSection .catalogoSection button {
-  padding: 5px;
-  border: 1px solid #353535;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-  font-family: "Afacad Flux", sans-serif;
-  width: 70%;
-  height: 50px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 23px;
-  color: #353535;
-  cursor: pointer;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-  box-shadow: none;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-}
-main #categoriesSection .toBriefcaseSection .catalogoSection button img {
-  width: 30px;
-  height: auto;
-}
 main #categoriesSection .toBriefcaseSection .contactSection {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 50%;
 }
 main #categoriesSection .toBriefcaseSection .contactSection h2 {
   width: 100%;
@@ -458,6 +402,7 @@ main #categoriesSection .toBriefcaseSection .contactSection h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-size: 28px;
 }
 main #categoriesSection .toBriefcaseSection .contactSection div {
   width: 100%;
@@ -489,7 +434,7 @@ main #categoriesSection .toBriefcaseSection .contactSection div ul li {
   justify-content: flex-end;
 }
 main #categoriesSection .toBriefcaseSection .contactSection div ul li img {
-  width: 60px;
+  width: 40px;
   height: auto;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -512,7 +457,7 @@ main #categoriesSection .toBriefcaseSection .contactSection .numeroCiudad ul {
 }
 main #categoriesSection .toBriefcaseSection .contactSection .numeroCiudad ul li {
   justify-content: flex-start;
-  font-size: 16px;
+  font-size: 23px;
 }
 main #categoriesSection .seventhCategory {
   background-image: url(/public/imgs/categories/hoodiesSueterCategory.jpeg);
@@ -538,7 +483,7 @@ main #categoriesSection #buttonSection button {
   font-size: 23px;
   color: #353535;
   cursor: pointer;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -584,7 +529,7 @@ main .sectionForm form {
   height: 300px;
   border-radius: 20px;
   border: 1px solid #414141;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
   gap: 5px;
 }
 main .sectionForm form #errorMessage {
@@ -617,7 +562,7 @@ main .sectionForm form button {
   font-size: 23px;
   color: #353535;
   cursor: pointer;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
   box-shadow: none;
   margin-top: 0px;
 }
@@ -638,13 +583,13 @@ main .sectionForm button {
   font-size: 23px;
   color: #353535;
   cursor: pointer;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
 }
 main .sectionForm button:hover {
   background-image: linear-gradient(to top, #fcddd4 0%, #e8dad0 100%);
 }
 main #whatsapp {
-  width: 80px;
+  width: 50px;
   height: auto;
   cursor: pointer;
   position: fixed;
@@ -659,14 +604,14 @@ main #whatsapp:hover {
 
 footer {
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
   z-index: 10999;
   box-shadow: 0px 0px 20px 1px #414141;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
 }
 footer img {
   width: 30%;

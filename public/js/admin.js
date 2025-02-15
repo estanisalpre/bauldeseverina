@@ -120,46 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // Funcionalidad del boton de transporte
-    const transportButton = document.getElementById('transportButton')
-
-    if(transportButton){
-        transportButton.addEventListener('click', () => {
-            const editTransport = document.getElementById('editTransport')
-            const editTransportValue = document.getElementById("editTransportValue");
-            const submitTransportButton = document.getElementById("submitTransportButton");
-            editTransport.style.display = 'block'
-
-            // Enviar los datos al servidor para actualizar el producto
-            submitTransportButton.addEventListener("click", () => {
-                const newTransportValue = editTransportValue.value;
-
-                // Verificar que los campos estén completos
-                if (newTransportValue) {
-                    fetch('/edit_transport.php', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ 
-                            transportPrice: newTransportValue
-                        })
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.success) {
-                            alert("Producto editado exitosamente.");
-                            location.reload(); // Recargar la página para reflejar los cambios
-                        } else {
-                            alert("Error al editar el producto.");
-                        }
-                    })
-                    .catch(error => console.error('Error:', error));
-                } else {
-                    alert("El nombre del producto es obligatorio.");
-                }
-            });
-        })
-    }
     
     //Botón para cerrar sesión
     const logout = document.getElementById('logout')
@@ -176,6 +136,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             })
             .catch(error => console.error('Error al cerrar sesión:', error));
+        })
+    }
+
+    //CERRAR MODAL DE EDICIÓN
+    const closeBtn = document.getElementById('closeBtn');
+
+    if(closeBtn){
+        closeBtn.addEventListener('click', () => {
+            editForm.style.display = 'none';
         })
     }
 })

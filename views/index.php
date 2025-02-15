@@ -6,12 +6,6 @@
     error_reporting(E_ALL);
 
     try {
-        //Transporte
-        $queryTransport = "SELECT transportPrice FROM transport";
-        $stmtTransport = $pdo->prepare($queryTransport);
-        $stmtTransport->execute();
-        $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
-    
         //Imagen 1
         $queryImgs1 = "SELECT productImg FROM productos ORDER BY RAND() LIMIT 1";
         $stmtImgs1 = $pdo->prepare($queryImgs1);
@@ -53,20 +47,6 @@
 <body>
     <!--NAV-->
     <nav id="nav">
-        <div class="topNav">
-            <img src="/public/imgs/icons/envios.png" alt="Ícono carro de envíos">
-                <p>Envío gratis a todo Colombia a partir de 
-                    <span id="minAmount">
-                        <?php 
-                            if (!empty($precioTransport)) {
-                                echo "$" . htmlspecialchars($precioTransport['transportPrice']);
-                            } else {
-                                echo "00,00";
-                            }
-                        ?>
-                    </span>
-                </p>
-        </div>
         <header>
             <div id="mobileHeader" class="mobileHeader">
                 <img id="toIndex" src="/public/imgs/logos/logo.png" alt="El Baul de Severina Logo">
@@ -140,35 +120,20 @@
         <h4>Categorias</h4> 
         <section id="categoriesSection">
             <div class="fourthCategory">
-                <div><h3>Tenis</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase"><img id="moreImg" src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
-                </div> 
+                <h3>Tenis</h3>
             </div>
             <div class="fifthCategory">
-                <div><h3>Vestidos & Faldas</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase"><img id="moreImg" src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
-                </div> 
+                <h3>Vestidos & Faldas</h3>
             </div>
             <div class="seventhCategory">
-                <div><h3>Hoodies & Sueters</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase"><img id="moreImg" src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
-                </div> 
+                <h3>Hoodies & Sueters</h3>
             </div>
             <div class="secondCategory">
-                <div><h3>Pantalones & Jeans</h3></div>
-                <div id="buttonSection">
-                    <button id="toBriefcase"><img id="moreImg" src="/public/imgs/icons/more.png" alt="Ícono Ver Más Catálogo">VER MÁS</button>
-                </div> 
+                <h3>Pantalones & Jeans</h3>
             </div>
+            <button id="toBriefcase">VER CATÁLOGO COMPLETO</button>
             <!--CATALOGO-->
             <div class="toBriefcaseSection">
-                <div class="catalogoSection">
-                    <h3>¿Quieres ver el catálogo completo?</h3>
-                    <button id="toBriefcase"><img src="/public/imgs/icons/catalogo.png" alt="Ícono de Catálogo de nuestra indumentaria">VER CATÁLOGO</button>
-                </div>
                 <div id="contactSection" class="contactSection">
                     <h2>¡Contáctanos!</h2>
                     <div>
@@ -180,7 +145,7 @@
                     </div>
                     <div class="numeroCiudad">
                         <ul>
-                            <li>📱 +57 301 2397022</li>
+                            <li>📱 301 2397022</li>
                             <li>📍 Medellín, CO</li>  
                         </ul>
                     </div>

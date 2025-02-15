@@ -323,6 +323,16 @@ main #addProduct form #addProductButton, main #productList form #addProductButto
 main #addProduct form #addProductButton:hover, main #productList form #addProductButton:hover {
   background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
+main #addProduct form .medidasInputs, main #productList form .medidasInputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+main #addProduct form .medidasInputs input, main #productList form .medidasInputs input {
+  padding: 1px;
+  font-size: 14px;
+}
 main #addProduct form button, main #productList form button {
   padding: 2px;
   border: 0px solid #e3e3e3;
@@ -330,7 +340,7 @@ main #addProduct form button, main #productList form button {
   background-color: transparent;
   transition: all 0.3s ease;
   font-family: "Afacad Flux", sans-serif;
-  width: 30%;
+  width: 100%;
   height: 50px;
   text-align: center;
   font-weight: 400;
@@ -339,6 +349,7 @@ main #addProduct form button, main #productList form button {
   cursor: pointer;
   background-color: #e3e3e3;
   box-shadow: 0px 0px 20px 1px black;
+  width: 90%;
   height: 40px;
   font-size: 16px;
   box-shadow: none;
@@ -435,7 +446,7 @@ main #productList .product .product-buttons button {
 }
 main #editForm, main #editTransport {
   width: 90%;
-  height: 500px;
+  height: 650px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -445,6 +456,13 @@ main #editForm, main #editTransport {
   position: fixed;
   background-color: #e3e3e3;
   overflow: hidden;
+}
+main #editForm img, main #editTransport img {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
 }
 main #editForm h2, main #editTransport h2 {
   width: 100%;

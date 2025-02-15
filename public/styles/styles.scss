@@ -1,6 +1,6 @@
 //Variables
 $backgroundImage: linear-gradient(to top, #fcddd4 0%, #e8dad0 100%);
-$secondBackgroundImage: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+$secondBackgroundImage: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
 $cardBackgroundImage: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 $lightBackgroundImage: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 $sm: 12px;
@@ -98,31 +98,15 @@ body{
 
 //Nav
 nav{
-    @include sizes($height: 120px);
+    @include sizes($height: 60px);
     @include displayFlex();
     position: fixed;
     top:0px;
     z-index: 10500;
     gap: 20px;
     backdrop-filter: blur(3px);
+    background-image: $secondBackgroundImage;
 
-    .topNav{
-        @include sizes(100%);
-        @include displayFlex($flexDirection:row);
-        background-image: $secondBackgroundImage;
-        cursor: default;
-        gap: 10px;
-        box-shadow: 0px 0px 5px 1px rgb(58, 58, 58);
-
-        img{
-            @include sizes(25px,auto);
-        }
-        p{
-            font-weight: $bold;
-            font-size: $md;
-            color: $darkFontColor;
-        }
-    }
     header{
         @include displayFlex();
         @include sizes($height: 50px);
@@ -134,11 +118,11 @@ nav{
             padding-right: 50px;
 
             #myLogo{
-                @include sizes(50px,auto);
+                @include sizes(60px,auto);
                 cursor: pointer;
             }
             img{
-                @include sizes(40px, auto);
+                @include sizes(25px, auto);
                 cursor: pointer;
                 transition: all 0.3s ease;
             }
@@ -148,10 +132,10 @@ nav{
             ul{
                 @include sizes(25%,50px);
                 @include displayFlex($flexDirection:row);
-                gap: 15px;
+                gap: 30px;
 
                 li{
-                    @include sizes(100px,80px);
+                    @include sizes(100px,50px);
                     @include displayFlex();
                     list-style: none;
                     transition: all 0.3s ease;
@@ -291,9 +275,9 @@ main{
                     @include displayFlex($flexDirection: row);
                     gap: 5px;
                     border: 0px;
-                    border-radius: 60px;
-                    background-image: $secondBackgroundImage;
-                    color: $darkFontColor;
+                    border-radius: 5px;
+                    background-color: $darkFontColor;
+                    color: $lightFontColor;
                     font-weight: $bold;
                     font-family: $afacadFont;
                     font-size: $lg;
@@ -313,6 +297,7 @@ main{
     padding: 5px;
     cursor: default;
     margin-top: 50px;
+    color: $darkFontColor;
     
     .textPresentation{
         @include sizes();
@@ -338,8 +323,7 @@ main{
         @include sizes(90%,50px);
         @include displayFlex();
         font-size: $lg;
-        align-items: flex-start;
-        padding-left: 20px;
+        align-items: center;
         margin-top: 50px;
     }
     //Contenedor de categorias
@@ -359,26 +343,17 @@ main{
             background-repeat: no-repeat;
             background-position: center;
             cursor: default;
-            @include displayFlex($justifyContent: space-between);
-            border-radius: 5px;
-            box-shadow: 0px 0px 20px 1px #b1b1b1;
-
-            div{
-                @include sizes(100%,40px);
-                @include displayFlex();
+            @include displayFlex();
+            position: relative;
 
                 h3{
-                    @include sizes(100%);
+                    @include sizes();
                     @include displayFlex();
-                    font-size: $md;
-                    margin-top: -13px;
-                    height: 30px;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
-                    font-weight: $noBold;
-                    background-image: $secondBackgroundImage;
+                    position: absolute;
+                    font-size: $lg;
+                    color: $lightFontColor;
+                    font-weight: 400;
                 }
-            }
         }
         .secondCategory{
             background-image: url(/public/imgs/categories/pantalonesJeansCategory.jpeg);
@@ -386,37 +361,30 @@ main{
         .fourthCategory{
             background-image: url(/public/imgs/categories/tenisCategory.jpeg);
         }
+        button{
+            @include sizes(70%, 50px);
+            font-family: $afacadFont;
+            outline: 0px;
+            border: 0px;
+            cursor: pointer;
+            font-size: $lg;
+            background-color: $darkFontColor !important;
+            color: $lightFontColor;
+        }
         //Contenedor de catalogo
         .toBriefcaseSection{
             @include sizes(100%,300px);
             @include displayFlex();
             z-index: 10000;
 
-            .catalogoSection{
-                @include sizes();
-                @include displayFlex();
-
-                h3{
-                    font-size: $lg;
-                }
-                
-                button{
-                    @include buttonDesign(70%);
-                    box-shadow: none;
-                    @include displayFlex($flexDirection:row);
-    
-                    img{
-                        @include sizes(30px,auto);
-                    }
-                }
-            }
             .contactSection{
                 @include displayFlex();
-                @include sizes();
+                @include sizes(80%,$height: 50%);
 
                 h2{
                     @include sizes($height: 50px);
                     @include displayFlex();
+                    font-size: $slg;
                 }
                 div{
                     @include sizes();
@@ -436,7 +404,7 @@ main{
                             justify-content: flex-end;
     
                             img{
-                                @include sizes(60px,auto);
+                                @include sizes(40px,auto);
                                 transition: all 0.3s ease;
                                 cursor: pointer;
                             }
@@ -457,7 +425,7 @@ main{
 
                         li{
                             justify-content: flex-start;
-                            font-size: $md;
+                            font-size: $lg;
                         }
                     }
                 }
@@ -546,7 +514,7 @@ main{
 
     //Whatsapp logo
     #whatsapp{
-        @include sizes(80px,auto);
+        @include sizes(50px,auto);
         cursor: pointer;
         position: fixed;
         left: 20px;
@@ -561,7 +529,7 @@ main{
 
 //Footer
 footer{
-    @include sizes($height: 400px);
+    @include sizes($height: 300px);
     @include displayFlex($flexDirection:row);
     z-index: 10999;
     box-shadow: 0px 0px 20px 1px $shadow;

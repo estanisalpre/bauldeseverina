@@ -1,11 +1,6 @@
 <?php
     include 'db.php';
 
-    //Transporte
-    $queryTransport = "SELECT transportPrice FROM transport";
-    $stmtTransport = $pdo->prepare($queryTransport);
-    $stmtTransport->execute();
-    $precioTransport = $stmtTransport->fetch(PDO::FETCH_ASSOC);
     //Bolsos
     $queryBolsos = "SELECT p.productImg, p.productName, p.productBrand, p.cintura, p.tiro, p.largo, p.cadera, p.pierna, p.busto, p.manga, p.productDescription, p.productPrice, p.available, p.id_categoria, t.nombre_talla FROM productos p INNER JOIN tallas t ON p.id_talla = t.id_talla WHERE p.available = 1 AND p.id_categoria = 1";
     $stmtBolsos = $pdo->prepare($queryBolsos);
@@ -76,20 +71,6 @@
 <body>
     <!--NAV-->
     <nav id="nav">
-        <div class="topNav">
-            <img src="/public/imgs/icons/envios.png" alt="Ícono carro de envíos">
-                <p>Envío gratis a todo Colombia a partir de 
-                    <span id="minAmount">
-                        <?php 
-                            if (!empty($precioTransport)) {
-                                echo "$" . htmlspecialchars($precioTransport['transportPrice']);
-                            } else {
-                                echo "00,00";
-                            }
-                        ?>
-                    </span>
-                </p>
-        </div>
         <header>
             <div id="mobileHeader" class="mobileHeader">
                 <img id="toIndex" src="/public/imgs/logos/logo.png" alt="El Baul de Severina Logo">

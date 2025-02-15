@@ -312,8 +312,17 @@ main{
             #addProductButton:hover{
                 background-image: $secondBackgroundImage;
             }
+            .medidasInputs{
+                @include displayFlex($flexDirection:row);
+
+                input{
+                    padding: 1px;
+                    font-size: $sm;
+                }
+            }
             button{
-                @include buttonDesign(30%);
+                @include buttonDesign();
+                width: 90%;
                 height: 40px;
                 font-size: $md;
                 box-shadow: none;
@@ -381,7 +390,7 @@ main{
         }
     }
     #editForm, #editTransport{
-        @include sizes(90%,$height: 500px);
+        @include sizes(90%,$height: 650px);
         @include displayFlex();
         box-shadow: 0px 0px 10px 1px black;
         display: none;
@@ -389,6 +398,12 @@ main{
         background-color: $lightFontColor;
         overflow: hidden;
 
+        img{
+            @include sizes(30px,auto);
+            position: absolute;
+            right: 0px;
+            cursor: pointer;
+        }
         h2{
             @include sizes($height: 30px);
             font-size: $md;
