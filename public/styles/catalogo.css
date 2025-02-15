@@ -660,21 +660,6 @@ main .sectionForm button:hover {
   background-image: linear-gradient(to top, #fcddd4 0%, #e8dad0 100%);
 }
 
-#whatsapp {
-  width: 80px;
-  height: auto;
-  cursor: pointer;
-  position: fixed;
-  left: 20px;
-  bottom: 20px;
-  transition: all 0.3s ease;
-  z-index: 10998;
-}
-
-#whatsapp:hover {
-  transform: scale(1.05);
-}
-
 @keyframes zoomAnimation {
   100% {
     transform: scale(1);

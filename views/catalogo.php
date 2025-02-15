@@ -119,7 +119,6 @@
     </div>
     <!--MAIN / CONTENIDO PRINCIPAL-->
     <main>
-        <img id="whatsapp" src="/public/imgs/icons/whatsapp.png" alt="Whatsapp Icon">
         <!--SECTION DE CATEGORIAS-->
         <section id="categorySection">
             <h2>Busca por categoría:</h2>
