@@ -415,6 +415,8 @@ main{
             @include sizes();
             @include displayFlex($flexDirection:row);
             overflow-y: scroll;
+            overflow-x: hidden;
+            scrollbar-width: 0px;
             flex-wrap: wrap;
             gap: 20px;
             padding-top: 10px;
