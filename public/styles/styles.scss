@@ -462,38 +462,6 @@ main{
         }
     }
 
-    //Seleccionar categorias
-    #selectCategory{
-        @include sizes();
-        position: fixed;
-        backdrop-filter: blur(8px);
-        @include displayFlex();
-        display: none;
-        z-index: 99450;
-
-        img{
-            @include sizes(50px,auto);
-            cursor: pointer;
-        }
-        ul{
-            @include sizes(70%,70%);
-            @include displayFlex();
-            border-radius: 20px;
-            background-image: $secondBackgroundImage;
-            border: 1px solid $darkFontColor;
-
-            li{
-                list-style: none;
-                cursor: pointer;
-                font-size: $lg;
-                color: $darkFontColor;
-            }
-            li:hover{
-                border-bottom: 1px solid $darkFontColor;
-            }
-        }
-    }
-    
     //Login
     .sectionForm{
         @include sizes();

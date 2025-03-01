@@ -66,9 +66,11 @@ function openCategory(id){
 //Cerramos las categorias
 function closeCategories(){
     const categories = document.querySelectorAll('.category')
-    const categoryModal = document.getElementById('selectCategory')
+    const categoryModal = document.getElementById('selectCategoryVisible')
+    const categoryModalInvisible = document.getElementById('selectCategoryInvisible')
 
     categoryModal.style.display = 'none'
+    categoryModalInvisible.style.display = 'none'
 
     categories.forEach(category => {
         category.style.display = 'none'
@@ -93,7 +95,7 @@ function whatsappRedirection(){
 //Funcionalidad para escoger categorias nuevamente
 export function selectCategory(){
     const categoryButton = document.querySelectorAll('.selectCategory')
-    const categoryModal = document.getElementById('selectCategory')
+    const categoryModal = document.getElementById('selectCategoryInvisible')
 
     categoryButton.forEach(function(category) {
         category.addEventListener('click', () => {

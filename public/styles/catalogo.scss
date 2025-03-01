@@ -325,8 +325,39 @@ main{
         }
     }
 
-    //Seleccionar categorias
-    #selectCategory{
+    // Visible categories
+    #selectCategoryVisible{
+        @include sizes();
+        position: fixed;
+        backdrop-filter: blur(8px);
+        @include displayFlex();
+        z-index: 10450;
+
+        img{
+            @include sizes(50px,auto);
+            cursor: pointer;
+        }
+        ul{
+            @include sizes(70%,70%);
+            @include displayFlex();
+            border-radius: 20px;
+            background-image: $secondBackgroundImage;
+            border: 1px solid $darkFontColor;
+
+            li{
+                list-style: none;
+                cursor: pointer;
+                font-size: $lg;
+                color: $darkFontColor;
+            }
+            li:hover{
+                border-bottom: 1px solid $darkFontColor;
+            }
+        }
+    }
+
+    // Invisible categories
+    #selectCategoryInvisible{
         @include sizes();
         position: fixed;
         backdrop-filter: blur(8px);

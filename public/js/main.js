@@ -2,19 +2,14 @@
 //IMPORTACIONES
 import { navFunctionality } from "./nav.js";
 import { allRedirections } from "./redirections.js";
-import { selectCategory, categoryButtons } from "./catalogo.js";
 
-//Los captura el DOM
 document.addEventListener('DOMContentLoaded', () => {
     navFunctionality();
     allRedirections();
     comenzar();
     loginButton();
-    selectCategory();
-    categoryButtons();
 });
 
-//Button Comenzar
 function comenzar(){
     const comenzar = document.querySelectorAll('#comenzarButton')
 
@@ -27,7 +22,6 @@ function comenzar(){
     }
 }
 
-//Boton para loguearse
 export function loginButton(){
     const toAdmin = document.querySelectorAll('#toAdmin')
     const sectionForm = document.getElementById('sectionForm')

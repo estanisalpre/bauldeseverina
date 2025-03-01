@@ -100,8 +100,23 @@
     </div>
     <!--MAIN / CONTENIDO PRINCIPAL-->
     <main>
-        <!--SECTION DE CATEGORIAS-->
-        <section id="selectCategory">
+         <!--SELECCIONA CATEGORIA MODAL FIJO-->
+         <section id="selectCategoryVisible">
+            <ul>
+                <li class="toCategory" data-id="bolsosCategory">Bolsos</li>
+                <li class="toCategory" data-id="jeansCategory">Jeans & Pantalones</li>
+                <li class="toCategory" data-id="blusasCategory">Blusas</li>
+                <li class="toCategory" data-id="tenisCategory">Tenis</li>
+                <li class="toCategory" data-id="vestidosCategory">Vestidos & Faldas</li>
+                <li class="toCategory" data-id="deportivaCategory">Ropa Deportiva</li>
+                <li class="toCategory" data-id="suetersCategory">Hoodies & Sueters</li>
+                <li class="toCategory" data-id="taconesCategory">Tacones & Sandalias</li>
+                <li class="toCategory" data-id="abrigosCategory">Chaquetas & Abrigos</li>
+                <li class="toCategory" data-id="moreCategory">¡Más para ti!</li>
+            </ul>              
+        </section>
+        <!--SECTION DE CATEGORIAS MODAL DESAPARECE-->
+        <section id="selectCategoryInvisible">
             <img id="closeCategories" src="/public/imgs/icons/exit.png" alt="Ícono para cerrar categorías de ropa">
             <ul>
                 <li class="toCategory" data-id="bolsosCategory">Bolsos</li>

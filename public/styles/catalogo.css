@@ -328,7 +328,44 @@ main #categorySection .scrollSection img {
   height: auto;
   transform: rotate(-90deg);
 }
-main #selectCategory {
+main #selectCategoryVisible {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10450;
+}
+main #selectCategoryVisible img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+main #selectCategoryVisible ul {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
+  border: 1px solid #353535;
+}
+main #selectCategoryVisible ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 23px;
+  color: #353535;
+}
+main #selectCategoryVisible ul li:hover {
+  border-bottom: 1px solid #353535;
+}
+main #selectCategoryInvisible {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -341,12 +378,12 @@ main #selectCategory {
   display: none;
   z-index: 10450;
 }
-main #selectCategory img {
+main #selectCategoryInvisible img {
   width: 50px;
   height: auto;
   cursor: pointer;
 }
-main #selectCategory ul {
+main #selectCategoryInvisible ul {
   width: 70%;
   height: 70%;
   display: flex;
@@ -357,13 +394,13 @@ main #selectCategory ul {
   background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
   border: 1px solid #353535;
 }
-main #selectCategory ul li {
+main #selectCategoryInvisible ul li {
   list-style: none;
   cursor: pointer;
   font-size: 23px;
   color: #353535;
 }
-main #selectCategory ul li:hover {
+main #selectCategoryInvisible ul li:hover {
   border-bottom: 1px solid #353535;
 }
 main .category {
