@@ -109,18 +109,18 @@
         <h4>Categorias</h4> 
         <section id="categoriesSection">
             <div class="fourthCategory">
-                <h3 id="toBriefcase">Tenis</h3>
+                <h3 class="selectCategory">Tenis</h3>
             </div>
             <div class="fifthCategory">
-                <h3 id="toBriefcase">Vestidos & Faldas</h3>
+                <h3 class="selectCategory">Vestidos & Faldas</h3>
             </div>
             <div class="seventhCategory">
-                <h3 id="toBriefcase">Hoodies & Sueters</h3>
+                <h3 class="selectCategory">Hoodies & Sueters</h3>
             </div>
             <div class="secondCategory">
-                <h3 id="toBriefcase">Pantalones & Jeans</h3>
+                <h3 class="selectCategory">Pantalones & Jeans</h3>
             </div>
-            <button id="toBriefcase">VER CATÁLOGO COMPLETO</button>
+            <button class="selectCategory">VER CATÁLOGO COMPLETO</button>
             <!--CATALOGO-->
             <div class="toBriefcaseSection">
                 <div id="contactSection" class="contactSection">
@@ -140,6 +140,22 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!--SELECCIONA CATEGORIA MODAL-->
+        <section id="selectCategory">
+            <img id="closeCategories" src="/public/imgs/icons/exit.png" alt="Ícono para cerrar categorías de ropa">
+            <ul>
+                <li class="toCategory" data-id="bolsosCategory">Bolsos</li>
+                <li class="toCategory" data-id="jeansCategory">Jeans & Pantalones</li>
+                <li class="toCategory" data-id="blusasCategory">Blusas</li>
+                <li class="toCategory" data-id="tenisCategory">Tenis</li>
+                <li class="toCategory" data-id="vestidosCategory">Vestidos & Faldas</li>
+                <li class="toCategory" data-id="deportivaCategory">Ropa Deportiva</li>
+                <li class="toCategory" data-id="suetersCategory">Hoodies & Sueters</li>
+                <li class="toCategory" data-id="taconesCategory">Tacones & Sandalias</li>
+                <li class="toCategory" data-id="abrigosCategory">Chaquetas & Abrigos</li>
+                <li class="toCategory" data-id="moreCategory">¡Más para ti!</li>
+            </ul>              
         </section>
         <!--LOGIN-->
         <section id="sectionForm" class="sectionForm">

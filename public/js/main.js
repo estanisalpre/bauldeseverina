@@ -2,17 +2,16 @@
 //IMPORTACIONES
 import { navFunctionality } from "./nav.js";
 import { allRedirections } from "./redirections.js";
+import { selectCategory, categoryButtons } from "./catalogo.js";
 
 //Los captura el DOM
 document.addEventListener('DOMContentLoaded', () => {
-    //Funcionalidad del NAV
     navFunctionality();
-    //Redirecciones
     allRedirections();
-    //Boton comenzar
     comenzar();
-    //Funcionalidad para loguearse
     loginButton();
+    selectCategory();
+    categoryButtons();
 });
 
 //Button Comenzar

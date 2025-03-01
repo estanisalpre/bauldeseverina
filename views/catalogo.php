@@ -101,21 +101,6 @@
     <!--MAIN / CONTENIDO PRINCIPAL-->
     <main>
         <!--SECTION DE CATEGORIAS-->
-        <section id="categorySection">
-            <h2>Busca por categoría:</h2>
-            <div class="links">
-                <div class="toCategory" data-id="bolsosCategory"><span>Bolsos</span><img src="/public/imgs/icons/bolso.png" alt="Ícono de Categoria de Bolsos"></div>
-                <div class="toCategory" data-id="jeansCategory"><span>Jeans</span><img src="/public/imgs/icons/jeans.png" alt="Ícono de Categoria de Pantalones y Jeans"></div>
-                <div class="toCategory" data-id="blusasCategory"><span>Blusas</span><img src="/public/imgs/icons/blusa.png" alt="Ícono de Categoria de Blusas"></div>
-                <div class="toCategory" data-id="tenisCategory"><span>Tenis</span><img src="/public/imgs/icons/zapatos.png" alt="Ícono de Categoria de Tenis"></div>
-                <div class="toCategory" data-id="vestidosCategory"><span>Vestidos & Faldas</span><img src="/public/imgs/icons/falda.png" alt="Ícono de Categoria de Vestidos y Faldas"></div>
-                <div class="toCategory" data-id="deportivaCategory"><span>Ropa Deportiva</span><img src="/public/imgs/icons/deportiva.png" alt="Ícono de Categoria de Ropa Deportiva"></div>
-                <div class="toCategory" data-id="suetersCategory"><span>Sueters</span><img src="/public/imgs/icons/sueters.png" alt="Ícono de Categoria de Hoodies y Sueters"></div>
-                <div class="toCategory" data-id="taconesCategory"><span>Tacones</span><img src="/public/imgs/icons/tacones.png" alt="Ícono de Categoria de Sandalias y Tacones"></div>
-                <div class="toCategory" data-id="abrigosCategory"><span>Abrigos</span><img src="/public/imgs/icons/abrigos.png" alt="Ícono de Categoria de Abrigos"></div>
-                <div class="toCategory" data-id="moreCategory"><span>Otros</span><img src="/public/imgs/icons/boutique.png" alt="Ícono de Categoria de Abrigos"></div>
-            </div>
-        </section>
         <section id="selectCategory">
             <img id="closeCategories" src="/public/imgs/icons/exit.png" alt="Ícono para cerrar categorías de ropa">
             <ul>

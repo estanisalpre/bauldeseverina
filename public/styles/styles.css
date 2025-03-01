@@ -506,6 +506,44 @@ main #categoriesSection #buttonSection button #moreImg {
 main #categoriesSection #buttonSection button:hover {
   transform: scale(1.02);
 }
+main #selectCategory {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  z-index: 99450;
+}
+main #selectCategory img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+main #selectCategory ul {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-image: linear-gradient(-225deg, #e6e6e6 0%, #ffffff 100%);
+  border: 1px solid #353535;
+}
+main #selectCategory ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 23px;
+  color: #353535;
+}
+main #selectCategory ul li:hover {
+  border-bottom: 1px solid #353535;
+}
 main .sectionForm {
   width: 100%;
   height: 100%;

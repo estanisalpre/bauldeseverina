@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 //Funcionalidad botones de categoría
-function categoryButtons(){
+export function categoryButtons(){
     const categories = document.querySelectorAll('.toCategory')
 
     categories.forEach(function(category){
@@ -44,7 +44,7 @@ function categoryButtons(){
             if(categoryId){
                 closeCategories();
                 openCategory(categoryId)
-                location.href = `catalogo#${categoryId}`;
+                location.href = `./catalogo#${categoryId}`;
             } else {
                 console.log('Categoria sin data-id')
             }
@@ -65,11 +65,9 @@ function openCategory(id){
 
 //Cerramos las categorias
 function closeCategories(){
-    const categorySection = document.getElementById("categorySection")
     const categories = document.querySelectorAll('.category')
     const categoryModal = document.getElementById('selectCategory')
 
-    categorySection.style.display = 'none'
     categoryModal.style.display = 'none'
 
     categories.forEach(category => {
@@ -93,7 +91,7 @@ function whatsappRedirection(){
 }
 
 //Funcionalidad para escoger categorias nuevamente
-function selectCategory(){
+export function selectCategory(){
     const categoryButton = document.querySelectorAll('.selectCategory')
     const categoryModal = document.getElementById('selectCategory')
 
